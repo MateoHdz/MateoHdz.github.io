@@ -1,0 +1,158 @@
+{
+  "lang": "en",
+  "name": "Mateo Hernández",
+  "title": "Full Stack Developer",
+  "headline": "React · Node.js · TypeScript · Firebase · Multi-tenant SaaS in production",
+  "contact": {
+    "location": "Cali, Colombia (UTC-5) · Open to remote work",
+    "phone": "+57 321 527 2808",
+    "email": "mateohernandez10012003@gmail.com",
+    "github": "github.com/MateoHdz",
+    "linkedin": "",
+    "portfolio": ""
+  },
+  "labels": {
+    "profile": "Professional Summary",
+    "experience": "Work Experience",
+    "projects": "Projects",
+    "skills": "Technical Skills",
+    "education": "Education",
+    "languages": "Languages",
+    "present": "Present"
+  },
+  "profile": "Full Stack Developer with 3+ years building business software with JavaScript, TypeScript, React and Node.js. Currently the lead developer of a multi-tenant SaaS for restaurants (point of sale, order management and online menu) running in production for 12 companies and 18 locations. I start from the business problem: I gather requirements with the client, model the data and rules, build with automated tests and document every decision. Experience in data migration, performance, multi-tenant security and AI-assisted development.",
+  "experience": [
+    {
+      "role": "Full Stack Developer",
+      "company": "Quantum Infinity Technologies",
+      "location": "Colombia",
+      "start": "07/2026",
+      "end": "",
+      "summary": "",
+      "bullets": [
+        "Lead developer of a multi-tenant SaaS for restaurants (POS, order management, online menu, product landing pages and admin console) built with React, Node.js/Express and Firebase, in production for 12 companies and 18 locations; authored 96% of the commits since August 2026 (408 of 424).",
+        "Extended and maintain the POS REST API (316 endpoints: cash register and reconciliation, purchases with taxes, inventory by location, production and reports) with about 1,600 automated test cases.",
+        "Designed a reusable data importer (generic engine, per-source adapter, preview and rollback) and migrated a client from VectorPOS: 1,703 customer, supplier and recipe records in about 21 minutes.",
+        "Integrated the online menu, OMS and POS through a versioned order contract with transactions and idempotent IDs that prevent duplicate sales, plus customer notifications via WhatsApp templates.",
+        "Cut sale checkout time by about 50% (from 1,390 ms to ~700 ms) by batch-loading recipes from Firestore; validated against 2,470 orders.",
+        "Built an internal console in 9 days to onboard companies and enable their apps (170+ tests) and implemented multi-tenant authentication with Firebase custom tokens, scrypt password hashing and login rate limiting.",
+        "Documented the product (79 technical documents, 44 business rules, architecture decision records and phased roadmaps) and work with AI (Claude Code) from specs and acceptance criteria."
+      ]
+    },
+    {
+      "role": "Full Stack Developer",
+      "company": "Mr. Max Vet",
+      "location": "Cali, Colombia",
+      "start": "03/2026",
+      "end": "05/2026",
+      "summary": "",
+      "bullets": [
+        "Designed and built VetPOS, a point of sale and veterinary management platform ready for multiple clinics, with NestJS, TypeORM, MySQL, React, TypeScript and Docker Compose.",
+        "Built 12 backend modules: sales, inventory with stock movements, customers, pets, appointments, services, expenses and Excel reports.",
+        "Implemented JWT authentication with three roles (super admin, admin and employee), security headers and request rate limiting."
+      ]
+    },
+    {
+      "role": "Software Developer & Customer Success",
+      "company": "Softgic",
+      "location": "Medellín, Colombia (remote)",
+      "start": "09/2025",
+      "end": "03/2026",
+      "summary": "",
+      "bullets": [
+        "Built Mini Programs (AXML, ACSS and JavaScript) for Claro's super app: Cinemark Preferencial (second-largest contributor to the repository) and the Templo de la Moda checkout flow (cart, payment summary and shipping details).",
+        "Built the plan and service sales flow of Claro's Sales App in Next.js 16, React 19 and Tailwind CSS: catalog, plan review and admin views.",
+        "Acted as the link between clients and the technical team: turned business needs into requirements and supported functional testing through QA."
+      ]
+    },
+    {
+      "role": "Software Developer & Customer Success",
+      "company": "Lappiz",
+      "location": "Medellín, Colombia (remote)",
+      "start": "08/2023",
+      "end": "07/2025",
+      "summary": "",
+      "bullets": [
+        "Technical lead of the Relatoría project for Colombia's Office of the Inspector General (Procuraduría General de la Nación), coordinating team activities and deliverable quality.",
+        "Built business solutions with JavaScript, React, Next.js and SQL Server on the Lappiz platform to automate business processes.",
+        "Gathered requirements with government agencies and corporate clients, and designed databases for critical processes.",
+        "Built Power BI dashboards and automated document generation with jsPDF, working with Scrum, Azure DevOps and Git."
+      ]
+    },
+    {
+      "role": "Software Development Intern",
+      "company": "Softgic",
+      "location": "Medellín, Colombia (remote)",
+      "start": "02/2023",
+      "end": "08/2023",
+      "summary": "",
+      "bullets": [
+        "Built proofs of concept for clients across industries with JavaScript, HTML5, CSS3, Bootstrap and Kendo UI, backed by SQL Server databases and Power BI reports."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Atlas Spaces",
+      "link": "github.com/MateoHdz/atlas-spaces",
+      "description": "Coworking booking platform that prevents overlapping reservations with MongoDB transactions. Express, React, Zod, JWT, Docker Compose and 47 Jest tests."
+    },
+    {
+      "name": "DaySecurity CRM",
+      "link": "",
+      "description": "CRM for an electronic security company: PDF quotes, inventory, material assignment to technicians and commissions. NestJS, React and MySQL."
+    },
+    {
+      "name": "Turnia",
+      "link": "github.com/MateoHdz/Turnia",
+      "description": "Product design for a SaaS that calculates the labor cost of every shift under Colombian law (night, Sunday and overtime surcharges) before the schedule is published."
+    }
+  ],
+  "skills": [
+    {
+      "group": "Languages",
+      "items": "JavaScript, TypeScript, SQL, Python, HTML5, CSS3"
+    },
+    {
+      "group": "Frontend",
+      "items": "React, Next.js, Vite, Tailwind CSS, Angular, Zustand, Recharts"
+    },
+    {
+      "group": "Backend",
+      "items": "Node.js, Express, NestJS, REST APIs, JWT, Zod"
+    },
+    {
+      "group": "Data",
+      "items": "Firebase (Firestore, Auth, Storage), MySQL, SQL Server, MongoDB, TypeORM"
+    },
+    {
+      "group": "Testing & quality",
+      "items": "Jest, node:test, Firestore emulator, functional testing"
+    },
+    {
+      "group": "Tools",
+      "items": "Git, GitHub, Azure DevOps, Docker, Postman, Power BI, jsPDF"
+    },
+    {
+      "group": "Practices",
+      "items": "Scrum, requirements gathering, data modeling, technical documentation (ADR), AI-assisted development (Claude Code)"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Software Analysis and Development Technologist",
+      "school": "SENA, Guadalajara de Buga, Colombia",
+      "dates": "2021 – 2023"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Spanish",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Basic (A2), actively studying"
+    }
+  ]
+}

@@ -1,0 +1,529 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-05T17:30:51.508Z",
+  "title": "Design System: Mateo Hernández Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "accent": {
+        "role": "primary",
+        "displayName": "Cane Green",
+        "canonical": "oklch(47.5% 0.097 149.1)",
+        "tonalRamp": [
+          "#050e06",
+          "#0b2c14",
+          "#0f4d22",
+          "#306c3e",
+          "#549060",
+          "#7eb487",
+          "#b6d4ba",
+          "#e8f1e9"
+        ],
+        "dark": "accent-dark",
+        "usage": "Links, focus ring, active nav line, availability dot, icons under the pointer, caret."
+      },
+      "accent-soft": {
+        "role": "primary",
+        "displayName": "Cane Wash",
+        "canonical": "oklch(47.5% 0.097 149.1 / 0.12)",
+        "tonalRamp": [
+          "#050e06",
+          "#0b2c14",
+          "#0f4d22",
+          "#306c3e",
+          "#549060",
+          "#7eb487",
+          "#b6d4ba",
+          "#e8f1e9"
+        ],
+        "dark": "accent-soft-dark",
+        "usage": "Text selection background only."
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Off-White Paper",
+        "canonical": "oklch(97.5% 0.004 106.5)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242423",
+          "#40403e",
+          "#5e5e5b",
+          "#80807e",
+          "#a5a5a2",
+          "#cacac9",
+          "#eeeeee"
+        ],
+        "dark": "paper-dark",
+        "usage": "Page, html background, theme-color, scrollbar track, label on the ink button."
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Soft-Black Ink",
+        "canonical": "oklch(19.8% 0.004 128.7)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242423",
+          "#3f403e",
+          "#5d5e5c",
+          "#7f817e",
+          "#a4a5a2",
+          "#cacbc9",
+          "#eeeeee"
+        ],
+        "dark": "ink-dark",
+        "usage": "Primary text and headings, primary button fill, skip link; 80% for row summaries."
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Olive Graphite",
+        "canonical": "oklch(48.1% 0.012 125.9)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#232521",
+          "#3e413b",
+          "#5c5f58",
+          "#7e827a",
+          "#a3a69f",
+          "#c9cbc7",
+          "#eeefed"
+        ],
+        "dark": "muted-dark",
+        "usage": "Scanned text: dates, meta lines, labels, hints, inactive nav, icons at rest; 50% for the resting nav line."
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Pale Rule",
+        "canonical": "oklch(91.4% 0.007 106.5)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#242422",
+          "#40403c",
+          "#5e5e5a",
+          "#80807c",
+          "#a5a5a1",
+          "#cbcbc8",
+          "#eeeeee"
+        ],
+        "dark": "line-dark",
+        "usage": "Every 1px hairline, the secondary button edge, the scrollbar thumb. Decorative contrast only."
+      },
+      "hover": {
+        "role": "neutral",
+        "displayName": "Pressed Paper",
+        "canonical": "oklch(95.1% 0.007 106.5)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#242422",
+          "#40403c",
+          "#5e5e5a",
+          "#80807c",
+          "#a5a5a1",
+          "#cbcbc8",
+          "#eeeeee"
+        ],
+        "dark": "hover-dark",
+        "usage": "The only fill: under the pointer on work rows, contact rows, secondary button."
+      },
+      "paper-dark": {
+        "role": "neutral",
+        "displayName": "Night Paper",
+        "canonical": "oklch(18.0% 0.004 128.7)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242423",
+          "#3f403e",
+          "#5d5e5b",
+          "#7f817e",
+          "#a4a5a2",
+          "#cacbc9",
+          "#eeeeee"
+        ],
+        "light": "paper"
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Chalk Ink",
+        "canonical": "oklch(94.4% 0.007 115.7)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#242422",
+          "#3f403c",
+          "#5d5e5a",
+          "#80817c",
+          "#a4a5a1",
+          "#cacbc8",
+          "#eeeeee"
+        ],
+        "light": "ink"
+      },
+      "muted-dark": {
+        "role": "neutral",
+        "displayName": "Lichen Gray",
+        "canonical": "oklch(72.0% 0.012 123.5)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#232521",
+          "#3e413a",
+          "#5c5f58",
+          "#7f817a",
+          "#a3a69f",
+          "#cacbc7",
+          "#eeefed"
+        ],
+        "light": "muted"
+      },
+      "line-dark": {
+        "role": "neutral",
+        "displayName": "Night Rule",
+        "canonical": "oklch(29.0% 0.008 128.8)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#232422",
+          "#3e403c",
+          "#5c5e5a",
+          "#7f817c",
+          "#a3a5a1",
+          "#cacbc8",
+          "#eeeeee"
+        ],
+        "light": "line"
+      },
+      "hover-dark": {
+        "role": "neutral",
+        "displayName": "Night Pressed",
+        "canonical": "oklch(22.0% 0.004 128.7)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242423",
+          "#3f403e",
+          "#5d5e5c",
+          "#7f817e",
+          "#a4a5a3",
+          "#cacbc9",
+          "#eeeeee"
+        ],
+        "light": "hover"
+      },
+      "accent-dark": {
+        "role": "primary",
+        "displayName": "Young Cane Green",
+        "canonical": "oklch(77.7% 0.088 151.3)",
+        "tonalRamp": [
+          "#050e07",
+          "#0d2b16",
+          "#134c27",
+          "#336c43",
+          "#568f65",
+          "#7fb38c",
+          "#b6d3bc",
+          "#e8f1ea"
+        ],
+        "light": "accent"
+      },
+      "accent-soft-dark": {
+        "role": "primary",
+        "displayName": "Young Cane Wash",
+        "canonical": "oklch(77.7% 0.088 151.3 / 0.16)",
+        "tonalRamp": [
+          "#050e07",
+          "#0d2b16",
+          "#134c27",
+          "#336c43",
+          "#568f65",
+          "#7fb38c",
+          "#b6d3bc",
+          "#e8f1ea"
+        ],
+        "light": "accent-soft"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The name, once, top of the identity column (3rem from 640px)."
+      },
+      "display-mobile": {
+        "displayName": "Display (phones)",
+        "purpose": "The name below 640px."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles; 24px to content."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "The role line under the name."
+      },
+      "title-item": {
+        "displayName": "Title Item",
+        "purpose": "Work-row titles."
+      },
+      "title-sm": {
+        "displayName": "Title Small",
+        "purpose": "Process step titles and experience roles."
+      },
+      "body-lead": {
+        "displayName": "Body Lead",
+        "purpose": "The about paragraphs, max 64ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Process, experience, stack and contact copy, max 64ch."
+      },
+      "body-strong": {
+        "displayName": "Body Strong",
+        "purpose": "Contact-row values."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "Work-row summaries (ink 80%) and the expanded panel, max 62ch."
+      },
+      "label-strong": {
+        "displayName": "Label Strong",
+        "purpose": "Button labels and the full-CV link."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Nav labels, quiet links, panel field labels, project links."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Dates, periods, org and domain lines, hints, availability, footer; tabular figures."
+      }
+    },
+    "shadows": [
+      {
+        "name": "hairline-inset",
+        "value": "inset 0 0 0 1px var(--line)",
+        "purpose": "Not elevation: draws the secondary button's 1px edge (Tailwind ring-1 ring-inset). The system casts no shadows."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Every arrival: entrance, row open, row content, icon rotation, nav line width, language crossfade. CSS var --ease-out."
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(0.77, 0, 0.175, 1)",
+        "purpose": "Row collapse only. CSS var --ease-in-out."
+      },
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Hover and press state changes (Tailwind default timing)."
+      },
+      {
+        "name": "rise",
+        "value": "700ms ease-out both; from opacity 0, translateY(8px), blur(2px); delay calc(var(--i) * 70ms + 80ms)",
+        "purpose": "One-time staggered entrance of the identity column, steps 0 to 4."
+      },
+      {
+        "name": "row-open",
+        "value": "grid-template-rows 0fr to 1fr, 420ms ease-out",
+        "purpose": "Work row panel opening in place."
+      },
+      {
+        "name": "row-close",
+        "value": "grid-template-rows 1fr to 0fr, 220ms ease-in-out",
+        "purpose": "Work row panel collapsing."
+      },
+      {
+        "name": "row-content-in",
+        "value": "opacity 360ms ease-out, transform translateY(6px) to 0 420ms ease-out, delay calc(var(--i) * 45ms + 90ms)",
+        "purpose": "Panel blocks arriving in sequence after the panel starts to open."
+      },
+      {
+        "name": "row-content-out",
+        "value": "opacity and transform 160ms ease, no delay",
+        "purpose": "Panel blocks leaving at once on close."
+      },
+      {
+        "name": "row-icon",
+        "value": "transform rotate(45deg) 320ms ease-out",
+        "purpose": "Plus becomes a close mark when the row opens."
+      },
+      {
+        "name": "nav-line",
+        "value": "width 360ms ease-out; background-color 200ms ease",
+        "purpose": "Section nav line: 32px rest, 48px hover, 64px active."
+      },
+      {
+        "name": "state-fill",
+        "value": "background-color / transform 200ms ease-standard",
+        "purpose": "Button and row fills, 0.97 press scale, 2px arrow nudges."
+      },
+      {
+        "name": "state-text",
+        "value": "color 150ms ease-standard",
+        "purpose": "Muted-to-ink text and icon color shifts."
+      },
+      {
+        "name": "press",
+        "value": "scale(0.97) on :active",
+        "purpose": "Primary and secondary buttons."
+      },
+      {
+        "name": "language-crossfade",
+        "value": "@view-transition { navigation: auto }; root old/new 260ms ease-out",
+        "purpose": "Cross-document crossfade between / and /en/."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "@media (prefers-reduced-motion: reduce)",
+        "purpose": "Smooth scroll off; rise, row panel, row content, row icon and nav line set to animation/transition none; row content forced visible; view-transition navigation none. Utility-level hover fills, press scale and arrow nudges are not covered."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one heavy object on the page: the CV download, ink fill with a paper label.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 17V3\"/><path d=\"m6 11 6 6 6-6\"/><path d=\"M19 21H5\"/></svg>Descargar hoja de vida</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; border-radius: 8px; background: var(--ink, #151614); color: var(--paper, #f7f7f4); font-family: var(--font-schibsted, \"Schibsted Grotesk\"), ui-sans-serif, system-ui, sans-serif; font-feature-settings: \"ss01\"; font-size: 0.875rem; line-height: 1.4286; font-weight: 600; text-decoration: none; transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-primary svg { width: 16px; height: 16px; } .ds-btn-primary:hover { background: color-mix(in oklab, var(--ink, #151614) 85%, transparent); } .ds-btn-primary:active { transform: scale(0.97); } .ds-btn-primary:focus-visible { outline: 2px solid var(--accent, #2f6b3d); outline-offset: 3px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "The email action beside the CV: transparent, 1px inset hairline edge, Pressed Paper on hover.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7\"/><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/></svg>Escríbeme</a>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; border-radius: 8px; background: transparent; color: var(--ink, #151614); box-shadow: inset 0 0 0 1px var(--line, #e3e3de); font-family: var(--font-schibsted, \"Schibsted Grotesk\"), ui-sans-serif, system-ui, sans-serif; font-feature-settings: \"ss01\"; font-size: 0.875rem; line-height: 1.4286; font-weight: 600; text-decoration: none; transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-secondary svg { width: 16px; height: 16px; } .ds-btn-secondary:hover { background: var(--hover, #efefea); } .ds-btn-secondary:active { transform: scale(0.97); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--accent, #2f6b3d); outline-offset: 3px; }"
+    },
+    {
+      "name": "Work Row",
+      "kind": "custom",
+      "refersTo": "work-row",
+      "description": "Signature component: a hairline index row that opens in place (grid rows 0fr to 1fr, 420ms ease-out; closes in 220ms). Shown closed and open.",
+      "html": "<ul class=\"ds-work\">\n<li class=\"ds-row\" data-open=\"false\"><button class=\"ds-row-btn\" type=\"button\" aria-expanded=\"false\"><span class=\"ds-row-main\"><span class=\"ds-row-head\"><span class=\"ds-row-title\">Mini Programas para la super app de Claro</span><span class=\"ds-row-period\">2025</span></span><span class=\"ds-row-meta\">Softgic · Telecomunicaciones · Comercio</span><span class=\"ds-row-summary\">Cinemark Preferencial y el flujo de compra de Templo de la Moda, funcionando dentro de la app de Claro.</span></span><span class=\"ds-row-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"M12 5v14\"/></svg></span></button><div class=\"ds-row-panel\"><div><div class=\"ds-row-content\"><div style=\"--i:0\"><p class=\"ds-row-label\">Contexto</p></div></div></div></div></li>\n<li class=\"ds-row\" data-open=\"true\"><button class=\"ds-row-btn\" type=\"button\" aria-expanded=\"true\"><span class=\"ds-row-main\"><span class=\"ds-row-head\"><span class=\"ds-row-title\">Ecosistema SaaS para restaurantes</span><span class=\"ds-row-period\">2026</span></span><span class=\"ds-row-meta\">Quantum Infinity · Restaurantes · SaaS multiempresa</span><span class=\"ds-row-summary\">Punto de venta, gestión de pedidos, menú online y consola de administración en producción para 12 empresas y 18 sedes.</span></span><span class=\"ds-row-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"M12 5v14\"/></svg></span></button><div class=\"ds-row-panel\"><div><div class=\"ds-row-content\"><div style=\"--i:0\"><p class=\"ds-row-label\">Contexto</p><p class=\"ds-row-text\">Restaurantes con varias sedes necesitaban vender en caja, recibir pedidos en línea, despacharlos a domicilio y controlar inventario y recetas desde un solo sistema.</p></div><div style=\"--i:1\"><p class=\"ds-row-label\">Lo que hice</p><ul class=\"ds-row-did\"><li>Amplié la API REST del POS hasta 316 endpoints con cerca de 1.600 casos de prueba.</li><li>Bajé el cierre de una venta de 1.390 ms a unos 700 ms cargando recetas por lotes.</li></ul></div><div style=\"--i:2\"><p class=\"ds-row-label\">Stack</p><p class=\"ds-row-text\">React · Vite · Tailwind CSS · Node.js · Express · Firebase</p></div><div style=\"--i:3\" class=\"ds-row-foot\"><span class=\"ds-row-status\">Código privado de la empresa.</span></div></div></div></div></li>\n</ul>",
+      "css": ".ds-work { list-style: none; margin: 0; padding: 0; max-width: 640px; border-bottom: 1px solid var(--line, #e3e3de); color: var(--ink, #151614); font-family: var(--font-schibsted, \"Schibsted Grotesk\"), ui-sans-serif, system-ui, sans-serif; font-feature-settings: \"ss01\"; } .ds-row { border-top: 1px solid var(--line, #e3e3de); } .ds-row-btn { display: grid; grid-template-columns: 1fr auto; column-gap: 20px; width: calc(100% + 32px); margin: 0 -16px; padding: 20px 16px; border: 0; border-radius: 12px; background: transparent; color: inherit; font: inherit; text-align: left; cursor: pointer; transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-row[data-open=\"false\"] .ds-row-btn:hover { background: var(--hover, #efefea); } .ds-row-btn:focus-visible { outline: 2px solid var(--accent, #2f6b3d); outline-offset: 3px; } .ds-row-main { display: block; min-width: 0; } .ds-row-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; } .ds-row-title { font-size: 1.0625rem; line-height: 1.5; font-weight: 600; letter-spacing: -0.01em; } .ds-row-period { flex-shrink: 0; font-size: 0.875rem; line-height: 1.4286; color: var(--muted, #5c5f58); font-variant-numeric: tabular-nums; } .ds-row-meta { display: block; margin-top: 4px; font-size: 0.875rem; line-height: 1.4286; color: var(--muted, #5c5f58); text-wrap: pretty; } .ds-row-summary { display: block; margin-top: 8px; max-width: 62ch; font-size: 0.9375rem; line-height: 1.625; color: color-mix(in oklab, var(--ink, #151614) 80%, transparent); text-wrap: pretty; } .ds-row-icon { display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; margin-top: 2px; border-radius: 9999px; color: var(--muted, #5c5f58); transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-row-btn:hover .ds-row-icon { color: var(--ink, #151614); } .ds-row-icon svg { width: 16px; height: 16px; transition: transform 320ms var(--ease-out, cubic-bezier(0.23, 1, 0.32, 1)); } .ds-row[data-open=\"true\"] .ds-row-icon svg { transform: rotate(45deg); } .ds-row-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 220ms var(--ease-in-out, cubic-bezier(0.77, 0, 0.175, 1)); } .ds-row[data-open=\"true\"] .ds-row-panel { grid-template-rows: 1fr; transition-duration: 420ms; transition-timing-function: var(--ease-out, cubic-bezier(0.23, 1, 0.32, 1)); } .ds-row-panel > div { overflow: hidden; min-height: 0; } .ds-row-content { display: flex; flex-direction: column; gap: 20px; max-width: 62ch; padding: 4px 0 28px; font-size: 0.9375rem; line-height: 1.625; } .ds-row-content > * { opacity: 0; transform: translateY(6px); transition: opacity 160ms ease, transform 160ms ease; } .ds-row[data-open=\"true\"] .ds-row-content > * { opacity: 1; transform: none; transition: opacity 360ms var(--ease-out, cubic-bezier(0.23, 1, 0.32, 1)), transform 420ms var(--ease-out, cubic-bezier(0.23, 1, 0.32, 1)); transition-delay: calc(var(--i, 0) * 45ms + 90ms); } .ds-row-content p { margin: 0; } .ds-row-label { font-size: 0.875rem; line-height: 1.4286; font-weight: 500; color: var(--muted, #5c5f58); } .ds-row-text { margin-top: 6px !important; } .ds-row-did { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; } .ds-row-did li { position: relative; padding-left: 16px; } .ds-row-did li::before { content: \"\"; position: absolute; left: 0; top: 0.7em; width: 8px; height: 1px; background: var(--muted, #5c5f58); } .ds-row-foot { font-size: 0.875rem; } .ds-row-status { color: var(--muted, #5c5f58); } @media (prefers-reduced-motion: reduce) { .ds-row-panel, .ds-row-content > *, .ds-row-icon svg { transition: none !important; } .ds-row-content > * { opacity: 1; transform: none; } }"
+    },
+    {
+      "name": "Section Nav",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Desktop scroll-spy: a 1px line before each label grows 32px to 48px on hover and to 64px in accent for the active section (360ms ease-out).",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Secciones\"><ul><li><a class=\"ds-nav-link\" href=\"#\" aria-current=\"true\"><span class=\"ds-nav-line\" aria-hidden=\"true\"></span><span class=\"ds-nav-label\">Trabajo</span></a></li><li><a class=\"ds-nav-link\" href=\"#\"><span class=\"ds-nav-line\" aria-hidden=\"true\"></span><span class=\"ds-nav-label\">Cómo trabajo</span></a></li><li><a class=\"ds-nav-link\" href=\"#\"><span class=\"ds-nav-line\" aria-hidden=\"true\"></span><span class=\"ds-nav-label\">Experiencia</span></a></li><li><a class=\"ds-nav-link\" href=\"#\"><span class=\"ds-nav-line\" aria-hidden=\"true\"></span><span class=\"ds-nav-label\">Stack</span></a></li><li><a class=\"ds-nav-link\" href=\"#\"><span class=\"ds-nav-line\" aria-hidden=\"true\"></span><span class=\"ds-nav-label\">Contacto</span></a></li></ul></nav>",
+      "css": ".ds-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; } .ds-nav-link { display: flex; align-items: center; gap: 16px; padding: 8px 0; font-family: var(--font-schibsted, \"Schibsted Grotesk\"), ui-sans-serif, system-ui, sans-serif; font-feature-settings: \"ss01\"; font-size: 0.875rem; line-height: 1.4286; font-weight: 500; text-decoration: none; } .ds-nav-line { display: block; height: 1px; width: 32px; background: color-mix(in oklab, var(--muted, #5c5f58) 50%, transparent); transition: width 360ms var(--ease-out, cubic-bezier(0.23, 1, 0.32, 1)), background-color 200ms ease; } .ds-nav-label { color: var(--muted, #5c5f58); transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-nav-link:hover .ds-nav-line { width: 48px; background: var(--ink, #151614); } .ds-nav-link:hover .ds-nav-label { color: var(--ink, #151614); } .ds-nav-link[aria-current=\"true\"] .ds-nav-line { width: 64px; background: var(--accent, #2f6b3d); } .ds-nav-link[aria-current=\"true\"] .ds-nav-label { color: var(--ink, #151614); } .ds-nav-link:focus-visible { outline: 2px solid var(--accent, #2f6b3d); outline-offset: 3px; } @media (prefers-reduced-motion: reduce) { .ds-nav-line { transition: none !important; } }"
+    },
+    {
+      "name": "Contact Rows",
+      "kind": "custom",
+      "refersTo": "contact-row",
+      "description": "Hairline list of full-width contact links: icon turns accent and the arrow nudges 2px up-right on hover, over a 12px Pressed Paper bleed.",
+      "html": "<ul class=\"ds-contact\"><li><a class=\"ds-contact-row\" href=\"#\"><span class=\"ds-contact-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7\"/><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/></svg></span><span class=\"ds-contact-label\">Correo</span><span class=\"ds-contact-value\">mateohernandez10012003<wbr>@gmail.com</span><span class=\"ds-contact-arrow\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></span></a></li><li><a class=\"ds-contact-row\" href=\"#\"><span class=\"ds-contact-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719\"/></svg></span><span class=\"ds-contact-label\">WhatsApp</span><span class=\"ds-contact-value\">+57 321 527 2808</span><span class=\"ds-contact-arrow\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></span></a></li><li><a class=\"ds-contact-row\" href=\"#\"><span class=\"ds-contact-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 17V3\"/><path d=\"m6 11 6 6 6-6\"/><path d=\"M19 21H5\"/></svg></span><span class=\"ds-contact-label\">Español</span><span class=\"ds-contact-value\">Hoja de vida en español (PDF)</span><span class=\"ds-contact-arrow\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></span></a></li></ul>",
+      "css": ".ds-contact { list-style: none; margin: 0; padding: 0; max-width: 640px; border-top: 1px solid var(--line, #e3e3de); border-bottom: 1px solid var(--line, #e3e3de); color: var(--ink, #151614); font-family: var(--font-schibsted, \"Schibsted Grotesk\"), ui-sans-serif, system-ui, sans-serif; font-feature-settings: \"ss01\"; } .ds-contact li + li { border-top: 1px solid var(--line, #e3e3de); } .ds-contact-row { display: flex; align-items: center; gap: 16px; margin: 0 -16px; padding: 16px; border-radius: 12px; color: inherit; text-decoration: none; transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-contact-row:hover { background: var(--hover, #efefea); } .ds-contact-row:focus-visible { outline: 2px solid var(--accent, #2f6b3d); outline-offset: 3px; } .ds-contact svg { display: block; width: 16px; height: 16px; } .ds-contact-icon { flex-shrink: 0; color: var(--muted, #5c5f58); transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-contact-row:hover .ds-contact-icon { color: var(--accent, #2f6b3d); } .ds-contact-label { width: 5rem; flex-shrink: 0; font-size: 0.875rem; line-height: 1.4286; color: var(--muted, #5c5f58); } .ds-contact-value { flex: 1; min-width: 0; font-size: 1rem; line-height: 1.5; font-weight: 500; overflow-wrap: break-word; } .ds-contact-arrow { flex-shrink: 0; color: var(--muted, #5c5f58); transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-contact-row:hover .ds-contact-arrow { color: var(--ink, #151614); transform: translate(2px, -2px); } @media (max-width: 639px) { .ds-contact-label { display: none; } }"
+    },
+    {
+      "name": "Accent Links",
+      "kind": "custom",
+      "refersTo": "link-accent",
+      "description": "Cane-green text links with a 1px underline at 40% that goes full on hover; the trailing icon nudges 2px in its own direction.",
+      "html": "<p class=\"ds-links\"><a class=\"ds-link-accent\" href=\"#\">Ver hoja de vida completa (PDF)<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 17V3\"/><path d=\"m6 11 6 6 6-6\"/><path d=\"M19 21H5\"/></svg></a><a class=\"ds-link-accent ds-link-accent-ext\" href=\"#\">Ver código en GitHub<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></a></p>",
+      "css": ".ds-links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; margin: 0; font-family: var(--font-schibsted, \"Schibsted Grotesk\"), ui-sans-serif, system-ui, sans-serif; font-feature-settings: \"ss01\"; } .ds-link-accent { display: inline-flex; align-items: center; gap: 6px; font-size: 0.875rem; line-height: 1.4286; font-weight: 600; color: var(--accent, #2f6b3d); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.22em; text-decoration-color: color-mix(in oklab, var(--accent, #2f6b3d) 40%, transparent); } .ds-link-accent:hover { text-decoration-color: var(--accent, #2f6b3d); } .ds-link-accent:focus-visible { outline: 2px solid var(--accent, #2f6b3d); outline-offset: 3px; } .ds-link-accent svg { width: 16px; height: 16px; transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-link-accent:hover svg { transform: translateY(2px); } .ds-link-accent-ext { gap: 4px; font-weight: 500; } .ds-link-accent-ext svg { width: 14px; height: 14px; } .ds-link-accent-ext:hover svg { transform: translate(2px, -2px); }"
+    },
+    {
+      "name": "Quiet Links",
+      "kind": "custom",
+      "refersTo": "link-quiet",
+      "description": "Muted icon-and-label links (GitHub, WhatsApp, language switch) that turn ink on hover in 150ms; no underline.",
+      "html": "<ul class=\"ds-quiet\"><li><a href=\"#\"><svg viewBox=\"0 0 16 16\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z\"/></svg>GitHub</a></li><li><a href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719\"/></svg>WhatsApp</a></li><li><a href=\"#\" hreflang=\"en\" lang=\"en\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5 8 6 6\"/><path d=\"m4 14 6-6 2-3\"/><path d=\"M2 5h12\"/><path d=\"M7 2h1\"/><path d=\"m22 22-5-10-5 10\"/><path d=\"M14 18h6\"/></svg>English</a></li></ul>",
+      "css": ".ds-quiet { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; font-family: var(--font-schibsted, \"Schibsted Grotesk\"), ui-sans-serif, system-ui, sans-serif; font-feature-settings: \"ss01\"; font-size: 0.875rem; line-height: 1.4286; font-weight: 500; } .ds-quiet a { display: inline-flex; align-items: center; gap: 6px; color: var(--muted, #5c5f58); text-decoration: none; transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-quiet a:hover { color: var(--ink, #151614); } .ds-quiet a:focus-visible { outline: 2px solid var(--accent, #2f6b3d); outline-offset: 3px; } .ds-quiet svg { width: 16px; height: 16px; }"
+    },
+    {
+      "name": "Availability Line",
+      "kind": "custom",
+      "refersTo": "availability-dot",
+      "description": "A static 8px cane-green dot before a muted status line; one of the accent's sanctioned uses.",
+      "html": "<p class=\"ds-availability\"><span class=\"ds-availability-dot\" aria-hidden=\"true\"></span>Abierto a nuevas oportunidades · Cali, Colombia · remoto</p>",
+      "css": ".ds-availability { display: flex; align-items: center; gap: 8px; margin: 0; font-family: var(--font-schibsted, \"Schibsted Grotesk\"), ui-sans-serif, system-ui, sans-serif; font-feature-settings: \"ss01\"; font-size: 0.875rem; line-height: 1.4286; color: var(--muted, #5c5f58); } .ds-availability-dot { flex-shrink: 0; width: 8px; height: 8px; border-radius: 9999px; background: var(--accent, #2f6b3d); }"
+    },
+    {
+      "name": "Hairline Definition Rows",
+      "kind": "custom",
+      "description": "The stack list: ruled top, bottom and between, a 10rem muted label column and body items. The system's replacement for cards.",
+      "html": "<dl class=\"ds-dl\"><div><dt>Lenguajes</dt><dd>JavaScript, TypeScript, SQL, Python, HTML5, CSS3</dd></div><div><dt>Frontend</dt><dd>React, Next.js, Vite, Tailwind CSS, Angular, Zustand, Recharts</dd></div><div><dt>Backend</dt><dd>Node.js, Express, NestJS, APIs REST, JWT, Zod</dd></div></dl>",
+      "css": ".ds-dl { margin: 0; max-width: 640px; border-top: 1px solid var(--line, #e3e3de); border-bottom: 1px solid var(--line, #e3e3de); color: var(--ink, #151614); font-family: var(--font-schibsted, \"Schibsted Grotesk\"), ui-sans-serif, system-ui, sans-serif; font-feature-settings: \"ss01\"; } .ds-dl > div { display: grid; grid-template-columns: 10rem 1fr; column-gap: 24px; row-gap: 4px; padding: 14px 0; } .ds-dl > div + div { border-top: 1px solid var(--line, #e3e3de); } .ds-dl dt { font-size: 0.875rem; line-height: 1.4286; color: var(--muted, #5c5f58); } .ds-dl dd { margin: 0; font-size: 1rem; line-height: 1.625; } @media (max-width: 639px) { .ds-dl > div { grid-template-columns: 1fr; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quiet Index",
+    "overview": "The site is an index, not a showcase. Off-white paper, soft-black ink, hairline rules and a single grotesk family carry every screen; the only color is a deep cane green taken from the sugar-cane fields of the Valle del Cauca, and it appears only where something can be acted on or is currently true. Nothing sits on a card, nothing casts a shadow, and no single project is staged as a hero. Hierarchy comes from three weight steps, a handful of sizes and the split between ink and muted text, never from surfaces.\n\nThe page is dense in content and sparse in apparatus. On desktop a sticky identity column (name, role, intro, section nav, actions, availability) stays put while a reading column of hairline-separated lists scrolls beside it: the work index, the process steps, the experience timeline, the stack groups, the contact rows. Every list is row-based, and detail lives one click deep inside the row that names it, not on another page or in a modal. On phones the same stack runs in one column and the section nav is dropped.\n\nMotion follows the owner's standing preference: clean, minimal, few animations, each one well made. There is one staggered entrance for the identity column, rows that open in place, a nav line that grows to mark the current section, a crossfade when the language changes, and 2px arrow nudges on hover. Everything that arrives uses one strong ease-out curve; everything that leaves is shorter. Confirmed rejections from the direction contract: hero banners, card grids, metric tiles.",
+    "keyCharacteristics": [
+      "Paper, ink and one green; the green marks interaction and live state only.",
+      "1px hairline rules are the only structure; no shadows, no cards, no panels at rest.",
+      "One family (Schibsted Grotesk) in three weights, stylistic set 01 everywhere, tabular figures for years and dates.",
+      "Sticky identity column beside a scrolling index; a single column on phones.",
+      "Work rows expand in place instead of linking out to case-study pages.",
+      "Strong ease-out for arrivals, short plain fades for exits, all of it off under reduced motion."
+    ],
+    "rules": [
+      {
+        "name": "The Open Slow, Close Fast Rule",
+        "body": "Arrivals take their time on the ease-out curve (420ms row, 700ms entrance); departures are cut short (220ms collapse, 160ms content fade) so nothing lingers after the reader is done with it.",
+        "section": "motion"
+      },
+      {
+        "name": "The One Green Rule",
+        "body": "Cane green marks what can be acted on or what is currently true: links, focus, the active section, availability, and an icon under the pointer. It never fills a surface, never tints a heading, never decorates. There is no second accent.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Inks Rule",
+        "body": "Hierarchy in text is ink for what is read and muted for what is scanned (dates, organizations, labels, hints). The only intermediate is ink at 80% for work-row summaries.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three Weights Rule",
+        "body": "400 is for reading, 500 for labels and values, 600 for names and titles. Nothing is set at 700 or heavier, nothing lighter than 400.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Time Rule",
+        "body": "Every year, date range and step number is set in tabular figures and in muted, so columns of time align down the page.",
+        "section": "typography"
+      },
+      {
+        "name": "The Bleed Rule",
+        "body": "Interactive rows extend their hover fill 16px past the text column on both sides (negative margin, matching padding), so text stays flush with the hairlines and the fill reads as a highlight, not a box.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Paper Rule",
+        "body": "Nothing floats. A surface may change tone under the pointer; it never lifts, never casts, and never sits in a box at rest.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do draw every list as hairline rows (1px `line`, closed top and bottom) and keep a row's detail inside that row, expanding in place.",
+      "Do keep cane green to links, focus, the active nav line, the availability dot and icons under the pointer; selection and caret use its wash and its hue.",
+      "Do set years, date ranges and step numbers in muted tabular figures.",
+      "Do use the ease-out curve (`cubic-bezier(0.23, 1, 0.32, 1)`) for anything that arrives, and make exits shorter than entrances (open 420ms, close 220ms).",
+      "Do add every new motion class to the `prefers-reduced-motion` block, leaving content fully visible and the interaction working without tweening.",
+      "Do bleed hover fills 16px past the text column with the 12px row radius, so text stays flush with the rules.",
+      "Do pair every icon with a visible text label: 16px Lucide outline, GitHub as its filled mark.",
+      "Do define any new color for both themes by role, and keep `theme-color` equal to `paper` and `paper-dark`."
+    ],
+    "donts": [
+      "Don't cast shadows or place content on cards or tinted panels at rest; the only fill is Pressed Paper, under the pointer.",
+      "Don't build hero banners, card grids or metric tiles; figures stay inside sentences.",
+      "Don't introduce a second accent, a gradient, or a second typeface.",
+      "Don't set type at 700 or heavier.",
+      "Don't animate the content column on load or on scroll; the identity column's single entrance is the only load motion.",
+      "Don't use the accent on headings, fills or decoration.",
+      "Don't put eyebrows or kickers above section titles; a hint line, when needed, goes under the title in muted Meta."
+    ]
+  }
+}

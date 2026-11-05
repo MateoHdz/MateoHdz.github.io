@@ -1,0 +1,158 @@
+{
+  "lang": "es",
+  "name": "Mateo Hernández",
+  "title": "Desarrollador Full Stack",
+  "headline": "React · Node.js · TypeScript · Firebase · SaaS multiempresa en producción",
+  "contact": {
+    "location": "Cali, Valle del Cauca, Colombia",
+    "phone": "+57 321 527 2808",
+    "email": "mateohernandez10012003@gmail.com",
+    "github": "github.com/MateoHdz",
+    "linkedin": "",
+    "portfolio": ""
+  },
+  "labels": {
+    "profile": "Perfil profesional",
+    "experience": "Experiencia profesional",
+    "projects": "Proyectos",
+    "skills": "Habilidades técnicas",
+    "education": "Educación",
+    "languages": "Idiomas",
+    "present": "Actualidad"
+  },
+  "profile": "Desarrollador Full Stack con más de 3 años construyendo software empresarial con JavaScript, TypeScript, React y Node.js. Hoy soy el desarrollador principal de un SaaS multiempresa para restaurantes (punto de venta, gestión de pedidos y menú online) que opera en producción para 12 empresas y 18 sedes. Trabajo desde el problema del negocio: levanto requerimientos con el cliente, modelo los datos y las reglas, construyo con pruebas automatizadas y documento cada decisión. Experiencia en migración de datos, rendimiento, seguridad multiempresa y desarrollo asistido por IA.",
+  "experience": [
+    {
+      "role": "Desarrollador Full Stack",
+      "company": "Quantum Infinity Technologies",
+      "location": "Colombia",
+      "start": "07/2026",
+      "end": "",
+      "summary": "",
+      "bullets": [
+        "Desarrollador principal de un SaaS multiempresa para restaurantes (POS, gestión de pedidos, menú online, landing por producto y consola administrativa) con React, Node.js/Express y Firebase, en producción para 12 empresas y 18 sedes; autor del 96 % de los commits desde agosto de 2026 (408 de 424).",
+        "Amplié y mantengo la API REST del POS (316 endpoints: caja y arqueo, compras con impuestos, inventario por ubicación, producción y reportes) con cerca de 1.600 casos de pruebas automatizadas.",
+        "Diseñé un importador de datos reutilizable (motor genérico, adaptador por sistema de origen, vista previa y reversa) y migré a un cliente desde VectorPOS: 1.703 registros de clientes, proveedores y recetas en unos 21 minutos.",
+        "Integré menú online, OMS y POS con un contrato de pedido versionado, transacciones e identificadores idempotentes que evitan ventas duplicadas, y avisos al cliente por plantillas de WhatsApp.",
+        "Reduje cerca de 50 % el tiempo de cierre de una venta (de 1.390 ms a ~700 ms) cargando las recetas de Firestore por lotes; validado contra 2.470 órdenes.",
+        "Construí en 9 días una consola interna para dar de alta empresas y activar sus aplicaciones (más de 170 pruebas) e implementé autenticación multiempresa con tokens de Firebase, contraseñas con scrypt y límite de intentos.",
+        "Documenté el producto (79 documentos técnicos, 44 reglas de negocio, decisiones de arquitectura y roadmaps por fases) y trabajo con IA (Claude Code) a partir de especificaciones y criterios de aceptación."
+      ]
+    },
+    {
+      "role": "Desarrollador Full Stack",
+      "company": "Mr. Max Vet",
+      "location": "Cali, Valle del Cauca",
+      "start": "03/2026",
+      "end": "05/2026",
+      "summary": "",
+      "bullets": [
+        "Diseñé y desarrollé VetPOS, plataforma de punto de venta y gestión veterinaria preparada para varias clínicas, con NestJS, TypeORM, MySQL, React, TypeScript y Docker Compose.",
+        "Construí 12 módulos de backend: ventas, inventario con movimientos de stock, clientes, mascotas, citas, servicios, gastos y reportes exportables a Excel.",
+        "Implementé autenticación JWT con tres roles (superadministrador, administrador y empleado), cabeceras de seguridad y límite de peticiones."
+      ]
+    },
+    {
+      "role": "Desarrollador de Software y Customer Success",
+      "company": "Softgic",
+      "location": "Medellín (remoto)",
+      "start": "09/2025",
+      "end": "03/2026",
+      "summary": "",
+      "bullets": [
+        "Desarrollé Mini Programas (AXML, ACSS y JavaScript) para la super app de Claro: Cinemark Preferencial (segundo mayor contribuidor del repositorio) y el flujo de compra de Templo de la Moda (carrito, resumen de pago y datos de envío).",
+        "Desarrollé el flujo de venta de planes y servicios de la App de Ventas de Claro en Next.js 16, React 19 y Tailwind CSS: catálogo, revisión de planes y vistas de administración.",
+        "Actué como enlace entre clientes y equipo técnico: convertí necesidades de negocio en requerimientos y acompañé las pruebas funcionales hasta QA."
+      ]
+    },
+    {
+      "role": "Desarrollador de Software y Customer Success",
+      "company": "Lappiz",
+      "location": "Medellín (remoto)",
+      "start": "08/2023",
+      "end": "07/2025",
+      "summary": "",
+      "bullets": [
+        "Lideré técnicamente el proyecto Relatoría para la Procuraduría General de la Nación, coordinando las actividades del equipo y la calidad de los entregables.",
+        "Desarrollé soluciones empresariales con JavaScript, React, Next.js y SQL Server sobre la plataforma Lappiz para automatizar procesos de negocio.",
+        "Levanté requerimientos con entidades gubernamentales y clientes corporativos, y diseñé las bases de datos de procesos críticos.",
+        "Construí tableros en Power BI y automaticé la generación de documentos con jsPDF, trabajando con Scrum, Azure DevOps y Git."
+      ]
+    },
+    {
+      "role": "Practicante de Análisis y Desarrollo de Software",
+      "company": "Softgic",
+      "location": "Medellín (remoto)",
+      "start": "02/2023",
+      "end": "08/2023",
+      "summary": "",
+      "bullets": [
+        "Construí pruebas de concepto para clientes de distintos sectores con JavaScript, HTML5, CSS3, Bootstrap y Kendo UI, con bases de datos en SQL Server e informes en Power BI."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Atlas Spaces",
+      "link": "github.com/MateoHdz/atlas-spaces",
+      "description": "Reservas para espacios de coworking que evita reservas superpuestas con transacciones de MongoDB. Express, React, Zod, JWT, Docker Compose y 47 pruebas con Jest."
+    },
+    {
+      "name": "DaySecurity CRM",
+      "link": "",
+      "description": "CRM para una empresa de seguridad electrónica: cotizaciones en PDF, inventario, asignación de material a técnicos y comisiones. NestJS, React y MySQL."
+    },
+    {
+      "name": "Turnia",
+      "link": "github.com/MateoHdz/Turnia",
+      "description": "Diseño de producto de un SaaS que calcula el costo laboral de cada turno según la norma colombiana (recargos nocturnos, dominicales y horas extra) antes de publicar el horario."
+    }
+  ],
+  "skills": [
+    {
+      "group": "Lenguajes",
+      "items": "JavaScript, TypeScript, SQL, Python, HTML5, CSS3"
+    },
+    {
+      "group": "Frontend",
+      "items": "React, Next.js, Vite, Tailwind CSS, Angular, Zustand, Recharts"
+    },
+    {
+      "group": "Backend",
+      "items": "Node.js, Express, NestJS, APIs REST, JWT, Zod"
+    },
+    {
+      "group": "Datos",
+      "items": "Firebase (Firestore, Auth, Storage), MySQL, SQL Server, MongoDB, TypeORM"
+    },
+    {
+      "group": "Pruebas y calidad",
+      "items": "Jest, node:test, emulador de Firestore, pruebas funcionales"
+    },
+    {
+      "group": "Herramientas",
+      "items": "Git, GitHub, Azure DevOps, Docker, Postman, Power BI, jsPDF"
+    },
+    {
+      "group": "Métodos",
+      "items": "Scrum, levantamiento de requerimientos, modelado de datos, documentación técnica (ADR), desarrollo asistido por IA (Claude Code)"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Tecnólogo en Análisis y Desarrollo de Software",
+      "school": "SENA, Guadalajara de Buga",
+      "dates": "2021 – 2023"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Español",
+      "level": "Nativo"
+    },
+    {
+      "name": "Inglés",
+      "level": "Básico (A2), en formación activa"
+    }
+  ]
+}
