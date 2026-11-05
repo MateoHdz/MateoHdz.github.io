@@ -1,7 +1,7 @@
 import { ArrowDownToLine, ArrowUpRight, Languages, Mail, MessageCircle } from "lucide-react";
 import type { CSSProperties, ReactNode } from "react";
 import type { Site } from "@/content/site";
-import { GithubMark } from "./BrandIcons";
+import { GithubMark, LinkedinMark } from "./BrandIcons";
 import { SectionNav } from "./SectionNav";
 import { WorkIndex } from "./WorkIndex";
 
@@ -91,6 +91,12 @@ export function Portfolio({ s }: { s: Site }) {
               <a href={s.contact.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-muted no-underline transition-colors hover:text-ink">
                 <GithubMark className="size-4" />
                 GitHub
+              </a>
+            </li>
+            <li>
+              <a href={s.contact.linkedin} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-muted no-underline transition-colors hover:text-ink">
+                <LinkedinMark className="size-4" />
+                LinkedIn
               </a>
             </li>
             <li>
@@ -190,6 +196,7 @@ export function Portfolio({ s }: { s: Site }) {
             <ContactRow href={`mailto:${s.contact.email}`} icon={<Mail className="size-4" aria-hidden="true" />} label={s.contactLabels.email} value={s.contact.email} />
             <ContactRow href={s.contact.whatsapp} external icon={<MessageCircle className="size-4" aria-hidden="true" />} label={s.contactLabels.whatsapp} value={s.contact.phone} />
             <ContactRow href={s.contact.github} external icon={<GithubMark className="size-4" />} label={s.contactLabels.github} value="github.com/MateoHdz" />
+            <ContactRow href={s.contact.linkedin} external icon={<LinkedinMark className="size-4" />} label={s.contactLabels.linkedin} value="linkedin.com/in/mateo-hernandez-209384280" />
             <ContactRow href={s.contact.cvEs} download icon={<ArrowDownToLine className="size-4" aria-hidden="true" />} label="Español" value={s.contactLabels.cvEs} />
             <ContactRow href={s.contact.cvEn} download icon={<ArrowDownToLine className="size-4" aria-hidden="true" />} label="English" value={s.contactLabels.cvEn} />
           </ul>

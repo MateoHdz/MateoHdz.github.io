@@ -36,23 +36,33 @@ const esc = (s) =>
 
 const dates = (job, cv) => `${job.start} – ${job.end || cv.labels.present}`;
 
-function contactItems(cv) {
+// Dos líneas fijas: datos personales y perfiles en línea. Así ningún enlace se parte entre líneas.
+function contactLines(cv) {
   const c = cv.contact;
   return [
-    { text: c.location },
-    { text: c.phone, href: `tel:${c.phone.replace(/[^+\d]/g, "")}` },
-    { text: c.email, href: `mailto:${c.email}` },
-    c.linkedin && { text: c.linkedin, href: `https://${c.linkedin}` },
-    c.github && { text: c.github, href: `https://${c.github}` },
-    c.portfolio && { text: c.portfolio, href: `https://${c.portfolio}` },
-  ].filter(Boolean);
+    [
+      { text: c.location },
+      { text: c.phone, href: `tel:${c.phone.replace(/[^+\d]/g, "")}` },
+      { text: c.email, href: `mailto:${c.email}` },
+    ],
+    [
+      c.linkedin && { text: c.linkedin, href: `https://${c.linkedin}` },
+      c.github && { text: c.github, href: `https://${c.github}` },
+      c.portfolio && { text: c.portfolio, href: `https://${c.portfolio}` },
+    ].filter(Boolean),
+  ].filter((line) => line.length);
 }
 
 // ---------- PDF (HTML impreso con Chrome sin interfaz) ----------
 function toHtml(cv) {
-  const contact = contactItems(cv)
-    .map((i) => (i.href ? `<a href="${esc(i.href)}">${esc(i.text)}</a>` : esc(i.text)))
-    .join(" | ");
+  const contact = contactLines(cv)
+    .map(
+      (line) =>
+        `<p class="contact">${line
+          .map((i) => `<span>${i.href ? `<a href="${esc(i.href)}">${esc(i.text)}</a>` : esc(i.text)}</span>`)
+          .join(" | ")}</p>`
+    )
+    .join("");
   const jobs = cv.experience
     .map(
       (j) => `
@@ -89,6 +99,7 @@ function toHtml(cv) {
   .title { font-size: 12pt; font-weight: bold; margin: 2pt 0 0; }
   .headline { margin: 1pt 0 4pt; color: #333; }
   .contact { margin: 0; }
+  .contact span { white-space: nowrap; }
   h2 { font-size: 11pt; text-transform: uppercase; letter-spacing: .6pt; margin: 11pt 0 5pt; padding-bottom: 2pt; border-bottom: 1px solid #111; break-after: avoid; }
   p { margin: 0; }
   .row { display: flex; justify-content: space-between; gap: 12pt; }
@@ -104,7 +115,7 @@ function toHtml(cv) {
   <h1>${esc(cv.name)}</h1>
   <p class="title">${esc(cv.title)}</p>
   <p class="headline">${esc(cv.headline)}</p>
-  <p class="contact">${contact}</p>
+  ${contact}
 
   <h2>${esc(cv.labels.profile)}</h2>
   <p>${esc(cv.profile)}</p>
@@ -172,17 +183,20 @@ function rowParagraph(leftRuns, right) {
 const bullet = (text) => new Paragraph({ numbering: { reference: "vinetas", level: 0 }, spacing: { after: 30 }, children: [run(text)] });
 
 function toDocx(cv) {
-  const contactRuns = [];
-  contactItems(cv).forEach((item, i) => {
-    if (i) contactRuns.push(run(" | "));
-    contactRuns.push(item.href ? new ExternalHyperlink({ link: item.href, children: [run(item.text)] }) : run(item.text));
+  const contactParagraphs = contactLines(cv).map((line) => {
+    const runs = [];
+    line.forEach((item, i) => {
+      if (i) runs.push(run(" | "));
+      runs.push(item.href ? new ExternalHyperlink({ link: item.href, children: [run(item.text)] }) : run(item.text));
+    });
+    return new Paragraph({ children: runs });
   });
 
   const children = [
     new Paragraph({ children: [run(cv.name, { size: 40, bold: true })] }),
     new Paragraph({ children: [run(cv.title, { size: 24, bold: true })] }),
     new Paragraph({ children: [run(cv.headline, { color: "333333" })] }),
-    new Paragraph({ children: contactRuns }),
+    ...contactParagraphs,
 
     sectionHeading(cv.labels.profile),
     new Paragraph({ children: [run(cv.profile)] }),

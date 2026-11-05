@@ -42,8 +42,8 @@ export type Site = {
   languagesLine: string;
   contactTitle: string;
   contactText: string;
-  contact: { email: string; phone: string; whatsapp: string; github: string; cvEs: string; cvEn: string };
-  contactLabels: { email: string; whatsapp: string; github: string; cvEs: string; cvEn: string };
+  contact: { email: string; phone: string; whatsapp: string; github: string; linkedin: string; cvEs: string; cvEn: string };
+  contactLabels: { email: string; whatsapp: string; github: string; linkedin: string; cvEs: string; cvEn: string };
   footer: string;
 };
 
@@ -51,6 +51,7 @@ const EMAIL = "mateohernandez10012003@gmail.com";
 const PHONE = "+57 321 527 2808";
 const WHATSAPP = "https://wa.me/573215272808";
 const GITHUB = "https://github.com/MateoHdz";
+const LINKEDIN = "https://www.linkedin.com/in/mateo-hernandez-209384280/";
 const CV_ES = "/cv/Mateo_Hernandez_Hoja_de_Vida_Desarrollador_Full_Stack.pdf";
 const CV_EN = "/cv/Mateo_Hernandez_Resume_Full_Stack_Developer.pdf";
 
@@ -291,11 +292,12 @@ const es: Site = {
   languagesLine: "Español nativo · Inglés A2, estudiándolo activamente.",
   contactTitle: "¿Hablamos?",
   contactText: "Estoy buscando un equipo donde pueda construir producto completo. Respondo rápido por correo o WhatsApp.",
-  contact: { email: EMAIL, phone: PHONE, whatsapp: WHATSAPP, github: GITHUB, cvEs: CV_ES, cvEn: CV_EN },
+  contact: { email: EMAIL, phone: PHONE, whatsapp: WHATSAPP, github: GITHUB, linkedin: LINKEDIN, cvEs: CV_ES, cvEn: CV_EN },
   contactLabels: {
     email: "Correo",
     whatsapp: "WhatsApp",
     github: "GitHub",
+    linkedin: "LinkedIn",
     cvEs: "Hoja de vida en español (PDF)",
     cvEn: "Resume in English (PDF)",
   },
@@ -516,11 +518,12 @@ const en: Site = {
   languagesLine: "Spanish: native · English: A2, actively studying. Happy to interview in Spanish or in simple English.",
   contactTitle: "Let's talk",
   contactText: "I'm looking for a team where I can build complete products. I reply quickly by email or WhatsApp.",
-  contact: { email: EMAIL, phone: PHONE, whatsapp: WHATSAPP, github: GITHUB, cvEs: CV_ES, cvEn: CV_EN },
+  contact: { email: EMAIL, phone: PHONE, whatsapp: WHATSAPP, github: GITHUB, linkedin: LINKEDIN, cvEs: CV_ES, cvEn: CV_EN },
   contactLabels: {
     email: "Email",
     whatsapp: "WhatsApp",
     github: "GitHub",
+    linkedin: "LinkedIn",
     cvEs: "Hoja de vida en español (PDF)",
     cvEn: "Resume in English (PDF)",
   },
