@@ -253,7 +253,10 @@ export function Portfolio({ s }: { s: Site }) {
                 {fl.figures.map((fig) => (
                   <div key={fig.value} className="fig">
                     <p className="fig-value">{fig.value}</p>
-                    <p className="fig-label">{fig.label}</p>
+                    <p className="fig-label">
+                      <span className="fig-long">{fig.label}</span>
+                      {fig.short && <span className="fig-short">{fig.short}</span>}
+                    </p>
                     {fig.scale && (
                       <div className="scale" role="img" aria-label={fig.scale.caption} style={{ "--ratio": fig.scale.ratio } as CSSProperties}>
                         <i />

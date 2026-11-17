@@ -1199,6 +1199,11 @@
     color: var(--ink-2);
   }
 
+  /* La versión corta del texto solo se usa en teléfonos. */
+  .fig-short {
+    display: none;
+  }
+
   /* Barra a escala: el tramo verde es la proporción real. */
   .scale {
     position: relative;
@@ -2611,5 +2616,87 @@
   .close-list svg {
     grid-column: 2;
     grid-row: 1 / span 2;
+  }
+}
+
+/* ---------- Teléfono: menos texto, lo esencial a la vista ----------
+   En pantallas pequeñas se ocultan las explicaciones largas y quedan títulos, cifras y casos
+   concretos. Solo bajo 40rem (640 px): tablets, incluido el iPad mini, y escritorio no cambian. */
+@media (width < 40rem) {
+  /* Inicio: el rol ya está en la frase de presentación y la revisión no aporta aquí. */
+  .tb > div:first-child,
+  .tb .tb-rev {
+    display: none;
+  }
+
+  /* Proyecto principal: cada bloque con su nombre y su cifra, sin la descripción. */
+  .flow .node > p:not(.node-dim),
+  .platform .node > p:not(.node-dim),
+  .contract,
+  .plan-legend > p {
+    display: none;
+  }
+
+  /* Resultados en dos columnas, con la versión corta de cada texto. */
+  .figs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .figs > .label {
+    grid-column: 1 / -1;
+  }
+
+  .fig {
+    padding: 0.95rem 1rem 1.1rem;
+  }
+
+  .fig:nth-of-type(even) {
+    border-left: 1px solid var(--line);
+  }
+
+  .fig-value {
+    font-size: 1.3125rem;
+  }
+
+  .fig-long {
+    display: none;
+  }
+
+  .fig-short {
+    display: inline;
+  }
+
+  /* Cómo trabajo: el título del paso y el caso real, sin el párrafo de explicación. */
+  .step > p,
+  .step-proof::before,
+  .step-proof > .label {
+    display: none;
+  }
+
+  .step-proof {
+    max-width: none;
+    padding-top: 0.6rem;
+  }
+
+  .step .step-proof > p:not(.label) {
+    margin-top: 0;
+    font-size: 1rem;
+    color: var(--ink-2);
+  }
+
+  /* Experiencia: fechas, cargo, empresa y barra; el detalle está en Proyectos. */
+  .job-line {
+    display: none;
+  }
+
+  .job {
+    padding-block: 1.25rem;
+  }
+
+  /* Stack: la metodología se lee en su cadena de pasos y la IA en su frase y su herramienta. */
+  .is-lead:has(.stack-chain) .stack-lead,
+  .stack-tasks {
+    display: none;
   }
 }

@@ -23,6 +23,8 @@ export type PlanNode = { name: string; text: string; dim?: string };
 export type Figure = {
   value: string;
   label: string;
+  /** Versión de una línea de `label` para teléfonos. */
+  short?: string;
   /** Barra a escala: `ratio` es la fracción del total que se dibuja en verde. */
   scale?: { ratio: number; caption: string };
 };
@@ -287,19 +289,23 @@ const es: Site = {
         {
           value: "4 meses",
           label: "Desde que llegué: amplié el punto de venta y los pedidos, llevé el menú y el Focus a multiempresa, y construí el Controlador y la demo comercial.",
+          short: "Punto de venta ampliado, menú multiempresa, Controlador y demo.",
         },
         {
           value: "2 veces más rápido",
           label: "Cobrar una venta pasó de 1,4 s a 0,7 s. Cargué las recetas por niveles en vez de una por una, y comprobé que el inventario descuenta igual.",
+          short: "Cobrar una venta: de 1,4 s a 0,7 s.",
           scale: { ratio: 700 / 1390, caption: "0,7 de 1,4 segundos" },
         },
         {
           value: "Más de 1.700 pruebas",
           label: "El punto de venta no tenía ninguna prueba automática cuando llegué. Todas las que tiene hoy las escribí yo.",
+          short: "Escritas por mí; antes no había ninguna.",
         },
         {
           value: "Un solo código",
           label: "Antes, cada restaurante nuevo era una copia de la app. Convertí el menú, el Focus y la gestión de pedidos en una sola base para todas las empresas.",
+          short: "Una base para todas las empresas, no una copia por restaurante.",
         },
       ],
       source: "Medido en el historial de git, las pruebas y los informes del proyecto. El código es privado y pertenece a la empresa, y no publico datos de sus clientes.",
@@ -727,19 +733,23 @@ const en: Site = {
         {
           value: "4 months",
           label: "Since I joined: I extended the point of sale and order management, made the menu and Focus multi-tenant, and built the Controller and the sales demo.",
+          short: "Extended POS, multi-tenant menu, Controller and demo.",
         },
         {
           value: "Twice as fast",
           label: "Checking out a sale went from 1.4 s to 0.7 s. I loaded recipes level by level instead of one by one, and checked that inventory is deducted the same way.",
+          short: "Checking out a sale: from 1.4 s to 0.7 s.",
           scale: { ratio: 700 / 1390, caption: "0.7 of 1.4 seconds" },
         },
         {
           value: "Over 1,700 tests",
           label: "The point of sale had no automated tests when I joined. I wrote every one it has today.",
+          short: "All written by me; there were none before.",
         },
         {
           value: "One codebase",
           label: "Each new restaurant used to be a copy of the app. I turned the menu, Focus and order management into a single base for every company.",
+          short: "One base for every company, not a copy per restaurant.",
         },
       ],
       source: "Measured from git history, the tests and the project reports. The code is private and belongs to the company, and I don't publish its customers' data.",
