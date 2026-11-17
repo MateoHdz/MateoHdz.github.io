@@ -1,398 +1,402 @@
 ---
 name: Mateo Hernández Portfolio
-description: A quiet, precise index of everything one full stack developer has built, with the work itself one click deep.
+description: "A career drawn as one technical sheet: charcoal ground, DIN-lineage lettering in one superfamily, lime as the reviewer's pen."
 colors:
-  paper: "#f7f7f4"
-  ink: "#151614"
-  muted: "#5c5f58"
-  line: "#e3e3de"
-  hover: "#efefea"
-  accent: "#2f6b3d"
-  accent-soft: "rgb(47 107 61 / 0.12)"
-  paper-dark: "#111210"
-  ink-dark: "#ecede8"
-  muted-dark: "#a3a69e"
-  line-dark: "#2a2c28"
-  hover-dark: "#1a1b19"
-  accent-dark: "#8cc79a"
-  accent-soft-dark: "rgb(140 199 154 / 0.16)"
+  pen: "oklch(87% 0.19 136)"
+  pen-hi: "oklch(92% 0.17 136)"
+  pen-ink: "oklch(19% 0.045 136)"
+  pen-ink-2: "oklch(34% 0.07 136)"
+  sheet: "oklch(14.5% 0.003 150)"
+  sheet-2: "oklch(17.6% 0.004 150)"
+  line: "oklch(27% 0.006 150)"
+  line-strong: "oklch(41% 0.008 150)"
+  ink: "oklch(96% 0.004 140)"
+  ink-2: "oklch(83% 0.006 145)"
+  ink-3: "oklch(68% 0.008 150)"
+  grid-minor: "oklch(100% 0 0 / 0.022)"
+  grid-major: "oklch(100% 0 0 / 0.05)"
 typography:
   display:
-    fontFamily: "Schibsted Grotesk, ui-sans-serif, system-ui, sans-serif"
-    fontSize: "3rem"
-    fontWeight: 600
-    lineHeight: 1.02
-    letterSpacing: "-0.035em"
-    fontFeature: '"ss01"'
-  display-mobile:
-    fontFamily: "Schibsted Grotesk, ui-sans-serif, system-ui, sans-serif"
-    fontSize: "2.5rem"
-    fontWeight: 600
-    lineHeight: 1.02
-    letterSpacing: "-0.035em"
-    fontFeature: '"ss01"'
-  headline:
-    fontFamily: "Schibsted Grotesk, ui-sans-serif, system-ui, sans-serif"
-    fontSize: "1.5rem"
-    fontWeight: 600
-    lineHeight: 1.333
+    fontFamily: "Sofia Sans, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "clamp(3.1rem, 5.6vw, 5.25rem)"
+    fontWeight: 800
+    lineHeight: 0.9
     letterSpacing: "-0.02em"
-    fontFeature: '"ss01"'
+  headline:
+    fontFamily: "Sofia Sans Condensed, Sofia Sans, ui-sans-serif, sans-serif"
+    fontSize: "clamp(2.6rem, 5.4vw, 4.5rem)"
+    fontWeight: 700
+    lineHeight: 0.92
+    letterSpacing: "0.005em"
+  title-lg:
+    fontFamily: "Sofia Sans, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "clamp(1.75rem, 3.3vw, 2.75rem)"
+    fontWeight: 800
+    lineHeight: 1.02
+    letterSpacing: "-0.02em"
   title:
-    fontFamily: "Schibsted Grotesk, ui-sans-serif, system-ui, sans-serif"
-    fontSize: "1.125rem"
-    fontWeight: 500
-    lineHeight: 1.556
+    fontFamily: "Sofia Sans, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "1.3125rem"
+    fontWeight: 700
+    lineHeight: 1.18
     letterSpacing: "-0.01em"
-    fontFeature: '"ss01"'
-  title-item:
-    fontFamily: "Schibsted Grotesk, ui-sans-serif, system-ui, sans-serif"
-    fontSize: "1.0625rem"
-    fontWeight: 600
-    lineHeight: 1.5
-    letterSpacing: "-0.01em"
-    fontFeature: '"ss01"'
-  title-sm:
-    fontFamily: "Schibsted Grotesk, ui-sans-serif, system-ui, sans-serif"
+  block-title:
+    fontFamily: "Sofia Sans Condensed, Sofia Sans, ui-sans-serif, sans-serif"
     fontSize: "1rem"
-    fontWeight: 600
-    lineHeight: 1.5
-    letterSpacing: "-0.01em"
-    fontFeature: '"ss01"'
+    fontWeight: 700
+    lineHeight: 1.15
+    letterSpacing: "0.07em"
+  figure:
+    fontFamily: "Sofia Sans Condensed, Sofia Sans, ui-sans-serif, sans-serif"
+    fontSize: "1.5rem"
+    fontWeight: 700
+    lineHeight: 1.1
+    letterSpacing: "0.02em"
+    fontFeature: '"lnum", "tnum"'
   body-lead:
-    fontFamily: "Schibsted Grotesk, ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "Sofia Sans, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "clamp(1.125rem, 1.45vw, 1.3125rem)"
+    fontWeight: 400
+    lineHeight: 1.45
+  body:
+    fontFamily: "Sofia Sans, ui-sans-serif, system-ui, sans-serif"
     fontSize: "1.0625rem"
     fontWeight: 400
-    lineHeight: 1.625
-    fontFeature: '"ss01"'
-  body:
-    fontFamily: "Schibsted Grotesk, ui-sans-serif, system-ui, sans-serif"
-    fontSize: "1rem"
-    fontWeight: 400
-    lineHeight: 1.625
-    fontFeature: '"ss01"'
-  body-strong:
-    fontFamily: "Schibsted Grotesk, ui-sans-serif, system-ui, sans-serif"
-    fontSize: "1rem"
-    fontWeight: 500
-    lineHeight: 1.5
-    fontFeature: '"ss01"'
+    lineHeight: 1.6
+    fontFeature: '"lnum", "tnum"'
   body-sm:
-    fontFamily: "Schibsted Grotesk, ui-sans-serif, system-ui, sans-serif"
+    fontFamily: "Sofia Sans, ui-sans-serif, system-ui, sans-serif"
     fontSize: "0.9375rem"
     fontWeight: 400
-    lineHeight: 1.625
-    fontFeature: '"ss01"'
+    lineHeight: 1.45
   label-strong:
-    fontFamily: "Schibsted Grotesk, ui-sans-serif, system-ui, sans-serif"
-    fontSize: "0.875rem"
-    fontWeight: 600
-    lineHeight: 1.4286
-    fontFeature: '"ss01"'
+    fontFamily: "Sofia Sans Condensed, Sofia Sans, ui-sans-serif, sans-serif"
+    fontSize: "0.9375rem"
+    fontWeight: 700
+    lineHeight: 1
+    letterSpacing: "0.08em"
   label:
-    fontFamily: "Schibsted Grotesk, ui-sans-serif, system-ui, sans-serif"
-    fontSize: "0.875rem"
-    fontWeight: 500
-    lineHeight: 1.4286
-    fontFeature: '"ss01"'
-  meta:
-    fontFamily: "Schibsted Grotesk, ui-sans-serif, system-ui, sans-serif"
-    fontSize: "0.875rem"
-    fontWeight: 400
-    lineHeight: 1.4286
-    fontFeature: '"ss01", "tnum"'
+    fontFamily: "Sofia Sans Condensed, Sofia Sans, ui-sans-serif, sans-serif"
+    fontSize: "0.8125rem"
+    fontWeight: 600
+    lineHeight: 1.2
+    letterSpacing: "0.09em"
+  data:
+    fontFamily: "Sofia Sans Condensed, Sofia Sans, ui-sans-serif, sans-serif"
+    fontSize: "0.9375rem"
+    fontWeight: 600
+    letterSpacing: "0.05em"
+    fontFeature: '"lnum", "tnum"'
 rounded:
-  focus: "6px"
-  control: "8px"
-  row: "12px"
-  full: "9999px"
+  none: "0px"
 spacing:
-  xs: "4px"
-  sm: "8px"
-  md: "12px"
-  base: "16px"
-  row: "20px"
-  lg: "24px"
-  xl: "32px"
-  gutter: "24px"
-  gutter-sm: "40px"
-  gutter-lg: "64px"
-  frame: "80px"
-  section: "96px"
+  gutter: "clamp(1rem, 3.6vw, 3.5rem)"
+  shell-max: "82.5rem"
+  header-h: "3.75rem"
+  band: "clamp(4.5rem, 9vw, 8.5rem)"
+  head-gap: "clamp(2.25rem, 4.6vw, 3.75rem)"
+  module: "1.5rem"
+  module-major: "6rem"
+  label-col: "10rem"
+  tick: "11px"
 components:
-  button-primary:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.paper}"
+  button-pen:
+    backgroundColor: "{colors.pen}"
+    textColor: "{colors.pen-ink}"
     typography: "{typography.label-strong}"
-    rounded: "{rounded.control}"
-    padding: "10px 16px"
-  button-primary-hover:
-    backgroundColor: "color-mix(in oklab, #151614 85%, transparent)"
-    textColor: "{colors.paper}"
-  button-secondary:
-    backgroundColor: "transparent"
+    rounded: "{rounded.none}"
+    height: "3rem"
+    padding: "0 1.375rem"
+  button-pen-hover:
+    backgroundColor: "{colors.pen-hi}"
+  button-line:
     textColor: "{colors.ink}"
     typography: "{typography.label-strong}"
-    rounded: "{rounded.control}"
-    padding: "10px 16px"
-  button-secondary-hover:
-    backgroundColor: "{colors.hover}"
-    textColor: "{colors.ink}"
-  link-accent:
-    textColor: "{colors.accent}"
+    rounded: "{rounded.none}"
+    height: "3rem"
+    padding: "0 1.375rem"
+  button-line-hover:
+    backgroundColor: "{colors.sheet-2}"
+  button-sm:
+    rounded: "{rounded.none}"
+    height: "2.25rem"
+    padding: "0 0.875rem"
+  button-ink:
+    backgroundColor: "{colors.pen-ink}"
+    textColor: "{colors.pen}"
     typography: "{typography.label-strong}"
-  link-quiet:
-    textColor: "{colors.muted}"
-    typography: "{typography.label}"
-  link-quiet-hover:
+    rounded: "{rounded.none}"
+    height: "3rem"
+    padding: "0 1.375rem"
+  button-ink-hover:
+    backgroundColor: "{colors.pen-ink-2}"
+    textColor: "{colors.pen-hi}"
+  button-ink-line:
+    textColor: "{colors.pen-ink}"
+    typography: "{typography.label-strong}"
+    rounded: "{rounded.none}"
+    height: "3rem"
+    padding: "0 1.375rem"
+  button-ink-line-hover:
+    backgroundColor: "{colors.pen-ink}"
+    textColor: "{colors.pen}"
+  icon-button:
     textColor: "{colors.ink}"
-  work-row:
-    backgroundColor: "transparent"
-    textColor: "{colors.ink}"
-    typography: "{typography.title-item}"
-    rounded: "{rounded.row}"
-    padding: "20px 16px"
-  work-row-hover:
-    backgroundColor: "{colors.hover}"
-  work-row-panel:
-    textColor: "{colors.ink}"
-    typography: "{typography.body-sm}"
-    padding: "4px 0 28px"
-    width: "62ch"
+    rounded: "{rounded.none}"
+    size: "2.25rem"
+  icon-button-hover:
+    backgroundColor: "{colors.sheet-2}"
+  site-header:
+    backgroundColor: "{colors.sheet}"
+    height: "{spacing.header-h}"
   nav-link:
-    textColor: "{colors.muted}"
+    textColor: "{colors.ink-3}"
     typography: "{typography.label}"
-    padding: "8px 0"
+    padding: "0.5rem 0"
   nav-link-active:
     textColor: "{colors.ink}"
-  nav-line:
-    backgroundColor: "color-mix(in oklab, #5c5f58 50%, transparent)"
-    height: "1px"
-    width: "32px"
-  nav-line-hover:
-    backgroundColor: "{colors.ink}"
-    width: "48px"
-  nav-line-active:
-    backgroundColor: "{colors.accent}"
-    width: "64px"
-  contact-row:
-    backgroundColor: "transparent"
+  tag:
+    textColor: "{colors.ink-2}"
+    rounded: "{rounded.none}"
+    padding: "0.3rem 0.55rem"
+  plan-block:
+    backgroundColor: "{colors.sheet}"
+    textColor: "{colors.ink-2}"
+    typography: "{typography.body-sm}"
+    rounded: "{rounded.none}"
+    padding: "1rem 1.125rem 1.125rem"
+  view-frame:
+    backgroundColor: "{colors.sheet-2}"
+    rounded: "{rounded.none}"
+  register-row:
+    textColor: "{colors.ink-2}"
+    rounded: "{rounded.none}"
+  register-row-open:
+    backgroundColor: "{colors.sheet-2}"
+  register-toggle:
     textColor: "{colors.ink}"
-    typography: "{typography.body-strong}"
-    rounded: "{rounded.row}"
-    padding: "16px"
-  contact-row-hover:
-    backgroundColor: "{colors.hover}"
-  availability-dot:
-    backgroundColor: "{colors.accent}"
-    rounded: "{rounded.full}"
-    size: "8px"
-  skip-link:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.paper}"
-    rounded: "{rounded.control}"
-    padding: "8px 16px"
+    rounded: "{rounded.none}"
+    size: "2.25rem"
+  register-toggle-open:
+    textColor: "{colors.pen}"
+  scale-bar:
+    backgroundColor: "{colors.line-strong}"
+    rounded: "{rounded.none}"
+    height: "5px"
+  scale-bar-measure:
+    backgroundColor: "{colors.pen}"
+  closing-sheet:
+    backgroundColor: "{colors.pen}"
+    textColor: "{colors.pen-ink}"
+    rounded: "{rounded.none}"
 ---
 
 # Design System: Mateo Hernández Portfolio
 
 ## Overview
 
-**Creative North Star: "The Quiet Index"**
+**Creative North Star: "The Dimensioned Sheet"**
 
-The site is an index, not a showcase. Off-white paper, soft-black ink, hairline rules and a single grotesk family carry every screen; the only color is a deep cane green taken from the sugar-cane fields of the Valle del Cauca, and it appears only where something can be acted on or is currently true. Nothing sits on a card, nothing casts a shadow, and no single project is staged as a hero. Hierarchy comes from three weight steps, a handful of sizes and the split between ink and muted text, never from surfaces.
+The site is one technical drawing sheet of a developer's career. A charcoal sheet carries a faint drafting grid, warm light-gray linework and lettering from the DIN lineage. Lime is the only color and it behaves like a reviewer's pen: it ticks the ends of dimension lines, writes the measured figures, underlines what is active and fills one block per view. A claim is set the way a drawing sets it, as a figure beside its basis, and the systems he built are drawn as plans with blocks, arrows and brackets.
 
-The page is dense in content and sparse in apparatus. On desktop a sticky identity column (name, role, intro, section nav, actions, availability) stays put while a reading column of hairline-separated lists scrolls beside it: the work index, the process steps, the experience timeline, the stack groups, the contact rows. Every list is row-based, and detail lives one click deep inside the row that names it, not on another page or in a modal. On phones the same stack runs in one column and the section nav is dropped.
+The density is that of a drawing, not of a landing page. The opening view is a framed sheet with zone ticks, the name in caps, a real cut-out portrait standing in a drawn view frame, and a side rail with numbered notes and a title block (role, location, work mode, engagement, languages, revision, CV). Each section opens with a condensed title joined by a dimension line to its measure. The main project is a bordered sheet holding a plan and a rail of figures, the other projects are register rows that unfold in place, the process is a dimension chain, experience is a timeline drawn to scale and the stack is a ruled table. The page ends on the only inverted sheet: lime ground, dark ink.
 
-Motion follows the owner's standing preference: clean, minimal, few animations, each one well made. There is one staggered entrance for the identity column, rows that open in place, a nav line that grows to mark the current section, a crossfade when the language changes, and 2px arrow nudges on hover. Everything that arrives uses one strong ease-out curve; everything that leaves is shorter. Confirmed rejections from the direction contract: hero banners, card grids, metric tiles.
+Motion has one idea: lines are drawn and content stays put. On load the frame plots its four strokes, the name rises out of its line box and the portrait develops. On scroll each dimension line, bracket and to-scale bar draws from its origin as it enters the viewport, and a lime hairline under the sticky header grows with the page. A two-button toggle swaps the photo for the illustrated avatar with a circular reveal from the face. All CSS motion is removed under `prefers-reduced-motion: reduce`. The direction contract refused the split hero with an avatar, the project card grid and the row of metric tiles; the owner's brief fixed the dark charcoal ground and the lime accent.
 
 **Key Characteristics:**
-- Paper, ink and one green; the green marks interaction and live state only.
-- 1px hairline rules are the only structure; no shadows, no cards, no panels at rest.
-- One family (Schibsted Grotesk) in three weights, stylistic set 01 everywhere, tabular figures for years and dates.
-- Sticky identity column beside a scrolling index; a single column on phones.
-- Work rows expand in place instead of linking out to case-study pages.
-- Strong ease-out for arrivals, short plain fades for exits, all of it off under reduced motion.
-
-### Motion Grammar
-
-Four curves, each with one job:
-
-- **Ease-out** (`cubic-bezier(0.23, 1, 0.32, 1)`, `--ease-out`): every arrival (entrance, row opening, row content, icon rotation, nav line width, language crossfade).
-- **Ease-in-out** (`cubic-bezier(0.77, 0, 0.175, 1)`, `--ease-in-out`): row collapse only.
-- **Standard** (`cubic-bezier(0.4, 0, 0.2, 1)`, Tailwind's default): hover and press state changes on buttons, rows, links and icons.
-- **Plain `ease`**: row content exit and the nav line's color change.
-
-| Moment | What moves | Duration | Curve | Delay |
-|---|---|---|---|---|
-| Identity entrance (once, on load) | opacity 0 to 1, translateY 8px to 0, blur 2px to 0 | 700ms | ease-out | 80ms + 70ms per step (steps 0 to 4) |
-| Work row opens | panel height via grid rows 0fr to 1fr | 420ms | ease-out | none |
-| Work row closes | grid rows 1fr to 0fr | 220ms | ease-in-out | none |
-| Row content arrives | opacity (360ms) and translateY 6px to 0 (420ms) | 360ms / 420ms | ease-out | 90ms + 45ms per block (blocks 0 to 3) |
-| Row content leaves | opacity and translateY back to 6px | 160ms | ease | none |
-| Row icon | plus rotates 45deg into a close mark | 320ms | ease-out | none |
-| Nav line | width 32px, 48px on hover, 64px when active | 360ms | ease-out | none |
-| Nav line color | muted to ink (hover) or accent (active) | 200ms | ease | none |
-| Fills and transforms | button and row backgrounds, 0.97 press scale, 2px arrow nudges | 200ms | standard | none |
-| Text color shifts | muted to ink on links, nav labels, icons | 150ms | standard | none |
-| Language switch | cross-document view transition, root crossfade | 260ms | ease-out | none |
-| In-page anchors | smooth scroll | browser | browser | none |
-
-Transitions are CSS, so every one of them is interruptible mid-flight; a row clicked twice reverses from wherever it is.
-
-**Reduced motion.** Under `prefers-reduced-motion: reduce`, smooth scrolling is off, the entrance, row panel, row content, row icon and nav line lose every animation and transition, row content is forced fully visible, and the language switch navigates without a view transition. Rows still open and close, and the nav still marks the active section; they simply change state without tweening. A global rule in the same block cuts every remaining transition and animation to 0.01ms, so the 200ms hover fills, the 0.97 press scale and the 2px arrow nudges become instant state changes.
-
-**The Open Slow, Close Fast Rule.** Arrivals take their time on the ease-out curve (420ms row, 700ms entrance); departures are cut short (220ms collapse, 160ms content fade) so nothing lingers after the reader is done with it.
+- One dark sheet (`color-scheme: dark`); there is no light theme.
+- One accent, lime, used as a pen: ticks, measured figures, active and focus states, one filled block per view.
+- One superfamily in two widths: Sofia Sans for the name, titles and sentences; Sofia Sans Condensed for section titles, labels, figures and controls. No monospace.
+- Square corners everywhere; the portrait reveal is the only circle.
+- 1px linework carries all structure: frame, title blocks, dimension lines, plan blocks. No shadows.
+- Measurements are real: bars and the timeline are drawn to scale from the content data.
+- Lines draw, content stays put, and all CSS motion is removed under reduced motion.
 
 ## Colors
 
-The palette is paper, ink and one green: near-achromatic neutrals with a faint olive cast, and one mid-dark cane green that carries all interaction. Both themes are defined as CSS custom properties on `:root`; the dark theme swaps values role by role through `prefers-color-scheme: dark`, with no manual toggle.
+A near-black charcoal with a trace of green, three grays of lettering, two weights of line and a single saturated lime.
 
 ### Primary
-- **Cane Green** (`accent`, #2f6b3d; dark `accent-dark`, #8cc79a): link text and its underline (40% at rest, full on hover), the 2px focus ring, the active section's nav line, the availability dot, the contact-row icon on hover, and the text caret. 5.94:1 on paper in light, 9.62:1 in dark.
-- **Cane Wash** (`accent-soft`, 12% green; dark `accent-soft-dark`, 16%): text selection background only; selected text stays ink.
+- **Pen Lime** (`pen`, oklch(87% 0.19 136)): the reviewer's pen. Ticks on dimension lines, the contract bracket, corner marks of the view frame, measured figures on plan blocks, note and step numerals, the active nav underline, the scroll-progress hairline, link underlines, the focus ring, the caret and text selection. As a fill: the one primary button, the measured span of a to-scale bar, the current job on the timeline and the whole closing sheet.
+- **Pen Lime, Lit** (`pen-hi`): hover fill of the lime button, and the label of the ink button on hover.
+- **Pen Ink** (`pen-ink`): the green-black that writes on lime. Label of the lime button; every text, rule and outline on the closing sheet; fill of its primary button; selected text.
+- **Pen Ink, Lifted** (`pen-ink-2`): hover fill of the ink button, nothing else.
 
 ### Neutral
-- **Off-White Paper** (`paper`, #f7f7f4; dark `paper-dark`, #111210): the page, the `html` background behind overscroll, the browser chrome color, the scrollbar track, and the label color on the ink button.
-- **Soft-Black Ink** (`ink`, #151614; dark `ink-dark`, #ecede8): every primary text and heading, the primary button fill (85% mix on hover), the skip link fill. Work-row summaries use ink at 80%.
-- **Olive Graphite** (`muted`, #5c5f58; dark `muted-dark`, #a3a69e): everything scanned rather than read: intro line, dates and periods, org and domain lines, field labels, hints, inactive nav labels, icons at rest, the footer. The resting nav line is muted at 50%. 6.05:1 on paper, 5.63:1 on the hover fill; 7.61:1 in dark.
-- **Pale Rule** (`line`, #e3e3de; dark `line-dark`, #2a2c28): every hairline: list dividers, the secondary button's 1px inset edge, the scrollbar thumb, the footer link's resting underline. Decorative contrast only (1.20:1); it never carries meaning on its own.
-- **Pressed Paper** (`hover`, #efefea; dark `hover-dark`, #1a1b19): the system's only fill, appearing under the pointer behind work rows, contact rows and the secondary button.
+- **Charcoal Sheet** (`sheet`): the page, the header, the side rail and the fill of plan blocks.
+- **Raised Sheet** (`sheet-2`): the single tonal step. Fill of the portrait's view frame, of a register row under the pointer or open, and of outlined controls on hover.
+- **Hairline** (`line`): dividers inside tables and lists, the header's bottom rule, zone-tick rules, tag outlines, year rulings on the timeline.
+- **Object Line** (`line-strong`): the sheet frame, sheet and block outlines, dimension lines, control outlines, group rules, the track of a to-scale bar.
+- **Lettering White** (`ink`): the name, titles, table values, button labels.
+- **Reading Gray** (`ink-2`): body copy.
+- **Label Gray** (`ink-3`): labels, years and dates, zone ticks, sources, resting nav links, past jobs on the timeline, arrows inside drawings.
+- **Drafting Grid** (`grid-minor`, `grid-major`): white at 2.2% and 5%, the 1px rulings of the grid paper.
 
-### Browser Surface
-- `color-scheme` is `light` on `:root` and `dark` inside the dark media query, so native controls and scrollbars follow the theme.
-- The `theme-color` meta is set per scheme to exactly `paper` and `paper-dark`, so the mobile browser bar is the page.
-- Scrollbars use `line` on `paper`; `scrollbar-gutter: stable` keeps the layout from shifting.
-- `::selection` uses Cane Wash with ink text; `caret-color` is the accent.
-- The favicon is a rounded ink square (14/64 corner) with a paper "M" monogram, one version for both schemes.
+Measured against Charcoal Sheet: Lettering White 17.6:1, Reading Gray 11.8:1, Label Gray 6.9:1 (6.6:1 on Raised Sheet), Pen Lime 14.2:1. Pen Ink on Pen Lime is 13.1:1. Object Line is 2.3:1 and Hairline 1.3:1.
 
 ### Named Rules
-**The One Green Rule.** Cane green marks what can be acted on or what is currently true: links, focus, the active section, availability, and an icon under the pointer. It never fills a surface, never tints a heading, never decorates. There is no second accent.
+**The Reviewer's Pen Rule.** Lime marks what a reviewer would mark: the ticks that close a dimension line, a measured figure, the numeral of a note or step, the active nav item, the pressed toggle, focus, the underline of a link. It never colors a heading or running text, and it never outlines a container at rest.
 
-**The Two Inks Rule.** Hierarchy in text is ink for what is read and muted for what is scanned (dates, organizations, labels, hints). The only intermediate is ink at 80% for work-row summaries.
+**The One Lime Block Rule.** A view holds at most one lime-filled block: the primary action in the hero, then the closing sheet. Every other lime fill is a measurement or a mark: the measured span of a to-scale bar, the current job on the timeline, the 6px corner of the monogram, selected text.
+
+**The Structure-Only Line Rule.** Object Line and Hairline sit at 2.3:1 and 1.3:1 on the sheet, so a line organizes but never carries meaning alone. Every outlined control also holds a text label or an icon at text contrast, and every bar has its figure written beside it.
 
 ## Typography
 
-**Display Font:** Schibsted Grotesk (with ui-sans-serif, system-ui, sans-serif)
-**Body Font:** Schibsted Grotesk (same family)
-**Label/Mono Font:** none; numbers use the same family's tabular figures.
+**Display Font:** Sofia Sans (with ui-sans-serif, system-ui, sans-serif)
+**Body Font:** Sofia Sans (same family and fallback)
+**Label/Mono Font:** Sofia Sans Condensed (with Sofia Sans, ui-sans-serif, sans-serif). There is no monospace.
 
-**Character:** One contemporary grotesk does every job in clear weight steps, tight negative tracking at display and headline sizes, neutral at body. It is loaded through `next/font` (Latin subset, `display: swap`) as `--font-schibsted` and mapped to Tailwind's sans stack; stylistic set 01 (`font-feature-settings: "ss01"`) is on for the whole document, with `optimizeLegibility` and antialiasing.
+**Character:** One DIN-descended superfamily, the lettering of engineering drawings, loaded as variable fonts through `next/font`. Width does the job a second typeface would do: normal width for what is read as language, condensed for what is read as lettering on the sheet.
 
 ### Hierarchy
-- **Display** (600, 2.5rem on phones, 3rem from 640px, line-height 1.02, -0.035em): the name, once, at the top of the identity column.
-- **Headline** (600, 1.5rem, 1.333, -0.02em): section titles; 24px to the content below.
-- **Title** (500, 1.125rem, 1.556, -0.01em): the role line under the name.
-- **Title Item** (600, 1.0625rem, 1.5, -0.01em): work-row titles.
-- **Title Small** (600, 1rem, 1.5, -0.01em): process step titles and experience roles; the company sits under the role at 400 in muted.
-- **Body Lead** (400, 1.0625rem, 1.625): the about paragraphs, max 64ch.
-- **Body** (400, 1rem, 1.625): process, experience, stack and contact copy, max 64ch.
-- **Body Small** (400, 0.9375rem, 1.625): work-row summaries and the expanded panel, max 62ch.
-- **Body Strong** (500, 1rem, 1.5): contact-row values.
-- **Label Strong** (600, 0.875rem, 1.4286): button labels and the full-CV link.
-- **Label** (500, 0.875rem, 1.4286): nav labels, social and language links, panel field labels, project links.
-- **Meta** (400, 0.875rem, 1.4286, tabular figures): dates, periods, org and domain lines, hints, availability, the languages line, the footer.
-
-Headings use `text-wrap: balance`; paragraphs and list items use `text-wrap: pretty`.
+- **Display** (800, clamp(3.1rem, 5.6vw, 5.25rem), 0.9, -0.02em, uppercase): the name, on two lines, clamp(2.6rem, 13.6vw, 4rem) below 48rem. The closing question uses the same voice at clamp(2.5rem, 5.6vw, 5.25rem) / 0.92, capped at 12ch.
+- **Headline** (Condensed 700, clamp(2.6rem, 5.4vw, 4.5rem), 0.92, 0.005em, uppercase): section titles.
+- **Title Large** (800, clamp(1.75rem, 3.3vw, 2.75rem), 1.02, -0.02em): the main project's title, sentence case.
+- **Title** (700, 1.3125rem, 1.18, -0.01em): process step and job titles. Register titles flex at clamp(1.1875rem, 1.7vw, 1.4375rem).
+- **Block Title** (Condensed 700, 1rem, 1.15, 0.07em, uppercase): names of plan blocks. Register group heads use it at 1.125rem / 0.08em.
+- **Figure** (Condensed 700, 1.5rem, 1.1, 0.02em): measured figures in the figures rail, in Lettering White. A figure dimensioned on a plan block is 1rem in Pen Lime.
+- **Body Lead** (400, clamp(1.125rem, 1.45vw, 1.3125rem), 1.45): the hero sentence, capped at 29rem, with its opening words at 700 in Lettering White. The main project summary and the closing text run at clamp(1.0625rem, 1.3vw, 1.1875rem) / 1.5.
+- **Body** (400, 1.0625rem, 1.6; 1rem below 48rem): the default. Text inside rows and lists runs at 1rem / 1.5 to 1.55. Each block caps its own measure: 22rem for steps, 34rem for the project summary, 36rem for job lines, 44rem for the aside note.
+- **Body Small** (400, 0.9375rem, 1.45): notes, plan block text, table values. Figure captions and the plan legend drop to 0.875rem.
+- **Label Strong** (Condensed 700, 0.9375rem, 1, 0.08em, uppercase): buttons and the name beside the monogram; 0.8125rem in small buttons.
+- **Label** (Condensed 600, 0.8125rem, 1.2, 0.09em, uppercase, Label Gray): table terms, captions over a plan, client lines, section measures. 0.75rem inside the title block and spec tables, 0.875rem for nav links.
+- **Data** (Condensed 600, 0.9375rem, 0.05em, sentence case): years and date ranges. Tags and chain steps use it at 0.8125rem and 0.875rem.
 
 ### Named Rules
-**The Three Weights Rule.** 400 is for reading, 500 for labels and values, 600 for names and titles. Nothing is set at 700 or heavier, nothing lighter than 400.
+**The Width Is Hierarchy Rule.** Normal width is for language: the name, project and role titles, sentences. Condensed is for lettering: section titles, labels, figures, dates, controls. A new element picks its width by that test; a second family or a monospace is never the answer.
 
-**The Tabular Time Rule.** Every year, date range and step number is set in tabular figures and in muted, so columns of time align down the page.
+**The Lettering Caps Rule.** Uppercase belongs to the name, the closing question, section titles and condensed labels and controls, tracked 0.06em to 0.09em at label sizes. Project titles, figures, tags and sentences stay in sentence case.
+
+**The Tabular Figures Rule.** `font-variant-numeric: lining-nums tabular-nums` is set once on the body, so every figure, year and date aligns in columns wherever it appears.
 
 ## Layout
 
-The frame is centered at a maximum width of 1200px with side gutters of 24px on phones, 40px from 640px and 64px from 1024px.
+Content sits in one shell, `min(82.5rem, 100% - 2 × gutter)`, with a fluid gutter of clamp(1rem, 3.6vw, 3.5rem). The header is sticky at 3.75rem. Sections are separated by space above the title only (clamp(4.5rem, 9vw, 8.5rem), nothing below and no rule between sections), and a title sits clamp(2.25rem, 4.6vw, 3.75rem) above its content. The drafting grid gives the base module: 1.5rem minor, 6rem major.
 
-From 1024px the page is two columns, `minmax(0, 5fr)` and `minmax(0, 7fr)`, 80px apart. The identity column is sticky at the top, exactly one dynamic viewport tall (`100dvh`), padded 80px top and bottom, and split vertically: name, role, intro and section nav at the top; actions, links and the availability line pinned to the bottom. The content column has 80px of padding top and bottom.
+Wide screens read as a sheet with a rail. The hero is `minmax(0, 1fr)` plus a rail of clamp(19rem, 27vw, 23.5rem), sized to the first viewport under the header (min-height clamp(38rem, 100svh − header − 2.25rem, 51rem)); its main area splits 1.14fr / 1fr between identity and portrait. The main project repeats the pattern with a figures rail of clamp(18rem, 26vw, 22rem). Register rows use four columns (5.5rem year, title, summary, 2.25rem toggle). Experience uses a 10rem dates column, the role, and a timeline column divided into four years; the stack table reuses the 10rem column and the same gap. The closing sheet is a full-bleed lime band whose inner sheet splits 1.12fr / 1fr.
 
-Below 1024px everything stacks in one column: the header (64px top padding, 80px from 640px), then the content (80px top, 96px bottom). The section nav is hidden because scroll-spy has no job without the sticky column. Below 640px the two actions stack full width, 12px apart; from 640px they sit inline.
+Responsive behavior, as built:
+- **Below 72rem:** each rail folds under its main area (notes beside the title block; figures as value-and-caption rows), the process chain becomes two by two, the closing sheet stacks, and stack items are separated by commas instead of rules.
+- **Below 64rem:** the text nav is replaced by a menu button.
+- **Below 48rem:** one column and 1rem body. Hero order is name, sentence, actions, links, portrait, notes, title block. Zone ticks reduce to A–D across the top. Drawings turn vertical: plan arrows point down, the contract bracket and the platform bus move to the left edge, the process becomes a vertical chain with its ticks on the left, and each job's bar moves above its text.
+- **Below 40rem:** the name beside the monogram is hidden.
+- **Short desktops (height under 47.5rem at 72rem or wider):** the rail tightens and the revision row is hidden, so the title block stays in the first viewport.
 
-Vertical rhythm: 96px between sections, 24px from a section title to its content, a muted hint line pulled 12px up under the work title with 20px before the index. Rows breathe at 20px vertical padding (work, process), 16px (contact) and 14px (stack); experience entries are 24px apart with no rules. In the identity column: name to role 12px, role to intro 16px, intro to nav 56px.
+### Named Rules
+**The Inhabited Rail Rule.** The right-hand rail is where a drawing keeps its notes: numbered notes and the title block in the hero, measured figures beside the plan. A rail is never empty and never decorative, and below 72rem it folds under what it annotates.
 
-Two-column rows use a fixed label column: 10rem for experience dates and stack groups (from 640px), 1.75rem for process numbers, 5rem for contact labels (from 640px). Measures are 37ch for the intro, 64ch for prose sections, 62ch for row summaries and panels; the work index itself spans the full content width. Sections carry a 64px scroll margin so anchor jumps land below the top edge.
+**The One Grid Per Entry Rule.** A register row and its unfolded detail sit on the same four columns, and experience and stack share the 10rem label column, so the same field is found in the same place down the page.
 
-**The Bleed Rule.** Interactive rows extend their hover fill 16px past the text column on both sides (negative margin, matching padding), so text stays flush with the hairlines and the fill reads as a highlight, not a box.
+**The Space Above Rule.** A section is announced by the space above its title, not by a rule or a tinted band. The only full-width change of ground is the closing sheet.
 
 ## Elevation & Depth
 
-The system is flat. There are no shadows and no layered surfaces; the only change in tone is the Pressed Paper fill that appears under the pointer. Spatial depth comes from the layout itself: the identity column holds still while the index scrolls past it. The secondary button's edge is a 1px inset ring in `line` (Tailwind's ring utility, mechanically an inset box-shadow), which reads as a hairline, not as elevation. Blur exists only inside the entrance keyframe, resolving from 2px to zero.
+The system is flat and casts no shadows: there is no `box-shadow` or `drop-shadow` in the build. Depth comes from four things. Outlines: 1px Object Line around sheets, blocks and controls. One tonal step: Raised Sheet for the view frame and for a row under the pointer or open. Overlap: the cut-out portrait stands in front of its drawn frame and breaks out of its top edge, and the sticky header covers the page with a 1px rule. Inversion: the closing sheet. Blur appears once, 6px to 0 in the portrait's entrance, and never as glass.
 
-### Shadow Vocabulary
-- **Hairline inset** (`box-shadow: inset 0 0 0 1px var(--line)`): the secondary button's edge. It is the only use of the shadow mechanism and casts nothing.
-
-**The Flat Paper Rule.** Nothing floats. A surface may change tone under the pointer; it never lifts, never casts, and never sits in a box at rest.
+### Named Rules
+**The Flat Sheet Rule.** Nothing floats and nothing casts. A surface may step one tone under the pointer or while open; rank is shown by inversion to lime, once, at the end of the page.
 
 ## Shapes
 
-Corners are gently rounded and few: 8px on buttons and the skip link, 12px on the hover fill of work and contact rows, 6px on the focus outline of elements that have no radius of their own (buttons and rows keep theirs, because the focus rule lives in the base layer), and full circles for the availability dot and the row icon's 24px well. Structure is drawn with 1px solid rules in `line`; lists are closed at both top and bottom. Inside expanded rows, list items are marked with an 8px by 1px muted dash set at 0.7em, a hairline rather than a glyph. Icons are Lucide outlines at 16px (14px inside inline project links), default stroke, 1.75 stroke for the row's plus; GitHub uses its filled mark. Every icon travels with a visible text label. The focus outline is 2px accent with a 3px offset.
+Every corner is square (0px): buttons, blocks, sheets, tags, toggles, bars, the focus ring. The single circle is the portrait reveal, a transition over the picture and not a container.
+
+Structure is 1px linework. A dimension line is a 1px Object Line closed at both ends by a 1px × 11px lime tick. A figure on a plan block hangs under a 1px line with a 9px tick. The view frame carries two 13px L-shaped lime marks above its top corners. The contract bracket is a 0.5rem-deep, three-sided lime outline spanning the blocks it binds. Bars are solid and thin: 5px for a to-scale bar, 7px for a job on the timeline. The focus ring is a 2px lime outline at 3px offset (Pen Ink on the closing sheet).
+
+Icons are Lucide outlines (2px stroke, round caps) at about 1rem. They sit beside a text label, except in the two square toggles (menu, register row), which carry an accessible name instead. GitHub and LinkedIn are redrawn in the same stroke. Arrows that belong to a drawing are authored SVG in 1px square-capped linework: the shaft stretches with the gap and the head keeps its size.
+
+The portrait is a true cut-out, with alpha from the asset, in a 4:5 box anchored to the bottom of its view.
+
+### Named Rules
+**The Line-and-Tick Rule.** One geometry draws everything: a 1px line closed by a 1px lime tick. Frame, dividers, dimension lines, active states and scroll progress are all that same line; nothing gets a thicker border to look important.
+
+**The Grid Under Drawings Rule.** The drafting grid appears only under things that are drawings: the hero sheet (masked so it is strongest around the portrait), the portrait's view frame and the main project's plan. Tables, the register, the timeline and the closing sheet sit on plain sheet.
 
 ## Components
 
 ### Buttons
-Two quiet, solid controls side by side; the ink one is the single heavy object on the page.
-- **Shape:** gently rounded (8px).
-- **Primary (CV download):** ink fill, paper label in Label Strong, 10px by 16px padding, 16px download icon 8px before the label.
-- **Hover / Focus:** fill drops to ink at 85%; press scales to 0.97; both on 200ms standard. Focus shows the global accent ring.
-- **Secondary (write to me):** transparent with the 1px inset hairline edge, ink label, mail icon; Pressed Paper fill on hover, same press.
-- **Mobile:** both full width and stacked below 640px.
+Lettered plates: square, flat, labeled in condensed caps.
+- **Shape:** square (0px), 3rem tall, 1.375rem side padding, Label Strong, a 1rem icon after the label at 0.625rem. Small: 2.25rem tall, 0.875rem padding, 0.8125rem label.
+- **Primary:** Pen Lime fill with a Pen Ink label. Used once, for the hero's main action.
+- **Outlined:** 1px Object Line with a Lettering White label; on hover the outline turns Lettering White and the fill Raised Sheet. Used for the CV download and, small, for the header's contact link.
+- **On the closing sheet:** an ink button (Pen Ink fill, Pen Lime label; hover Pen Ink, Lifted with a lit label) and an ink-outlined button (1px Pen Ink; hover inverts to Pen Ink fill and lime label). The copy-email button swaps its icon for a check and its label for a confirmation for 2.4s, announced politely.
+- **Hover / Focus / Active:** colors change in 0.2s; the trailing icon nudges 3px down for downward actions or 2px up and right for outbound ones (0.35s, `cubic-bezier(0.16, 1, 0.3, 1)`); press is `scale(0.98)` in 0.15s; focus is the 2px lime outline.
+- **Icon button and language switch:** a 2.25rem square with a 1rem icon and 1px Object Line (menu toggle, register toggle), and a 2.25rem-tall two-letter switch with a 1px Hairline.
 
-### Links
-- **Accent link** (full-CV download, project links): accent text in Label Strong or Label, 1px underline at 0.22em offset, decoration at 40% accent turning full on hover. A trailing icon nudges 2px in its own direction on hover (download arrow down, external arrow up and right), 200ms.
-- **Quiet link** (GitHub, WhatsApp, language switch): muted Label with a 16px icon 6px before it, no underline, muted to ink on hover in 150ms. Items sit 20px apart and wrap.
-- **Footer link:** muted text with a `line`-colored underline; both go to ink on hover.
-- The language link carries `hreflang` and `lang` for the target language and triggers the 260ms crossfade.
+### Tags and Chains
+- **Tag:** 1px Hairline outline, Reading Gray, condensed 600 at 0.8125rem / 0.05em, 0.3rem × 0.55rem padding. Not interactive; it lists the materials of a drawing (the main project's stack).
+- **Chain:** the steps of a flow inside a register row. 1px Object Line boxes on Charcoal Sheet with Lettering White condensed text at 0.875rem, joined by drawn arrows in Label Gray.
 
-### Work Row (signature component)
-The index of all work; each row is a heading-wrapped button that opens its detail in place.
-- **Closed:** a top hairline, then a full-width button: Title Item and the period (Meta, tabular) on one baseline, the org and domain line in Meta 4px below, the summary in Body Small at ink 80% 8px below (62ch). At the right a 16px plus (1.75 stroke) sits in a 24px round well, muted at rest, ink on hover.
-- **Hover:** a 12px-rounded Pressed Paper fill under the Bleed Rule, 200ms. The fill is removed while the row is open.
-- **Open:** the panel grows from 0fr to 1fr (420ms ease-out) and the plus turns 45deg into a close mark (320ms). The panel holds labeled blocks 20px apart (context, what I did, stack, then link and status), each with a muted Label and Body Small content; "what I did" items use the hairline dash; stack items are joined with middle dots; a private-code status reads in muted beside the accent project link. Blocks fade and rise 6px in sequence (90ms, then +45ms each).
-- **Close:** 220ms ease-in-out collapse; content fades out in 160ms with no stagger.
-- **Behavior:** any number of rows can be open at once. The button carries `aria-expanded` and `aria-controls`; the panel is a labeled region and is `inert` while closed.
+### Sheets and Containers
+There are no cards. The containers are the sheet, the plan block and the table.
+- **Corner Style:** square (0px).
+- **Background:** Charcoal Sheet; Raised Sheet only for the view frame; Pen Lime for the closing sheet.
+- **Shadow Strategy:** none, see Elevation & Depth.
+- **Border:** 1px Object Line (1px Pen Ink on the closing sheet).
+- **Internal Padding:** clamp(1.5rem, 3.4vw, 3rem) for a sheet; 1rem 1.125rem 1.125rem for a plan block.
 
-### Section Nav
-Desktop-only scroll-spy in the identity column.
-- **Style:** a vertical list, 4px between items, each link 8px tall-padded with a horizontal line 16px before the Label.
-- **Rest:** 32px line in muted at 50%, muted label.
-- **Hover:** line grows to 48px and turns ink; label turns ink.
-- **Active:** line grows to 64px in accent, label ink, `aria-current`. The label slides right as the line grows (360ms ease-out).
-- **Tracking:** the active section is whichever enters a band roughly 35% to 40% down the viewport (IntersectionObserver, root margin -35% top and -60% bottom). Clicking smooth-scrolls to the section.
+### Navigation
+A sticky header on Charcoal Sheet with a 1px Hairline below it; a lime hairline on that rule grows from the left with scroll progress. Left: a 2rem monogram box in 1px Object Line with a 6px lime square on its bottom-right corner, then the name in Label Strong. Center: links in condensed 600 at 0.875rem / 0.09em, Label Gray at rest; on hover and for the section in view they turn Lettering White and a 1px lime underline draws from the left in 0.4s. Right: the language switch and the small contact button. Below 64rem a menu button opens a panel under the header: full-width links at 1.125rem condensed caps separated by Hairlines, each with a right arrow. It closes on a link, on Escape or when the window widens. A skip link appears on keyboard focus as a lime plate with a Pen Ink label.
 
-### Contact Rows
-- **Style:** a hairline list closed top and bottom; each row is a full-width link: icon, a 5rem muted label column (hidden below 640px), the value in Body Strong, and a trailing up-right arrow.
-- **Hover:** 12px Pressed Paper fill under the Bleed Rule (200ms); the leading icon turns accent, the arrow turns ink and nudges 2px up and right.
-- **Wrapping:** long values wrap; the email breaks before the "@" on narrow screens, never inside the domain.
-- **Downloads:** the two CV rows use the download icon and the `download` attribute.
+### Sheet Frame and Zone Ticks
+The hero is drawn as a sheet: four 1px Object Line strokes that plot themselves clockwise on load (1.1s each, 0.12s apart, `scaleX`/`scaleY` from the previous corner), with zone references along the edge, A to H across a 1rem top band and 1 to 4 down the left, in condensed Label Gray at 0.6875rem and hidden from assistive technology.
 
-### Hairline Lists
-- **Process:** an ordered list ruled at top, bottom and between rows; a 1.75rem column with the step number ("1.") in muted tabular Meta, then Title Small and muted Body.
-- **Stack:** a definition list with the same rules, 14px rows, a 10rem Meta group label and Body items.
-- **Experience:** unruled; a 10rem column of tabular dates, the role in Title Small with the company beneath in muted 400, and one muted line. An accent full-CV link follows 32px below.
+### Title Block and Spec Tables
+The cajetín. A definition list ruled with Hairlines under a 1px Object Line: a fixed label column (6.25rem in the title block, 4.75rem in a project's spec table, 10rem in the stack table), terms in Label at 0.75rem, values in Lettering White at 0.9375rem behind a vertical Hairline. CV links inside it are condensed 700 with a 1px lime underline and a download icon. In the stack table, items on one line are separated by short vertical rules. Its last two rows, development methodology and AI-assisted development, sit under an Object Line with more air: each leads with one sentence at hero-lead size in Lettering White, then the methodology shows its steps as a chain with lime numerals and the AI row shows its tasks as columns with lime ticks, and both close on short label-and-value notes (framework; tool and judgment).
 
-### Availability Line
-An 8px accent dot, then a muted Meta line with status, city and remote. The dot is static.
+### Section Head
+A Headline title, a dimension line that takes the remaining width, and the section's measure in Label at the far end ("9 proyectos · 2023 – 2026"). The line draws from the left as the head enters the viewport. The Stack head is the one built without a measure; its line runs to the shell edge. Below 48rem the title takes the full row and the line and measure sit under it.
 
-### Skip Link
-Visually hidden until focused; then fixed 16px from the top-left, ink fill, paper text, 8px radius, 8px by 16px padding.
+### Plan Diagram
+The main project's systems drawn as a plan on minor grid paper. Blocks are 1px Object Line boxes on Charcoal Sheet with a Block Title and one sentence in Body Small. Blocks in a flow are joined by stretching arrows; a lime bracket under the row binds the blocks that share a contract and holds one centered sentence. Platform blocks hang from a horizontal bus by 1rem drops. A block may carry one dimensioned figure at its foot. A legend closes the plan: stack tags and one sentence, in Label Gray, naming where the figures come from.
+
+### Figures Rail and To-Scale Bar
+A ruled column beside the plan, one cell per figure: the value in Figure, one sentence of scope in Body Small at 0.875rem and, only when the value is a ratio of two real numbers, a 5px bar whose lime span is that ratio over an Object Line track (700 of 1,390 ms). The bar draws from the left on entry and carries its ratio as an accessible label.
+
+### Project Register Row
+The signature list. Each row shows year, title with the client line under it in Label, a one-sentence summary and a square toggle with a plus. The whole row is the hit area. Hovering or opening steps the row to Raised Sheet and turns the toggle's outline and icon lime; opening rotates the plus 45° (0.5s) and unfolds the detail in place (grid rows 0fr to 1fr, 0.55s, `cubic-bezier(0.16, 1, 0.3, 1)`; content fades in after 0.12s). The detail keeps the row's columns: context, an optional flow chain and the spec table (role, status when there is one, stack, code) under the title; what he did, as a list with 0.75rem lime dashes, under the summary. Private code keeps its field and says so with a lock icon. The detail is always in the HTML, and a row opens itself when the URL hash points at it.
+
+### Dimension Chain
+The process as one dimension line with a lime tick at the start of every step and at the end of the chain. Each step has a lime condensed numeral, a Title, a paragraph capped at 22rem and a proof cell: a hairline, the Label "En la práctica" and one sentence in Ink at 0.9375rem naming a verifiable case from his work. The four children sit on a shared subgrid so titles, paragraphs and proofs line up across columns. The line draws on entry. Two by two below 72rem; a vertical chain with ticks on the left below 48rem.
+
+### To-Scale Timeline
+Experience as rows of dates, role and a bar on a shared four-year axis. Each bar's start and length are computed from the job's months, 7px tall, at least 4px wide, Label Gray for past jobs and Pen Lime for the current one. Year rulings are Hairlines. The education row has no bar and labels itself in the timeline column.
+
+### Portrait and View Toggle
+A real portrait cut-out standing in a drawn view frame (Raised Sheet with major grid, 1px Object Line, lime corner marks) and breaking out of its top edge. Hovering the portrait does nothing: the owner removed the pointer lens on 2026-11-12. A two-button toggle under the portrait (condensed caps, the pressed option in Lettering White with a 1px lime underline) switches the whole portrait: a circle centered on the face grows until the illustrated avatar covers the picture in 0.9s and shrinks back in 0.6s. Mouse, touch and keyboard use the same toggle. On load the frame draws up from its base and the portrait develops (opacity, 1.5rem rise and 6px blur to none, 1.2s).
+
+Assets and provenance:
+- `src/assets/mateo-foto.webp` (1024 × 1280, transparent): owner-supplied portrait photograph, provided 2026-11-11, not generated; edges defringed and re-encoded to WebP. Provenance in `src/assets/mateo-foto.webp.json`.
+- `src/assets/mateo-avatar.webp` (1024 × 1280, transparent): owner-supplied illustrated 3D avatar, made by the owner outside this project, provided 2026-11-11; same treatment. Provenance in `src/assets/mateo-avatar.webp.json`.
+
+### Closing Sheet
+The only inverted surface: a full-bleed Pen Lime band holding a sheet outlined in 1px Pen Ink. Left, the closing question in Display, a sentence at weight 500 and the two ink buttons. Right, a ruled list of contact rows (label in condensed caps, value at 600, an outbound or download icon); a row under the pointer inverts to Pen Ink with lime text and its icon nudges 3px up and right. Selection and focus invert with it. The footer line sits inside the band in condensed caps.
+
+### Share Image
+`public/og.jpg` (1200 × 630): rendered with headless Chrome from an HTML layout (name, role, one verified fact, site URL) over the owner-supplied portrait; no generated imagery. Its provenance is embedded in the JPEG comment segment.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** draw every list as hairline rows (1px `line`, closed top and bottom) and keep a row's detail inside that row, expanding in place.
-- **Do** keep cane green to links, focus, the active nav line, the availability dot and icons under the pointer; selection and caret use its wash and its hue.
-- **Do** set years, date ranges and step numbers in muted tabular figures.
-- **Do** use the ease-out curve (`cubic-bezier(0.23, 1, 0.32, 1)`) for anything that arrives, and make exits shorter than entrances (open 420ms, close 220ms).
-- **Do** add every new motion class to the `prefers-reduced-motion` block, leaving content fully visible and the interaction working without tweening.
-- **Do** bleed hover fills 16px past the text column with the 12px row radius, so text stays flush with the rules.
-- **Do** pair every icon with a visible text label: 16px Lucide outline, GitHub as its filled mark.
-- **Do** define any new color for both themes by role, and keep `theme-color` equal to `paper` and `paper-dark`.
+- **Do** draw structure with 1px lines: `line` for dividers inside a table or list, `line-strong` for outlines, frames and dimension lines.
+- **Do** close a dimension line with 1px × 11px lime ticks and end it on a real measure set in Label.
+- **Do** keep lime for marks, measured figures, active and focus states, and one filled block per view.
+- **Do** choose width by role: Sofia Sans for names, titles and sentences; Sofia Sans Condensed for section titles, labels, figures, dates and controls.
+- **Do** write a figure with its basis: the value in Figure, one sentence of scope or source under it, and a to-scale bar only when the value is a ratio of two real numbers.
+- **Do** keep every project on the register grid with the same spec fields; when code is private the field stays and says so with the lock icon.
+- **Do** number only what is ordered: hero notes and process steps carry a lime condensed numeral, sections carry none.
+- **Do** put a label beside or under what it names: the measure at the end of the dimension line, the client line under the project title.
+- **Do** build new motion as a line growing from its origin (`scaleX` or `scaleY`, `cubic-bezier(0.16, 1, 0.3, 1)` on load, a scroll-linked `view()` timeline below the hero), and make sure the `prefers-reduced-motion: reduce` block stops it.
+- **Do** use Lucide outline icons at about 1rem, with a text label beside them or an accessible name on a square toggle, and 1px square-capped SVG for arrows inside drawings.
 
 ### Don't:
-- **Don't** cast shadows or place content on cards or tinted panels at rest; the only fill is Pressed Paper, under the pointer.
-- **Don't** build hero banners, card grids or metric tiles; figures stay inside sentences.
-- **Don't** introduce a second accent, a gradient, or a second typeface.
-- **Don't** set type at 700 or heavier.
-- **Don't** animate the content column on load or on scroll; the identity column's single entrance is the only load motion.
-- **Don't** use the accent on headings, fills or decoration.
-- **Don't** put eyebrows or kickers above section titles; a hint line, when needed, goes under the title in muted Meta.
+- **Don't** round corners or cast shadows; the portrait reveal is the only circle and nothing floats.
+- **Don't** put content on cards, lay projects out as a card grid or set figures as a row of metric tiles; projects are register rows and figures live in a ruled rail beside the plan they measure.
+- **Don't** add a second accent, a gradient fill, gradient text or glass; the only gradients are the 1px grid rulings and the masks that fade them.
+- **Don't** set headings or running text in lime, and don't fill a second block with lime in the same view.
+- **Don't** bring in a second typeface or a monospace, and don't let a system face stand in for Sofia Sans in display sizes.
+- **Don't** place a small label above a heading; the heading speaks first.
+- **Don't** draw the drafting grid under tables, the register, the timeline or the closing sheet.
+- **Don't** animate content on scroll; below the hero only lines, brackets and bars draw.
+- **Don't** rely on a line alone to show a control or a state; Object Line is 2.3:1 on the sheet.
+- **Don't** add a light theme; the sheet is dark only.

@@ -1,529 +1,592 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-05T17:30:51.508Z",
+  "generatedAt": "2026-11-12T05:28:29.561Z",
   "title": "Design System: Mateo Hernández Portfolio",
   "extensions": {
     "colorMeta": {
-      "accent": {
+      "pen": {
         "role": "primary",
-        "displayName": "Cane Green",
-        "canonical": "oklch(47.5% 0.097 149.1)",
+        "displayName": "Pen Lime",
+        "canonical": "oklch(87% 0.19 136)",
+        "hex": "#98f069",
         "tonalRamp": [
-          "#050e06",
-          "#0b2c14",
-          "#0f4d22",
-          "#306c3e",
-          "#549060",
-          "#7eb487",
-          "#b6d4ba",
-          "#e8f1e9"
+          "#021000",
+          "#112f00",
+          "#245200",
+          "#387800",
+          "#4da100",
+          "#72c83e",
+          "#ade393",
+          "#dff7d4"
         ],
-        "dark": "accent-dark",
-        "usage": "Links, focus ring, active nav line, availability dot, icons under the pointer, caret."
+        "usage": "Ticks, measured figures, numerals, active and focus states, link underlines, caret and selection; as a fill, the one primary button, measured bar spans, the current job and the closing sheet."
       },
-      "accent-soft": {
+      "pen-hi": {
         "role": "primary",
-        "displayName": "Cane Wash",
-        "canonical": "oklch(47.5% 0.097 149.1 / 0.12)",
+        "displayName": "Pen Lime, Lit",
+        "canonical": "oklch(92% 0.17 136)",
+        "hex": "#affe88",
         "tonalRamp": [
-          "#050e06",
-          "#0b2c14",
-          "#0f4d22",
-          "#306c3e",
-          "#549060",
-          "#7eb487",
-          "#b6d4ba",
-          "#e8f1e9"
+          "#021000",
+          "#112f00",
+          "#245200",
+          "#387800",
+          "#559f24",
+          "#7ac550",
+          "#b1e29a",
+          "#e1f6d7"
         ],
-        "dark": "accent-soft-dark",
-        "usage": "Text selection background only."
+        "usage": "Hover fill of the lime button; label of the ink button on hover."
       },
-      "paper": {
+      "pen-ink": {
+        "role": "primary",
+        "displayName": "Pen Ink",
+        "canonical": "oklch(19% 0.045 136)",
+        "hex": "#0a1804",
+        "tonalRamp": [
+          "#080d06",
+          "#1d2b17",
+          "#3a4b32",
+          "#5b6c53",
+          "#7d9075",
+          "#a1b599",
+          "#c9d6c3",
+          "#ebf1e8"
+        ],
+        "usage": "Writes on lime: label of the lime button, all text, rules and outlines on the closing sheet, fill of its primary button, selected text."
+      },
+      "pen-ink-2": {
+        "role": "primary",
+        "displayName": "Pen Ink, Lifted",
+        "canonical": "oklch(34% 0.07 136)",
+        "hex": "#264019",
+        "tonalRamp": [
+          "#060e03",
+          "#182d0c",
+          "#334d26",
+          "#546f47",
+          "#769369",
+          "#9ab98c",
+          "#c4d8bb",
+          "#e9f2e5"
+        ],
+        "usage": "Hover fill of the ink button only."
+      },
+      "sheet": {
         "role": "neutral",
-        "displayName": "Off-White Paper",
-        "canonical": "oklch(97.5% 0.004 106.5)",
+        "displayName": "Charcoal Sheet",
+        "canonical": "oklch(14.5% 0.003 150)",
+        "hex": "#090a09",
         "tonalRamp": [
           "#0b0b0b",
-          "#242423",
-          "#40403e",
-          "#5e5e5b",
-          "#80807e",
-          "#a5a5a2",
-          "#cacac9",
+          "#262726",
+          "#444544",
+          "#656665",
+          "#888a88",
+          "#adaead",
+          "#d0d1d0",
           "#eeeeee"
         ],
-        "dark": "paper-dark",
-        "usage": "Page, html background, theme-color, scrollbar track, label on the ink button."
+        "usage": "Page, header, side rail, fill of plan blocks."
       },
-      "ink": {
+      "sheet-2": {
         "role": "neutral",
-        "displayName": "Soft-Black Ink",
-        "canonical": "oklch(19.8% 0.004 128.7)",
+        "displayName": "Raised Sheet",
+        "canonical": "oklch(17.6% 0.004 150)",
+        "hex": "#0f1110",
         "tonalRamp": [
           "#0b0b0b",
-          "#242423",
-          "#3f403e",
-          "#5d5e5c",
-          "#7f817e",
-          "#a4a5a2",
-          "#cacbc9",
-          "#eeeeee"
+          "#252725",
+          "#444644",
+          "#646765",
+          "#878a88",
+          "#acafac",
+          "#d0d1d0",
+          "#eeefee"
         ],
-        "dark": "ink-dark",
-        "usage": "Primary text and headings, primary button fill, skip link; 80% for row summaries."
-      },
-      "muted": {
-        "role": "neutral",
-        "displayName": "Olive Graphite",
-        "canonical": "oklch(48.1% 0.012 125.9)",
-        "tonalRamp": [
-          "#0b0b0a",
-          "#232521",
-          "#3e413b",
-          "#5c5f58",
-          "#7e827a",
-          "#a3a69f",
-          "#c9cbc7",
-          "#eeefed"
-        ],
-        "dark": "muted-dark",
-        "usage": "Scanned text: dates, meta lines, labels, hints, inactive nav, icons at rest; 50% for the resting nav line."
+        "usage": "The single tonal step: view frame, register row under the pointer or open, hover of outlined controls."
       },
       "line": {
         "role": "neutral",
-        "displayName": "Pale Rule",
-        "canonical": "oklch(91.4% 0.007 106.5)",
+        "displayName": "Hairline",
+        "canonical": "oklch(27% 0.006 150)",
+        "hex": "#242725",
         "tonalRamp": [
-          "#0b0b0a",
-          "#242422",
-          "#40403c",
-          "#5e5e5a",
-          "#80807c",
-          "#a5a5a1",
-          "#cbcbc8",
-          "#eeeeee"
+          "#0a0b0b",
+          "#252725",
+          "#434643",
+          "#646764",
+          "#878a87",
+          "#abafac",
+          "#cfd2d0",
+          "#eeefee"
         ],
-        "dark": "line-dark",
-        "usage": "Every 1px hairline, the secondary button edge, the scrollbar thumb. Decorative contrast only."
+        "usage": "Dividers inside tables and lists, header rule, zone-tick rules, tag outlines, year rulings. 1.3:1 on the sheet: structure only."
       },
-      "hover": {
+      "line-strong": {
         "role": "neutral",
-        "displayName": "Pressed Paper",
-        "canonical": "oklch(95.1% 0.007 106.5)",
+        "displayName": "Object Line",
+        "canonical": "oklch(41% 0.008 150)",
+        "hex": "#474c48",
         "tonalRamp": [
-          "#0b0b0a",
-          "#242422",
-          "#40403c",
-          "#5e5e5a",
-          "#80807c",
-          "#a5a5a1",
-          "#cbcbc8",
-          "#eeeeee"
+          "#0a0c0a",
+          "#242725",
+          "#424643",
+          "#636764",
+          "#868b87",
+          "#aaafab",
+          "#cfd2cf",
+          "#edefee"
         ],
-        "dark": "hover-dark",
-        "usage": "The only fill: under the pointer on work rows, contact rows, secondary button."
+        "usage": "Sheet frame, sheet and block outlines, dimension lines, control outlines, group rules, to-scale bar track. 2.3:1 on the sheet: structure only."
       },
-      "paper-dark": {
+      "ink": {
         "role": "neutral",
-        "displayName": "Night Paper",
-        "canonical": "oklch(18.0% 0.004 128.7)",
+        "displayName": "Lettering White",
+        "canonical": "oklch(96% 0.004 140)",
+        "hex": "#f0f2f0",
         "tonalRamp": [
           "#0b0b0b",
-          "#242423",
-          "#3f403e",
-          "#5d5e5b",
-          "#7f817e",
-          "#a4a5a2",
-          "#cacbc9",
-          "#eeeeee"
+          "#252725",
+          "#444543",
+          "#656764",
+          "#888a87",
+          "#adaeac",
+          "#d0d1d0",
+          "#eeefee"
         ],
-        "light": "paper"
+        "usage": "Name, titles, table values, button labels. 17.6:1 on the sheet."
       },
-      "ink-dark": {
+      "ink-2": {
         "role": "neutral",
-        "displayName": "Chalk Ink",
-        "canonical": "oklch(94.4% 0.007 115.7)",
+        "displayName": "Reading Gray",
+        "canonical": "oklch(83% 0.006 145)",
+        "hex": "#c5c8c5",
         "tonalRamp": [
           "#0b0b0a",
-          "#242422",
-          "#3f403c",
-          "#5d5e5a",
-          "#80817c",
-          "#a4a5a1",
-          "#cacbc8",
-          "#eeeeee"
+          "#252725",
+          "#434643",
+          "#646764",
+          "#878a87",
+          "#acafac",
+          "#cfd2cf",
+          "#eeefee"
         ],
-        "light": "ink"
+        "usage": "Body copy. 11.8:1 on the sheet."
       },
-      "muted-dark": {
+      "ink-3": {
         "role": "neutral",
-        "displayName": "Lichen Gray",
-        "canonical": "oklch(72.0% 0.012 123.5)",
+        "displayName": "Label Gray",
+        "canonical": "oklch(68% 0.008 150)",
+        "hex": "#959a96",
         "tonalRamp": [
-          "#0b0b0a",
-          "#232521",
-          "#3e413a",
-          "#5c5f58",
-          "#7f817a",
-          "#a3a69f",
-          "#cacbc7",
-          "#eeefed"
+          "#0a0c0a",
+          "#242725",
+          "#424643",
+          "#636764",
+          "#868b87",
+          "#aaafab",
+          "#cfd2cf",
+          "#edefee"
         ],
-        "light": "muted"
+        "usage": "Labels, years and dates, zone ticks, sources, resting nav links, past jobs, arrows inside drawings. 6.9:1 on the sheet."
       },
-      "line-dark": {
+      "grid-minor": {
         "role": "neutral",
-        "displayName": "Night Rule",
-        "canonical": "oklch(29.0% 0.008 128.8)",
-        "tonalRamp": [
-          "#0b0b0a",
-          "#232422",
-          "#3e403c",
-          "#5c5e5a",
-          "#7f817c",
-          "#a3a5a1",
-          "#cacbc8",
-          "#eeeeee"
-        ],
-        "light": "line"
-      },
-      "hover-dark": {
-        "role": "neutral",
-        "displayName": "Night Pressed",
-        "canonical": "oklch(22.0% 0.004 128.7)",
+        "displayName": "Drafting Grid, Minor",
+        "canonical": "oklch(100% 0 0 / 0.022)",
+        "hex": "rgb(255 255 255 / 0.022)",
         "tonalRamp": [
           "#0b0b0b",
-          "#242423",
-          "#3f403e",
-          "#5d5e5c",
-          "#7f817e",
-          "#a4a5a3",
-          "#cacbc9",
+          "#262626",
+          "#454545",
+          "#666666",
+          "#898989",
+          "#aeaeae",
+          "#d1d1d1",
           "#eeeeee"
         ],
-        "light": "hover"
+        "usage": "1px rulings every 1.5rem on the hero sheet and the plan."
       },
-      "accent-dark": {
-        "role": "primary",
-        "displayName": "Young Cane Green",
-        "canonical": "oklch(77.7% 0.088 151.3)",
+      "grid-major": {
+        "role": "neutral",
+        "displayName": "Drafting Grid, Major",
+        "canonical": "oklch(100% 0 0 / 0.05)",
+        "hex": "rgb(255 255 255 / 0.05)",
         "tonalRamp": [
-          "#050e07",
-          "#0d2b16",
-          "#134c27",
-          "#336c43",
-          "#568f65",
-          "#7fb38c",
-          "#b6d3bc",
-          "#e8f1ea"
+          "#0b0b0b",
+          "#262626",
+          "#454545",
+          "#666666",
+          "#898989",
+          "#aeaeae",
+          "#d1d1d1",
+          "#eeeeee"
         ],
-        "light": "accent"
-      },
-      "accent-soft-dark": {
-        "role": "primary",
-        "displayName": "Young Cane Wash",
-        "canonical": "oklch(77.7% 0.088 151.3 / 0.16)",
-        "tonalRamp": [
-          "#050e07",
-          "#0d2b16",
-          "#134c27",
-          "#336c43",
-          "#568f65",
-          "#7fb38c",
-          "#b6d3bc",
-          "#e8f1ea"
-        ],
-        "light": "accent-soft"
+        "usage": "1px rulings every 6rem on the hero sheet and every 1.5rem inside the portrait's view frame."
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "The name, once, top of the identity column (3rem from 640px)."
-      },
-      "display-mobile": {
-        "displayName": "Display (phones)",
-        "purpose": "The name below 640px."
+        "purpose": "The name in the hero, on two lines, uppercase; the closing question uses the same voice."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Section titles; 24px to content."
+        "purpose": "Section titles, condensed and uppercase, joined to their measure by a dimension line."
+      },
+      "title-lg": {
+        "displayName": "Title Large",
+        "purpose": "The main project's title, sentence case."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "The role line under the name."
+        "purpose": "Process step and job titles; register titles flex around it."
       },
-      "title-item": {
-        "displayName": "Title Item",
-        "purpose": "Work-row titles."
+      "block-title": {
+        "displayName": "Block Title",
+        "purpose": "Names of plan blocks, condensed caps; register group heads one step larger."
       },
-      "title-sm": {
-        "displayName": "Title Small",
-        "purpose": "Process step titles and experience roles."
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Measured figures in the figures rail; smaller and lime when dimensioned on a plan block."
       },
       "body-lead": {
         "displayName": "Body Lead",
-        "purpose": "The about paragraphs, max 64ch."
+        "purpose": "The hero sentence, capped at 29rem."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Process, experience, stack and contact copy, max 64ch."
-      },
-      "body-strong": {
-        "displayName": "Body Strong",
-        "purpose": "Contact-row values."
+        "purpose": "Default reading text; 1rem below 48rem; tabular lining figures."
       },
       "body-sm": {
         "displayName": "Body Small",
-        "purpose": "Work-row summaries (ink 80%) and the expanded panel, max 62ch."
+        "purpose": "Notes, plan block text, table values."
       },
       "label-strong": {
         "displayName": "Label Strong",
-        "purpose": "Button labels and the full-CV link."
+        "purpose": "Buttons and the name beside the monogram, condensed caps."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Nav labels, quiet links, panel field labels, project links."
+        "purpose": "Table terms, plan captions, client lines, section measures; uppercase, Label Gray."
       },
-      "meta": {
-        "displayName": "Meta",
-        "purpose": "Dates, periods, org and domain lines, hints, availability, footer; tabular figures."
+      "data": {
+        "displayName": "Data",
+        "purpose": "Years and date ranges; tags and chain steps one step smaller. Sentence case."
       }
     },
-    "shadows": [
-      {
-        "name": "hairline-inset",
-        "value": "inset 0 0 0 1px var(--line)",
-        "purpose": "Not elevation: draws the secondary button's 1px edge (Tailwind ring-1 ring-inset). The system casts no shadows."
-      }
-    ],
+    "shadows": [],
     "motion": [
       {
-        "name": "ease-out",
-        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
-        "purpose": "Every arrival: entrance, row open, row content, icon rotation, nav line width, language crossfade. CSS var --ease-out."
+        "name": "ease",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "CSS var --ease. Exponential ease-out for everything that draws on load, rises, unfolds or nudges."
       },
       {
-        "name": "ease-in-out",
-        "value": "cubic-bezier(0.77, 0, 0.175, 1)",
-        "purpose": "Row collapse only. CSS var --ease-in-out."
+        "name": "frame-draw",
+        "value": "draw-x / draw-y (scale from 0) 1.1s var(--ease) both; delays 0s, 0.12s, 0.24s, 0.36s",
+        "purpose": "The four strokes of the hero frame plot clockwise on load."
       },
       {
-        "name": "ease-standard",
-        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
-        "purpose": "Hover and press state changes (Tailwind default timing)."
+        "name": "name-rise",
+        "value": "translateY(105%) to 0, 0.95s var(--ease) both; delay 0.15s, second line 0.24s",
+        "purpose": "Each line of the name rises out of its clipped line box."
       },
       {
-        "name": "rise",
-        "value": "700ms ease-out both; from opacity 0, translateY(8px), blur(2px); delay calc(var(--i) * 70ms + 80ms)",
-        "purpose": "One-time staggered entrance of the identity column, steps 0 to 4."
+        "name": "appear",
+        "value": "opacity 0 and translateY(0.75rem) to rest, 0.9s var(--ease) both; delays 0.45s, 0.53s, 0.62s",
+        "purpose": "Hero sentence, actions, links and rail on load; also the portrait toggle (0.8s at 0.9s) and the mobile menu (0.4s)."
       },
       {
-        "name": "row-open",
-        "value": "grid-template-rows 0fr to 1fr, 420ms ease-out",
-        "purpose": "Work row panel opening in place."
+        "name": "view-frame-draw",
+        "value": "draw-y 1s var(--ease) both 0.2s; transform-origin bottom",
+        "purpose": "The portrait's view frame draws up from its base."
       },
       {
-        "name": "row-close",
-        "value": "grid-template-rows 1fr to 0fr, 220ms ease-in-out",
-        "purpose": "Work row panel collapsing."
+        "name": "portrait-develop",
+        "value": "opacity 0, translateY(1.5rem) and blur(6px) to rest, 1.2s var(--ease) both 0.35s",
+        "purpose": "The portrait develops once on load. The only blur in the system."
       },
       {
-        "name": "row-content-in",
-        "value": "opacity 360ms ease-out, transform translateY(6px) to 0 420ms ease-out, delay calc(var(--i) * 45ms + 90ms)",
-        "purpose": "Panel blocks arriving in sequence after the panel starts to open."
+        "name": "scroll-draw",
+        "value": "draw-x linear both; animation-timeline: view(); animation-range: entry 0% cover 28%",
+        "purpose": "Dimension lines, the step chain, the contract bracket, to-scale bars and job bars draw from their origin as they enter the viewport (draw-y for the step chain below 48rem). Behind @supports."
       },
       {
-        "name": "row-content-out",
-        "value": "opacity and transform 160ms ease, no delay",
-        "purpose": "Panel blocks leaving at once on close."
+        "name": "scroll-progress",
+        "value": "scaleX(0) to scaleX(1) linear both; animation-timeline: scroll(root)",
+        "purpose": "The lime hairline under the sticky header grows with the page. Behind @supports."
       },
       {
-        "name": "row-icon",
-        "value": "transform rotate(45deg) 320ms ease-out",
-        "purpose": "Plus becomes a close mark when the row opens."
+        "name": "nav-underline",
+        "value": "transform scaleX(0) to scaleX(1), 0.4s var(--ease), origin left",
+        "purpose": "1px lime underline on a nav link on hover and for the section in view."
       },
       {
-        "name": "nav-line",
-        "value": "width 360ms ease-out; background-color 200ms ease",
-        "purpose": "Section nav line: 32px rest, 48px hover, 64px active."
+        "name": "row-unfold",
+        "value": "grid-template-rows 0fr to 1fr, 0.55s var(--ease); detail opacity 0.5s after 0.12s (0.3s out)",
+        "purpose": "A register row unfolds in place."
       },
       {
-        "name": "state-fill",
-        "value": "background-color / transform 200ms ease-standard",
-        "purpose": "Button and row fills, 0.97 press scale, 2px arrow nudges."
+        "name": "toggle-rotate",
+        "value": "rotate 45deg, 0.5s var(--ease)",
+        "purpose": "The plus of a register toggle becomes a close mark."
       },
       {
-        "name": "state-text",
-        "value": "color 150ms ease-standard",
-        "purpose": "Muted-to-ink text and icon color shifts."
+        "name": "portrait-reveal",
+        "value": "--lr (registered <length>) 0 to 75rem in 0.9s var(--ease) for the avatar view, back to 0 in 0.6s; centered at 50% 30%, on the face",
+        "purpose": "The view toggle opens the illustrated portrait from the face and closes it again; hovering does nothing."
+      },
+      {
+        "name": "state",
+        "value": "background-color, border-color and color 0.2s (0.25s on rows)",
+        "purpose": "Hover and pressed-state color changes."
       },
       {
         "name": "press",
-        "value": "scale(0.97) on :active",
-        "purpose": "Primary and secondary buttons."
+        "value": "transform scale(0.98), 0.15s",
+        "purpose": "Buttons on :active."
       },
       {
-        "name": "language-crossfade",
-        "value": "@view-transition { navigation: auto }; root old/new 260ms ease-out",
-        "purpose": "Cross-document crossfade between / and /en/."
+        "name": "icon-nudge",
+        "value": "translateY(3px) or translate(2px, -2px), 0.35s var(--ease); translate(3px, -3px) on closing-sheet rows",
+        "purpose": "The trailing icon moves in the direction of its action on hover."
       },
       {
         "name": "reduced-motion",
-        "value": "@media (prefers-reduced-motion: reduce)",
-        "purpose": "Smooth scroll off; rise, row panel, row content, row icon and nav line set to animation/transition none; row content forced visible; view-transition navigation none. Utility-level hover fills, press scale and arrow nudges are not covered."
+        "value": "@media (prefers-reduced-motion: reduce) { animation: none; transition-duration: 0.01ms } on every element and pseudo-element; scroll-behavior: auto",
+        "purpose": "Load and scroll drawing are removed and states switch at once, the portrait view included."
       }
     ],
     "breakpoints": [
       {
         "name": "sm",
-        "value": "640px"
+        "value": "40rem",
+        "purpose": "Below it the name beside the monogram is hidden (Tailwind max-sm)."
+      },
+      {
+        "name": "phone",
+        "value": "48rem",
+        "purpose": "Below it: one column, 1rem body, drawings turn vertical."
       },
       {
         "name": "lg",
-        "value": "1024px"
+        "value": "64rem",
+        "purpose": "Below it the text nav becomes a menu button (Tailwind lg)."
+      },
+      {
+        "name": "sheet",
+        "value": "72rem",
+        "purpose": "Below it each rail folds under its main area."
+      },
+      {
+        "name": "short-desktop",
+        "value": "(height < 47.5rem) and (width >= 72rem)",
+        "purpose": "The hero rail tightens and the revision row is hidden."
+      }
+    ],
+    "assets": [
+      {
+        "path": "src/assets/mateo-foto.webp",
+        "kind": "portrait photograph",
+        "dimensions": "1024x1280, transparent background",
+        "origin": "Owner-supplied, provided 2026-11-11. Not generated. Edges defringed and re-encoded to WebP.",
+        "provenance": "src/assets/mateo-foto.webp.json"
+      },
+      {
+        "path": "src/assets/mateo-avatar.webp",
+        "kind": "illustrated avatar",
+        "dimensions": "1024x1280, transparent background",
+        "origin": "Owner-supplied 3D avatar made by the owner outside this project, provided 2026-11-11. Edges defringed and re-encoded to WebP.",
+        "provenance": "src/assets/mateo-avatar.webp.json"
+      },
+      {
+        "path": "public/og.jpg",
+        "kind": "share image",
+        "dimensions": "1200x630",
+        "origin": "Rendered with headless Chrome from an HTML layout (name, role, one verified fact, site URL) over the owner-supplied portrait. No generated imagery.",
+        "provenance": "Embedded in the JPEG comment segment (impeccable:prompt)."
       }
     ]
   },
   "components": [
     {
-      "name": "Primary Button",
+      "name": "Pen Button",
       "kind": "button",
-      "refersTo": "button-primary",
-      "description": "The one heavy object on the page: the CV download, ink fill with a paper label.",
-      "html": "<a class=\"ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 17V3\"/><path d=\"m6 11 6 6 6-6\"/><path d=\"M19 21H5\"/></svg>Descargar hoja de vida</a>",
-      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; border-radius: 8px; background: var(--ink, #151614); color: var(--paper, #f7f7f4); font-family: var(--font-schibsted, \"Schibsted Grotesk\"), ui-sans-serif, system-ui, sans-serif; font-feature-settings: \"ss01\"; font-size: 0.875rem; line-height: 1.4286; font-weight: 600; text-decoration: none; transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-primary svg { width: 16px; height: 16px; } .ds-btn-primary:hover { background: color-mix(in oklab, var(--ink, #151614) 85%, transparent); } .ds-btn-primary:active { transform: scale(0.97); } .ds-btn-primary:focus-visible { outline: 2px solid var(--accent, #2f6b3d); outline-offset: 3px; }"
+      "refersTo": "button-pen",
+      "description": "The one lime-filled action of a view: the hero's primary button. Square, condensed caps, the icon nudges 3px down on hover.",
+      "html": "<div class=\"ds-sheet\"><a class=\"ds-btn-pen\" href=\"#\">Ver proyectos <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14\"/><path d=\"m19 12-7 7-7-7\"/></svg></a></div>",
+      "css": ".ds-sheet { padding: 1.5rem; background: var(--sheet, #090a09); color: var(--ink-2, #c5c8c5); font-family: var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, system-ui, sans-serif; font-variant-numeric: lining-nums tabular-nums; } .ds-btn-pen { display: inline-flex; align-items: center; justify-content: center; gap: 0.625rem; height: 3rem; padding-inline: 1.375rem; border: 1px solid transparent; border-radius: 0; font-family: var(--font-sofia-cond, \"Sofia Sans Condensed\"), var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, sans-serif; font-size: 0.9375rem; font-weight: 700; line-height: 1; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; white-space: nowrap; cursor: pointer; transition: background-color 0.2s, border-color 0.2s, color 0.2s, transform 0.15s; } .ds-btn-pen:active { transform: scale(0.98); } .ds-btn-pen svg { width: 1rem; height: 1rem; flex-shrink: 0; transition: transform 0.35s var(--ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-btn-pen { background: var(--pen, #98f069); color: var(--pen-ink, #0a1804); } .ds-btn-pen:hover { background: var(--pen-hi, #affe88); } .ds-btn-pen:hover svg { transform: translateY(3px); } .ds-btn-pen:focus-visible { outline: 2px solid var(--pen, #98f069); outline-offset: 3px; } @media (prefers-reduced-motion: reduce) { .ds-btn-pen, .ds-btn-pen svg { transition-duration: 0.01ms !important; animation: none !important; } }"
     },
     {
-      "name": "Secondary Button",
+      "name": "Line Button",
       "kind": "button",
-      "refersTo": "button-secondary",
-      "description": "The email action beside the CV: transparent, 1px inset hairline edge, Pressed Paper on hover.",
-      "html": "<a class=\"ds-btn-secondary\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7\"/><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/></svg>Escríbeme</a>",
-      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 16px; border-radius: 8px; background: transparent; color: var(--ink, #151614); box-shadow: inset 0 0 0 1px var(--line, #e3e3de); font-family: var(--font-schibsted, \"Schibsted Grotesk\"), ui-sans-serif, system-ui, sans-serif; font-feature-settings: \"ss01\"; font-size: 0.875rem; line-height: 1.4286; font-weight: 600; text-decoration: none; transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-secondary svg { width: 16px; height: 16px; } .ds-btn-secondary:hover { background: var(--hover, #efefea); } .ds-btn-secondary:active { transform: scale(0.97); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--accent, #2f6b3d); outline-offset: 3px; }"
+      "refersTo": "button-line",
+      "description": "Outlined secondary action in 1px Object Line: the CV download, and at 2.25rem the header's contact link. Hover brightens the outline and steps the fill to Raised Sheet.",
+      "html": "<div class=\"ds-sheet ds-line-row\"><a class=\"ds-btn-line\" href=\"#\">Hoja de vida <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 15V3\"/><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><path d=\"m7 10 5 5 5-5\"/></svg></a><a class=\"ds-btn-line ds-btn-line-sm ds-btn-line-out\" href=\"#\">Contacto <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></a></div>",
+      "css": ".ds-sheet { padding: 1.5rem; background: var(--sheet, #090a09); color: var(--ink-2, #c5c8c5); font-family: var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, system-ui, sans-serif; font-variant-numeric: lining-nums tabular-nums; } .ds-line-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; } .ds-btn-line { display: inline-flex; align-items: center; justify-content: center; gap: 0.625rem; height: 3rem; padding-inline: 1.375rem; border: 1px solid transparent; border-radius: 0; font-family: var(--font-sofia-cond, \"Sofia Sans Condensed\"), var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, sans-serif; font-size: 0.9375rem; font-weight: 700; line-height: 1; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; white-space: nowrap; cursor: pointer; transition: background-color 0.2s, border-color 0.2s, color 0.2s, transform 0.15s; } .ds-btn-line:active { transform: scale(0.98); } .ds-btn-line svg { width: 1rem; height: 1rem; flex-shrink: 0; transition: transform 0.35s var(--ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-btn-line { border-color: var(--line-strong, #474c48); background: transparent; color: var(--ink, #f0f2f0); } .ds-btn-line:hover { border-color: var(--ink, #f0f2f0); background: var(--sheet-2, #0f1110); } .ds-btn-line:hover svg { transform: translateY(3px); } .ds-btn-line-out:hover svg { transform: translate(2px, -2px); } .ds-btn-line-sm { height: 2.25rem; padding-inline: 0.875rem; font-size: 0.8125rem; } .ds-btn-line:focus-visible { outline: 2px solid var(--pen, #98f069); outline-offset: 3px; } @media (prefers-reduced-motion: reduce) { .ds-btn-line, .ds-btn-line svg { transition-duration: 0.01ms !important; animation: none !important; } }"
     },
     {
-      "name": "Work Row",
-      "kind": "custom",
-      "refersTo": "work-row",
-      "description": "Signature component: a hairline index row that opens in place (grid rows 0fr to 1fr, 420ms ease-out; closes in 220ms). Shown closed and open.",
-      "html": "<ul class=\"ds-work\">\n<li class=\"ds-row\" data-open=\"false\"><button class=\"ds-row-btn\" type=\"button\" aria-expanded=\"false\"><span class=\"ds-row-main\"><span class=\"ds-row-head\"><span class=\"ds-row-title\">Mini Programas para la super app de Claro</span><span class=\"ds-row-period\">2025</span></span><span class=\"ds-row-meta\">Softgic · Telecomunicaciones · Comercio</span><span class=\"ds-row-summary\">Cinemark Preferencial y el flujo de compra de Templo de la Moda, funcionando dentro de la app de Claro.</span></span><span class=\"ds-row-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"M12 5v14\"/></svg></span></button><div class=\"ds-row-panel\"><div><div class=\"ds-row-content\"><div style=\"--i:0\"><p class=\"ds-row-label\">Contexto</p></div></div></div></div></li>\n<li class=\"ds-row\" data-open=\"true\"><button class=\"ds-row-btn\" type=\"button\" aria-expanded=\"true\"><span class=\"ds-row-main\"><span class=\"ds-row-head\"><span class=\"ds-row-title\">Ecosistema SaaS para restaurantes</span><span class=\"ds-row-period\">2026</span></span><span class=\"ds-row-meta\">Quantum Infinity · Restaurantes · SaaS multiempresa</span><span class=\"ds-row-summary\">Punto de venta, gestión de pedidos, menú online y consola de administración en producción para 12 empresas y 18 sedes.</span></span><span class=\"ds-row-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"M12 5v14\"/></svg></span></button><div class=\"ds-row-panel\"><div><div class=\"ds-row-content\"><div style=\"--i:0\"><p class=\"ds-row-label\">Contexto</p><p class=\"ds-row-text\">Restaurantes con varias sedes necesitaban vender en caja, recibir pedidos en línea, despacharlos a domicilio y controlar inventario y recetas desde un solo sistema.</p></div><div style=\"--i:1\"><p class=\"ds-row-label\">Lo que hice</p><ul class=\"ds-row-did\"><li>Amplié la API REST del POS hasta 316 endpoints con cerca de 1.600 casos de prueba.</li><li>Bajé el cierre de una venta de 1.390 ms a unos 700 ms cargando recetas por lotes.</li></ul></div><div style=\"--i:2\"><p class=\"ds-row-label\">Stack</p><p class=\"ds-row-text\">React · Vite · Tailwind CSS · Node.js · Express · Firebase</p></div><div style=\"--i:3\" class=\"ds-row-foot\"><span class=\"ds-row-status\">Código privado de la empresa.</span></div></div></div></div></li>\n</ul>",
-      "css": ".ds-work { list-style: none; margin: 0; padding: 0; max-width: 640px; border-bottom: 1px solid var(--line, #e3e3de); color: var(--ink, #151614); font-family: var(--font-schibsted, \"Schibsted Grotesk\"), ui-sans-serif, system-ui, sans-serif; font-feature-settings: \"ss01\"; } .ds-row { border-top: 1px solid var(--line, #e3e3de); } .ds-row-btn { display: grid; grid-template-columns: 1fr auto; column-gap: 20px; width: calc(100% + 32px); margin: 0 -16px; padding: 20px 16px; border: 0; border-radius: 12px; background: transparent; color: inherit; font: inherit; text-align: left; cursor: pointer; transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-row[data-open=\"false\"] .ds-row-btn:hover { background: var(--hover, #efefea); } .ds-row-btn:focus-visible { outline: 2px solid var(--accent, #2f6b3d); outline-offset: 3px; } .ds-row-main { display: block; min-width: 0; } .ds-row-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; } .ds-row-title { font-size: 1.0625rem; line-height: 1.5; font-weight: 600; letter-spacing: -0.01em; } .ds-row-period { flex-shrink: 0; font-size: 0.875rem; line-height: 1.4286; color: var(--muted, #5c5f58); font-variant-numeric: tabular-nums; } .ds-row-meta { display: block; margin-top: 4px; font-size: 0.875rem; line-height: 1.4286; color: var(--muted, #5c5f58); text-wrap: pretty; } .ds-row-summary { display: block; margin-top: 8px; max-width: 62ch; font-size: 0.9375rem; line-height: 1.625; color: color-mix(in oklab, var(--ink, #151614) 80%, transparent); text-wrap: pretty; } .ds-row-icon { display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; margin-top: 2px; border-radius: 9999px; color: var(--muted, #5c5f58); transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-row-btn:hover .ds-row-icon { color: var(--ink, #151614); } .ds-row-icon svg { width: 16px; height: 16px; transition: transform 320ms var(--ease-out, cubic-bezier(0.23, 1, 0.32, 1)); } .ds-row[data-open=\"true\"] .ds-row-icon svg { transform: rotate(45deg); } .ds-row-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 220ms var(--ease-in-out, cubic-bezier(0.77, 0, 0.175, 1)); } .ds-row[data-open=\"true\"] .ds-row-panel { grid-template-rows: 1fr; transition-duration: 420ms; transition-timing-function: var(--ease-out, cubic-bezier(0.23, 1, 0.32, 1)); } .ds-row-panel > div { overflow: hidden; min-height: 0; } .ds-row-content { display: flex; flex-direction: column; gap: 20px; max-width: 62ch; padding: 4px 0 28px; font-size: 0.9375rem; line-height: 1.625; } .ds-row-content > * { opacity: 0; transform: translateY(6px); transition: opacity 160ms ease, transform 160ms ease; } .ds-row[data-open=\"true\"] .ds-row-content > * { opacity: 1; transform: none; transition: opacity 360ms var(--ease-out, cubic-bezier(0.23, 1, 0.32, 1)), transform 420ms var(--ease-out, cubic-bezier(0.23, 1, 0.32, 1)); transition-delay: calc(var(--i, 0) * 45ms + 90ms); } .ds-row-content p { margin: 0; } .ds-row-label { font-size: 0.875rem; line-height: 1.4286; font-weight: 500; color: var(--muted, #5c5f58); } .ds-row-text { margin-top: 6px !important; } .ds-row-did { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 8px; } .ds-row-did li { position: relative; padding-left: 16px; } .ds-row-did li::before { content: \"\"; position: absolute; left: 0; top: 0.7em; width: 8px; height: 1px; background: var(--muted, #5c5f58); } .ds-row-foot { font-size: 0.875rem; } .ds-row-status { color: var(--muted, #5c5f58); } @media (prefers-reduced-motion: reduce) { .ds-row-panel, .ds-row-content > *, .ds-row-icon svg { transition: none !important; } .ds-row-content > * { opacity: 1; transform: none; } }"
+      "name": "Ink Buttons",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "The two actions on the lime closing sheet: an ink-filled button with a lime label and an ink-outlined one that inverts on hover.",
+      "html": "<div class=\"ds-lime\"><a class=\"ds-btn-ink\" href=\"#\">Escribir por WhatsApp <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></a><button class=\"ds-btn-ink-line\" type=\"button\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"14\" height=\"14\" x=\"8\" y=\"8\" rx=\"2\" ry=\"2\"/><path d=\"M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2\"/></svg> Copiar correo</button></div>",
+      "css": ".ds-lime { display: flex; flex-wrap: wrap; gap: 0.75rem; padding: 1.5rem; background: var(--pen, #98f069); } :is(.ds-btn-ink, .ds-btn-ink-line) { display: inline-flex; align-items: center; justify-content: center; gap: 0.625rem; height: 3rem; padding-inline: 1.375rem; border: 1px solid transparent; border-radius: 0; font-family: var(--font-sofia-cond, \"Sofia Sans Condensed\"), var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, sans-serif; font-size: 0.9375rem; font-weight: 700; line-height: 1; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; white-space: nowrap; cursor: pointer; transition: background-color 0.2s, border-color 0.2s, color 0.2s, transform 0.15s; } :is(.ds-btn-ink, .ds-btn-ink-line):active { transform: scale(0.98); } :is(.ds-btn-ink, .ds-btn-ink-line) svg { width: 1rem; height: 1rem; flex-shrink: 0; transition: transform 0.35s var(--ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-btn-ink { background: var(--pen-ink, #0a1804); color: var(--pen, #98f069); } .ds-btn-ink:hover { background: var(--pen-ink-2, #264019); color: var(--pen-hi, #affe88); } .ds-btn-ink:hover svg { transform: translate(2px, -2px); } .ds-btn-ink-line { border-color: var(--pen-ink, #0a1804); background: transparent; color: var(--pen-ink, #0a1804); } .ds-btn-ink-line:hover { background: var(--pen-ink, #0a1804); color: var(--pen, #98f069); } .ds-btn-ink:focus-visible, .ds-btn-ink-line:focus-visible { outline: 2px solid var(--pen-ink, #0a1804); outline-offset: 3px; } @media (prefers-reduced-motion: reduce) { .ds-btn-ink, .ds-btn-ink-line, .ds-btn-ink svg, .ds-btn-ink-line svg { transition-duration: 0.01ms !important; animation: none !important; } }"
     },
     {
-      "name": "Section Nav",
+      "name": "Header Navigation",
       "kind": "nav",
       "refersTo": "nav-link",
-      "description": "Desktop scroll-spy: a 1px line before each label grows 32px to 48px on hover and to 64px in accent for the active section (360ms ease-out).",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Secciones\"><ul><li><a class=\"ds-nav-link\" href=\"#\" aria-current=\"true\"><span class=\"ds-nav-line\" aria-hidden=\"true\"></span><span class=\"ds-nav-label\">Trabajo</span></a></li><li><a class=\"ds-nav-link\" href=\"#\"><span class=\"ds-nav-line\" aria-hidden=\"true\"></span><span class=\"ds-nav-label\">Cómo trabajo</span></a></li><li><a class=\"ds-nav-link\" href=\"#\"><span class=\"ds-nav-line\" aria-hidden=\"true\"></span><span class=\"ds-nav-label\">Experiencia</span></a></li><li><a class=\"ds-nav-link\" href=\"#\"><span class=\"ds-nav-line\" aria-hidden=\"true\"></span><span class=\"ds-nav-label\">Stack</span></a></li><li><a class=\"ds-nav-link\" href=\"#\"><span class=\"ds-nav-line\" aria-hidden=\"true\"></span><span class=\"ds-nav-label\">Contacto</span></a></li></ul></nav>",
-      "css": ".ds-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; } .ds-nav-link { display: flex; align-items: center; gap: 16px; padding: 8px 0; font-family: var(--font-schibsted, \"Schibsted Grotesk\"), ui-sans-serif, system-ui, sans-serif; font-feature-settings: \"ss01\"; font-size: 0.875rem; line-height: 1.4286; font-weight: 500; text-decoration: none; } .ds-nav-line { display: block; height: 1px; width: 32px; background: color-mix(in oklab, var(--muted, #5c5f58) 50%, transparent); transition: width 360ms var(--ease-out, cubic-bezier(0.23, 1, 0.32, 1)), background-color 200ms ease; } .ds-nav-label { color: var(--muted, #5c5f58); transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-nav-link:hover .ds-nav-line { width: 48px; background: var(--ink, #151614); } .ds-nav-link:hover .ds-nav-label { color: var(--ink, #151614); } .ds-nav-link[aria-current=\"true\"] .ds-nav-line { width: 64px; background: var(--accent, #2f6b3d); } .ds-nav-link[aria-current=\"true\"] .ds-nav-label { color: var(--ink, #151614); } .ds-nav-link:focus-visible { outline: 2px solid var(--accent, #2f6b3d); outline-offset: 3px; } @media (prefers-reduced-motion: reduce) { .ds-nav-line { transition: none !important; } }"
+      "description": "Sticky header: monogram box with a 6px lime corner, condensed caps links whose 1px lime underline draws from the left on hover and for the section in view, the language switch, and the scroll-progress hairline on the bottom rule (shown here at 35%).",
+      "html": "<div class=\"ds-header-wrap\"><header class=\"ds-header\"><a class=\"ds-mark\" href=\"#\" aria-label=\"Mateo Hernández, inicio\"><span class=\"ds-mark-box\" aria-hidden=\"true\">MH</span><span class=\"ds-mark-name\">Mateo Hernández</span></a><nav class=\"ds-nav\" aria-label=\"Navegación principal\"><a class=\"ds-nav-link\" href=\"#\" aria-current=\"true\">Proyectos</a><a class=\"ds-nav-link\" href=\"#\">Proceso</a><a class=\"ds-nav-link\" href=\"#\">Experiencia</a><a class=\"ds-nav-link\" href=\"#\">Stack</a></nav><a class=\"ds-lang\" href=\"#\" lang=\"en\">EN</a></header></div>",
+      "css": ".ds-header-wrap { container-type: inline-size; } @container (width < 50rem) { .ds-mark-name { display: none; } .ds-nav { gap: 1.25rem; } } .ds-header { position: relative; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 1.25rem; min-height: 3.75rem; padding-inline: 1.5rem; background: var(--sheet, #090a09); border-bottom: 1px solid var(--line, #242725); } .ds-header::after { content: \"\"; position: absolute; inset: auto 0 -1px 0; height: 1px; background: var(--pen, #98f069); transform: scaleX(0.35); transform-origin: left; } .ds-mark { display: inline-flex; align-items: center; gap: 0.75rem; font-family: var(--font-sofia-cond, \"Sofia Sans Condensed\"), var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, sans-serif; font-size: 0.9375rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; color: var(--ink, #f0f2f0); } .ds-mark-box { position: relative; display: grid; place-items: center; width: 2rem; height: 2rem; border: 1px solid var(--line-strong, #474c48); font-size: 0.8125rem; font-weight: 800; letter-spacing: 0.04em; } .ds-mark-box::after { content: \"\"; position: absolute; right: -1px; bottom: -1px; width: 6px; height: 6px; background: var(--pen, #98f069); } .ds-nav { display: flex; align-items: center; gap: 2rem; } .ds-nav-link { position: relative; padding-block: 0.5rem; font-family: var(--font-sofia-cond, \"Sofia Sans Condensed\"), var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, sans-serif; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; text-decoration: none; color: var(--ink-3, #959a96); transition: color 0.2s; } .ds-nav-link::after { content: \"\"; position: absolute; inset-inline: 0; bottom: 0.125rem; height: 1px; background: var(--pen, #98f069); transform: scaleX(0); transform-origin: left; transition: transform 0.4s var(--ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-nav-link:hover, .ds-nav-link[aria-current=\"true\"] { color: var(--ink, #f0f2f0); } .ds-nav-link:hover::after, .ds-nav-link[aria-current=\"true\"]::after { transform: scaleX(1); } .ds-lang { display: grid; place-items: center; height: 2.25rem; padding-inline: 0.65rem; border: 1px solid var(--line, #242725); font-family: var(--font-sofia-cond, \"Sofia Sans Condensed\"), var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, sans-serif; font-size: 0.875rem; font-weight: 700; letter-spacing: 0.09em; text-decoration: none; color: var(--ink-2, #c5c8c5); transition: border-color 0.2s, color 0.2s; } .ds-lang:hover { border-color: var(--ink, #f0f2f0); color: var(--ink, #f0f2f0); } .ds-mark:focus-visible, .ds-nav-link:focus-visible, .ds-lang:focus-visible { outline: 2px solid var(--pen, #98f069); outline-offset: 3px; } @media (prefers-reduced-motion: reduce) { .ds-nav-link, .ds-nav-link::after, .ds-lang { transition-duration: 0.01ms !important; animation: none !important; } }"
     },
     {
-      "name": "Contact Rows",
+      "name": "Section Head",
       "kind": "custom",
-      "refersTo": "contact-row",
-      "description": "Hairline list of full-width contact links: icon turns accent and the arrow nudges 2px up-right on hover, over a 12px Pressed Paper bleed.",
-      "html": "<ul class=\"ds-contact\"><li><a class=\"ds-contact-row\" href=\"#\"><span class=\"ds-contact-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7\"/><rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/></svg></span><span class=\"ds-contact-label\">Correo</span><span class=\"ds-contact-value\">mateohernandez10012003<wbr>@gmail.com</span><span class=\"ds-contact-arrow\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></span></a></li><li><a class=\"ds-contact-row\" href=\"#\"><span class=\"ds-contact-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719\"/></svg></span><span class=\"ds-contact-label\">WhatsApp</span><span class=\"ds-contact-value\">+57 321 527 2808</span><span class=\"ds-contact-arrow\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></span></a></li><li><a class=\"ds-contact-row\" href=\"#\"><span class=\"ds-contact-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 17V3\"/><path d=\"m6 11 6 6 6-6\"/><path d=\"M19 21H5\"/></svg></span><span class=\"ds-contact-label\">Español</span><span class=\"ds-contact-value\">Hoja de vida en español (PDF)</span><span class=\"ds-contact-arrow\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></span></a></li></ul>",
-      "css": ".ds-contact { list-style: none; margin: 0; padding: 0; max-width: 640px; border-top: 1px solid var(--line, #e3e3de); border-bottom: 1px solid var(--line, #e3e3de); color: var(--ink, #151614); font-family: var(--font-schibsted, \"Schibsted Grotesk\"), ui-sans-serif, system-ui, sans-serif; font-feature-settings: \"ss01\"; } .ds-contact li + li { border-top: 1px solid var(--line, #e3e3de); } .ds-contact-row { display: flex; align-items: center; gap: 16px; margin: 0 -16px; padding: 16px; border-radius: 12px; color: inherit; text-decoration: none; transition: background-color 200ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-contact-row:hover { background: var(--hover, #efefea); } .ds-contact-row:focus-visible { outline: 2px solid var(--accent, #2f6b3d); outline-offset: 3px; } .ds-contact svg { display: block; width: 16px; height: 16px; } .ds-contact-icon { flex-shrink: 0; color: var(--muted, #5c5f58); transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-contact-row:hover .ds-contact-icon { color: var(--accent, #2f6b3d); } .ds-contact-label { width: 5rem; flex-shrink: 0; font-size: 0.875rem; line-height: 1.4286; color: var(--muted, #5c5f58); } .ds-contact-value { flex: 1; min-width: 0; font-size: 1rem; line-height: 1.5; font-weight: 500; overflow-wrap: break-word; } .ds-contact-arrow { flex-shrink: 0; color: var(--muted, #5c5f58); transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-contact-row:hover .ds-contact-arrow { color: var(--ink, #151614); transform: translate(2px, -2px); } @media (max-width: 639px) { .ds-contact-label { display: none; } }"
+      "description": "A condensed section title joined to its measure by a dimension line: 1px Object Line closed by 1px by 11px lime ticks. In the build the line draws from the left as it enters the viewport.",
+      "html": "<div class=\"ds-sheet ds-sec-wrap\"><div class=\"ds-sec-head\"><h2 class=\"ds-sec-title\">Proyectos</h2><span class=\"ds-dim\" aria-hidden=\"true\"></span><p class=\"ds-dim-note\">9 proyectos · 2023 – 2026</p></div></div>",
+      "css": ".ds-sheet { padding: 1.5rem; background: var(--sheet, #090a09); color: var(--ink-2, #c5c8c5); font-family: var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, system-ui, sans-serif; font-variant-numeric: lining-nums tabular-nums; } .ds-sec-wrap { container-type: inline-size; } .ds-sec-head { display: flex; align-items: flex-end; gap: 1rem clamp(1rem, 2.4vw, 2rem); } @container (width < 40rem) { .ds-sec-head { flex-wrap: wrap; } .ds-sec-title { flex-basis: 100%; } } .ds-sec-title { margin: 0; font-family: var(--font-sofia-cond, \"Sofia Sans Condensed\"), var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, sans-serif; font-size: clamp(2.6rem, 5.4vw, 4.5rem); font-weight: 700; line-height: 0.92; letter-spacing: 0.005em; text-transform: uppercase; color: var(--ink, #f0f2f0); } .ds-dim { position: relative; flex: 1; min-width: 2.5rem; height: 1px; margin-bottom: 0.5rem; background: var(--line-strong, #474c48); } .ds-dim::before, .ds-dim::after { content: \"\"; position: absolute; top: -5px; width: 1px; height: 11px; background: var(--pen, #98f069); } .ds-dim::before { left: 0; } .ds-dim::after { right: 0; } .ds-dim-note { margin: 0 0 0.2rem; font-family: var(--font-sofia-cond, \"Sofia Sans Condensed\"), var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, sans-serif; font-size: 0.8125rem; font-weight: 600; line-height: 1.2; letter-spacing: 0.09em; text-transform: uppercase; white-space: nowrap; color: var(--ink-3, #959a96); }"
     },
     {
-      "name": "Accent Links",
+      "name": "Title Block",
       "kind": "custom",
-      "refersTo": "link-accent",
-      "description": "Cane-green text links with a 1px underline at 40% that goes full on hover; the trailing icon nudges 2px in its own direction.",
-      "html": "<p class=\"ds-links\"><a class=\"ds-link-accent\" href=\"#\">Ver hoja de vida completa (PDF)<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 17V3\"/><path d=\"m6 11 6 6 6-6\"/><path d=\"M19 21H5\"/></svg></a><a class=\"ds-link-accent ds-link-accent-ext\" href=\"#\">Ver código en GitHub<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></a></p>",
-      "css": ".ds-links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; margin: 0; font-family: var(--font-schibsted, \"Schibsted Grotesk\"), ui-sans-serif, system-ui, sans-serif; font-feature-settings: \"ss01\"; } .ds-link-accent { display: inline-flex; align-items: center; gap: 6px; font-size: 0.875rem; line-height: 1.4286; font-weight: 600; color: var(--accent, #2f6b3d); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.22em; text-decoration-color: color-mix(in oklab, var(--accent, #2f6b3d) 40%, transparent); } .ds-link-accent:hover { text-decoration-color: var(--accent, #2f6b3d); } .ds-link-accent:focus-visible { outline: 2px solid var(--accent, #2f6b3d); outline-offset: 3px; } .ds-link-accent svg { width: 16px; height: 16px; transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-link-accent:hover svg { transform: translateY(2px); } .ds-link-accent-ext { gap: 4px; font-weight: 500; } .ds-link-accent-ext svg { width: 14px; height: 14px; } .ds-link-accent-ext:hover svg { transform: translate(2px, -2px); }"
+      "description": "The cajetín: a ruled definition list with a fixed label column, terms in Label and values in Lettering White behind a vertical hairline. CV links carry a 1px lime underline.",
+      "html": "<div class=\"ds-sheet\"><dl class=\"ds-tb\" aria-label=\"Datos\"><div><dt>Rol</dt><dd>Desarrollador Full Stack</dd></div><div><dt>Ubicación</dt><dd>Cali, Colombia · UTC−5</dd></div><div><dt>Idiomas</dt><dd>Español nativo · Inglés A2</dd></div><div><dt>Hoja de vida</dt><dd><a class=\"ds-cv-link\" href=\"#\">ES <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 15V3\"/><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><path d=\"m7 10 5 5 5-5\"/></svg></a><a class=\"ds-cv-link\" href=\"#\">EN <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 15V3\"/><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><path d=\"m7 10 5 5 5-5\"/></svg></a></dd></div></dl></div>",
+      "css": ".ds-sheet { padding: 1.5rem; background: var(--sheet, #090a09); color: var(--ink-2, #c5c8c5); font-family: var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, system-ui, sans-serif; font-variant-numeric: lining-nums tabular-nums; } .ds-tb { max-width: 23.5rem; margin: 0; border-top: 1px solid var(--line-strong, #474c48); } .ds-tb > div { display: grid; grid-template-columns: 6.25rem 1fr; border-bottom: 1px solid var(--line, #242725); } .ds-tb dt { display: flex; align-items: center; padding: 0.7rem 0 0.7rem 0; font-family: var(--font-sofia-cond, \"Sofia Sans Condensed\"), var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, sans-serif; font-size: 0.75rem; font-weight: 600; line-height: 1.2; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-3, #959a96); } .ds-tb dd { display: flex; align-items: center; gap: 0.75rem; margin: 0; padding: 0.6rem 0.75rem; border-left: 1px solid var(--line, #242725); font-size: 0.9375rem; line-height: 1.35; color: var(--ink, #f0f2f0); } .ds-cv-link { display: inline-flex; align-items: center; gap: 0.375rem; font-family: var(--font-sofia-cond, \"Sofia Sans Condensed\"), var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, sans-serif; font-weight: 700; letter-spacing: 0.06em; color: inherit; text-decoration: underline; text-decoration-color: var(--pen, #98f069); text-decoration-thickness: 1px; text-underline-offset: 0.28em; transition: color 0.2s; } .ds-cv-link:hover { color: var(--pen, #98f069); } .ds-cv-link:focus-visible { outline: 2px solid var(--pen, #98f069); outline-offset: 3px; } .ds-cv-link svg { width: 0.875rem; height: 0.875rem; }"
     },
     {
-      "name": "Quiet Links",
+      "name": "Plan Diagram",
       "kind": "custom",
-      "refersTo": "link-quiet",
-      "description": "Muted icon-and-label links (GitHub, WhatsApp, language switch) that turn ink on hover in 150ms; no underline.",
-      "html": "<ul class=\"ds-quiet\"><li><a href=\"#\"><svg viewBox=\"0 0 16 16\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z\"/></svg>GitHub</a></li><li><a href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719\"/></svg>WhatsApp</a></li><li><a href=\"#\" hreflang=\"en\" lang=\"en\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5 8 6 6\"/><path d=\"m4 14 6-6 2-3\"/><path d=\"M2 5h12\"/><path d=\"M7 2h1\"/><path d=\"m22 22-5-10-5 10\"/><path d=\"M14 18h6\"/></svg>English</a></li></ul>",
-      "css": ".ds-quiet { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; font-family: var(--font-schibsted, \"Schibsted Grotesk\"), ui-sans-serif, system-ui, sans-serif; font-feature-settings: \"ss01\"; font-size: 0.875rem; line-height: 1.4286; font-weight: 500; } .ds-quiet a { display: inline-flex; align-items: center; gap: 6px; color: var(--muted, #5c5f58); text-decoration: none; transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-quiet a:hover { color: var(--ink, #151614); } .ds-quiet a:focus-visible { outline: 2px solid var(--accent, #2f6b3d); outline-offset: 3px; } .ds-quiet svg { width: 16px; height: 16px; }"
+      "refersTo": "plan-block",
+      "description": "Systems drawn as a plan on minor grid paper: 1px blocks joined by a stretching arrow, a measured figure dimensioned at the foot of a block, and a lime bracket binding the blocks that share a contract.",
+      "html": "<div class=\"ds-plan\"><p class=\"ds-plan-label\">Recorrido de un pedido</p><div class=\"ds-flow\"><div class=\"ds-node\"><h4>Gestión de pedidos</h4><p>Cada sede enciende su cocina, pantalla de cocina, despacho y domiciliarios.</p></div><div class=\"ds-arrow\"><svg aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"square\"><line x1=\"0\" y1=\"50%\" x2=\"100%\" y2=\"50%\"/><svg x=\"100%\" y=\"50%\" overflow=\"visible\"><path d=\"M-6-4.5 0 0l-6 4.5\"/></svg></svg></div><div class=\"ds-node\"><h4>Punto de venta</h4><p>Caja y cuadre, compras con impuestos, inventario por ubicación, producción en planta y 30 reportes.</p><p class=\"ds-node-dim\">Cobro: de 1,4 s a 0,7 s</p></div></div><div class=\"ds-contract\"><p>Las tres hablan el mismo contrato de pedido, con transacciones e identificadores idempotentes: un pedido nunca se cobra dos veces.</p></div></div>",
+      "css": ".ds-plan { padding: 1.5rem; background-color: var(--sheet, #090a09); background-image: linear-gradient(var(--grid-minor, rgb(255 255 255 / 0.022)) 1px, transparent 1px), linear-gradient(90deg, var(--grid-minor, rgb(255 255 255 / 0.022)) 1px, transparent 1px); background-size: 1.5rem 1.5rem; color: var(--ink-2, #c5c8c5); font-family: var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, system-ui, sans-serif; font-variant-numeric: lining-nums tabular-nums; } .ds-plan-label { margin: 0; font-family: var(--font-sofia-cond, \"Sofia Sans Condensed\"), var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, sans-serif; font-size: 0.8125rem; font-weight: 600; line-height: 1.2; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-3, #959a96); } .ds-flow { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: stretch; margin-top: 0.875rem; } .ds-node { display: flex; flex-direction: column; padding: 1rem 1.125rem 1.125rem; border: 1px solid var(--line-strong, #474c48); background: var(--sheet, #090a09); } .ds-node h4 { margin: 0; font-family: var(--font-sofia-cond, \"Sofia Sans Condensed\"), var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, sans-serif; font-size: 1rem; font-weight: 700; line-height: 1.15; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink, #f0f2f0); } .ds-node p { margin: 0.5rem 0 0; font-size: 0.9375rem; line-height: 1.45; } .ds-node .ds-node-dim { position: relative; margin-top: auto; padding-top: 1.6rem; font-family: var(--font-sofia-cond, \"Sofia Sans Condensed\"), var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, sans-serif; font-size: 1rem; font-weight: 700; line-height: 1.2; letter-spacing: 0.04em; color: var(--pen, #98f069); } .ds-node-dim::before { content: \"\"; position: absolute; inset: 0.95rem 0 auto 0; height: 1px; background: var(--line-strong, #474c48); } .ds-node-dim::after { content: \"\"; position: absolute; left: 0; top: calc(0.95rem - 4px); width: 1px; height: 9px; background: var(--pen, #98f069); } .ds-arrow { display: grid; place-items: center; width: clamp(1.75rem, 3.2vw, 3rem); color: var(--ink-3, #959a96); } .ds-arrow svg { width: 100%; height: 0.75rem; overflow: visible; } .ds-arrow svg line, .ds-arrow svg path { vector-effect: non-scaling-stroke; } .ds-contract { position: relative; margin-top: 0.875rem; padding: 1rem 0 0; text-align: center; } .ds-contract::before { content: \"\"; position: absolute; inset: 0 0 auto 0; height: 0.5rem; border: 1px solid var(--pen, #98f069); border-top: 0; } .ds-contract p { display: inline-block; max-width: 38rem; margin: 0; font-size: 0.9375rem; line-height: 1.45; color: var(--ink, #f0f2f0); }"
     },
     {
-      "name": "Availability Line",
+      "name": "Figure with To-Scale Bar",
       "kind": "custom",
-      "refersTo": "availability-dot",
-      "description": "A static 8px cane-green dot before a muted status line; one of the accent's sanctioned uses.",
-      "html": "<p class=\"ds-availability\"><span class=\"ds-availability-dot\" aria-hidden=\"true\"></span>Abierto a nuevas oportunidades · Cali, Colombia · remoto</p>",
-      "css": ".ds-availability { display: flex; align-items: center; gap: 8px; margin: 0; font-family: var(--font-schibsted, \"Schibsted Grotesk\"), ui-sans-serif, system-ui, sans-serif; font-feature-settings: \"ss01\"; font-size: 0.875rem; line-height: 1.4286; color: var(--muted, #5c5f58); } .ds-availability-dot { flex-shrink: 0; width: 8px; height: 8px; border-radius: 9999px; background: var(--accent, #2f6b3d); }"
+      "refersTo": "scale-bar",
+      "description": "One cell of the figures rail: the value in condensed Figure, a sentence of scope, and a 5px bar whose lime span is the real ratio (0.7 of 1.4 seconds).",
+      "html": "<div class=\"ds-sheet\"><div class=\"ds-fig\"><p class=\"ds-fig-value\">2 veces más rápido</p><p class=\"ds-fig-label\">Cobrar una venta pasó de 1,4 s a 0,7 s.</p><div class=\"ds-scale\" role=\"img\" aria-label=\"0,7 de 1,4 segundos\" style=\"--ratio: 0.5036\"><i></i></div></div></div>",
+      "css": ".ds-sheet { padding: 1.5rem; background: var(--sheet, #090a09); color: var(--ink-2, #c5c8c5); font-family: var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, system-ui, sans-serif; font-variant-numeric: lining-nums tabular-nums; } .ds-fig { max-width: 22rem; padding: 0.95rem 1.25rem 1rem; border-top: 1px solid var(--line, #242725); border-left: 1px solid var(--line-strong, #474c48); } .ds-fig-value { margin: 0; font-family: var(--font-sofia-cond, \"Sofia Sans Condensed\"), var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, sans-serif; font-size: 1.5rem; font-weight: 700; line-height: 1.1; letter-spacing: 0.02em; color: var(--ink, #f0f2f0); } .ds-fig-label { margin: 0.3rem 0 0; font-size: 0.875rem; line-height: 1.42; color: var(--ink-2, #c5c8c5); } .ds-scale { position: relative; height: 5px; margin-top: 0.7rem; background: var(--line-strong, #474c48); } .ds-scale i { position: absolute; inset: 0 auto 0 0; width: calc(var(--ratio) * 100%); background: var(--pen, #98f069); }"
     },
     {
-      "name": "Hairline Definition Rows",
+      "name": "Project Register Row",
       "kind": "custom",
-      "description": "The stack list: ruled top, bottom and between, a 10rem muted label column and body items. The system's replacement for cards.",
-      "html": "<dl class=\"ds-dl\"><div><dt>Lenguajes</dt><dd>JavaScript, TypeScript, SQL, Python, HTML5, CSS3</dd></div><div><dt>Frontend</dt><dd>React, Next.js, Vite, Tailwind CSS, Angular, Zustand, Recharts</dd></div><div><dt>Backend</dt><dd>Node.js, Express, NestJS, APIs REST, JWT, Zod</dd></div></dl>",
-      "css": ".ds-dl { margin: 0; max-width: 640px; border-top: 1px solid var(--line, #e3e3de); border-bottom: 1px solid var(--line, #e3e3de); color: var(--ink, #151614); font-family: var(--font-schibsted, \"Schibsted Grotesk\"), ui-sans-serif, system-ui, sans-serif; font-feature-settings: \"ss01\"; } .ds-dl > div { display: grid; grid-template-columns: 10rem 1fr; column-gap: 24px; row-gap: 4px; padding: 14px 0; } .ds-dl > div + div { border-top: 1px solid var(--line, #e3e3de); } .ds-dl dt { font-size: 0.875rem; line-height: 1.4286; color: var(--muted, #5c5f58); } .ds-dl dd { margin: 0; font-size: 1rem; line-height: 1.625; } @media (max-width: 639px) { .ds-dl > div { grid-template-columns: 1fr; } }"
+      "refersTo": "register-row",
+      "description": "Signature list row, shown closed and open: year, title with its client line, summary and a square toggle. Open or hovered, the row steps to Raised Sheet and the toggle turns lime; the detail keeps the row's columns and holds the flow chain and the spec table, with private code stated behind a lock.",
+      "html": "<div class=\"ds-reg\"><article class=\"ds-reg-row\" data-open=\"false\"><div class=\"ds-reg-cols ds-reg-head\"><span class=\"ds-reg-year\">2026</span><div><h4 class=\"ds-reg-title\">App de Ventas de Claro</h4><p class=\"ds-reg-label\">Softgic · Claro</p></div><p class=\"ds-reg-sum\">Flujo de venta de planes y servicios en Next.js 16 y React 19.</p><button class=\"ds-reg-toggle\" type=\"button\" aria-expanded=\"false\" aria-label=\"Ver detalle: App de Ventas de Claro\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"M12 5v14\"/></svg></button></div></article><article class=\"ds-reg-row\" data-open=\"true\"><div class=\"ds-reg-cols ds-reg-head\"><span class=\"ds-reg-year\">2025</span><div><h4 class=\"ds-reg-title\">Mini programas para la super app de Claro</h4><p class=\"ds-reg-label\">Softgic · Claro</p></div><p class=\"ds-reg-sum\">Cinemark Preferencial y el flujo de compra de Templo de la Moda, dentro de la app de Claro.</p><button class=\"ds-reg-toggle\" type=\"button\" aria-expanded=\"true\" aria-label=\"Cerrar detalle: Mini programas para la super app de Claro\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"M12 5v14\"/></svg></button></div><div class=\"ds-reg-cols ds-reg-detail\"><span class=\"ds-reg-spacer\" aria-hidden=\"true\"></span><div><h5 class=\"ds-reg-label\">Contexto</h5><p>Los comercios aliados de Claro venden y dan beneficios a los usuarios dentro de la super app, sin que la gente instale otra aplicación.</p><dl class=\"ds-spec\"><div><dt class=\"ds-reg-label\">Rol</dt><dd>Desarrollador</dd></div><div><dt class=\"ds-reg-label\">Stack</dt><dd>Mini Programs (AXML, ACSS) · JavaScript · Azure DevOps</dd></div><div><dt class=\"ds-reg-label\">Código</dt><dd><span class=\"ds-code-private\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"18\" height=\"11\" x=\"3\" y=\"11\" rx=\"2\" ry=\"2\"/><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"/></svg> Privado, del cliente</span></dd></div></dl></div><div><h5 class=\"ds-reg-label\">Lo que hice</h5><ul class=\"ds-done\"><li>Templo de la Moda: carrito, resumen de pago y formulario de datos de envío.</li><li>Vistas en AXML y estilos en ACSS según el diseño de Claro, con ramas por desarrollador y entregas en Azure DevOps.</li></ul></div><span class=\"ds-reg-spacer\" aria-hidden=\"true\"></span></div></article></div>",
+      "css": ".ds-reg { container-type: inline-size; background: var(--sheet, #090a09); border-top: 1px solid var(--line-strong, #474c48); color: var(--ink-2, #c5c8c5); font-family: var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, system-ui, sans-serif; font-variant-numeric: lining-nums tabular-nums; } .ds-reg-row { position: relative; border-bottom: 1px solid var(--line, #242725); transition: background-color 0.25s; } .ds-reg-row:hover, .ds-reg-row[data-open=\"true\"] { background: var(--sheet-2, #0f1110); } .ds-reg-cols { display: grid; grid-template-columns: 5.5rem minmax(0, 1.05fr) minmax(0, 1.25fr) 2.25rem; gap: 0.5rem clamp(1rem, 2.4vw, 2.25rem); padding-inline: clamp(0.75rem, 1.4vw, 1.25rem); } .ds-reg-head { align-items: start; padding-block: 1.5rem; } .ds-reg-year { padding-top: 0.3rem; font-family: var(--font-sofia-cond, \"Sofia Sans Condensed\"), var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, sans-serif; font-size: 0.9375rem; font-weight: 600; letter-spacing: 0.05em; color: var(--ink-3, #959a96); } .ds-reg-title { margin: 0; font-size: clamp(1.1875rem, 1.7vw, 1.4375rem); font-weight: 700; line-height: 1.18; letter-spacing: -0.01em; color: var(--ink, #f0f2f0); } .ds-reg-label { margin: 0.4rem 0 0; font-family: var(--font-sofia-cond, \"Sofia Sans Condensed\"), var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, sans-serif; font-size: 0.8125rem; font-weight: 600; line-height: 1.2; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-3, #959a96); } .ds-reg-sum { margin: 0; font-size: 1rem; line-height: 1.5; } .ds-reg-toggle { display: grid; place-items: center; width: 2.25rem; height: 2.25rem; padding: 0; border: 1px solid var(--line-strong, #474c48); border-radius: 0; background: transparent; color: var(--ink, #f0f2f0); cursor: pointer; transition: border-color 0.2s, color 0.2s; } .ds-reg-toggle::after { content: \"\"; position: absolute; inset: 0; } .ds-reg-toggle svg { width: 1rem; height: 1rem; transition: rotate 0.5s var(--ease, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-reg-row:hover .ds-reg-toggle, .ds-reg-row[data-open=\"true\"] .ds-reg-toggle { border-color: var(--pen, #98f069); color: var(--pen, #98f069); } .ds-reg-row[data-open=\"true\"] .ds-reg-toggle svg { rotate: 45deg; } .ds-reg-toggle:focus-visible { outline: 2px solid var(--pen, #98f069); outline-offset: 3px; } .ds-reg-detail { position: relative; z-index: 1; padding-block: 0.5rem 2rem; } .ds-reg-detail h5 { margin: 0 0 0.6rem; } .ds-reg-detail p { margin: 0; font-size: 1rem; line-height: 1.55; } .ds-spec { margin: 1.5rem 0 0; border-top: 1px solid var(--line, #242725); } .ds-spec > div { display: grid; grid-template-columns: 4.75rem 1fr; gap: 0.75rem; padding-block: 0.6rem; border-bottom: 1px solid var(--line, #242725); font-size: 0.9375rem; line-height: 1.4; } .ds-spec dt { margin: 0; padding-top: 0.15rem; font-size: 0.75rem; } .ds-spec dd { margin: 0; color: var(--ink, #f0f2f0); } .ds-code-private { display: inline-flex; align-items: center; gap: 0.45rem; color: var(--ink-2, #c5c8c5); } .ds-code-private svg { width: 0.875rem; height: 0.875rem; flex-shrink: 0; } .ds-done { margin: 0; padding: 0; list-style: none; } .ds-done li { position: relative; padding-left: 1.5rem; font-size: 1rem; line-height: 1.55; } .ds-done li + li { margin-top: 0.6rem; } .ds-done li::before { content: \"\"; position: absolute; left: 0; top: 0.78em; width: 0.75rem; height: 1px; background: var(--pen, #98f069); } @container (width < 44rem) { .ds-reg-cols { grid-template-columns: minmax(0, 1fr) 2.25rem; padding-inline: 0.75rem; } .ds-reg-head .ds-reg-year { grid-column: 1 / -1; padding-top: 0; } .ds-reg-head .ds-reg-sum { grid-column: 1 / -1; grid-row: 3; } .ds-reg-head .ds-reg-toggle { grid-column: 2; grid-row: 2; } .ds-reg-detail { row-gap: 1.75rem; } .ds-reg-detail > * { grid-column: 1 / -1; } .ds-reg-detail > .ds-reg-spacer { display: none; } } @media (prefers-reduced-motion: reduce) { .ds-reg-row, .ds-reg-toggle, .ds-reg-toggle svg { transition-duration: 0.01ms !important; animation: none !important; } }"
+    },
+    {
+      "name": "Tags and Step Chain",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "The two chip forms. Tags list the materials of a drawing in a hairline outline; a chain boxes the steps of a flow and joins them with drawn 1px arrows. Neither is interactive.",
+      "html": "<div class=\"ds-sheet\"><ul class=\"ds-tags\" aria-label=\"Stack\"><li>React</li><li>Vite</li><li>Node.js</li><li>Express</li><li>Firestore</li><li>node:test</li></ul><ol class=\"ds-chain\"><li><span>Carrito</span></li><li><svg viewBox=\"0 0 24 10\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"square\"><path d=\"M4 5h15M15 1.5 19.5 5 15 8.5\"/></svg><span>Resumen de pago</span></li><li><svg viewBox=\"0 0 24 10\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"square\"><path d=\"M4 5h15M15 1.5 19.5 5 15 8.5\"/></svg><span>Datos de envío</span></li></ol></div>",
+      "css": ".ds-sheet { padding: 1.5rem; background: var(--sheet, #090a09); color: var(--ink-2, #c5c8c5); font-family: var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, system-ui, sans-serif; font-variant-numeric: lining-nums tabular-nums; } .ds-tags { display: flex; flex-wrap: wrap; gap: 0.375rem; margin: 0; padding: 0; list-style: none; } .ds-tags li { padding: 0.3rem 0.55rem; border: 1px solid var(--line, #242725); font-family: var(--font-sofia-cond, \"Sofia Sans Condensed\"), var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, sans-serif; font-size: 0.8125rem; font-weight: 600; line-height: 1.2; letter-spacing: 0.05em; color: var(--ink-2, #c5c8c5); } .ds-chain { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0; margin: 1.25rem 0 0; padding: 0; list-style: none; } .ds-chain li { display: inline-flex; align-items: center; font-family: var(--font-sofia-cond, \"Sofia Sans Condensed\"), var(--font-sofia, \"Sofia Sans\"), ui-sans-serif, sans-serif; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.05em; color: var(--ink, #f0f2f0); } .ds-chain li span { padding: 0.32rem 0.6rem; border: 1px solid var(--line-strong, #474c48); background: var(--sheet, #090a09); } .ds-chain li svg { width: 1.5rem; height: 0.625rem; color: var(--ink-3, #959a96); overflow: visible; }"
     }
   ],
   "narrative": {
-    "northStar": "The Quiet Index",
-    "overview": "The site is an index, not a showcase. Off-white paper, soft-black ink, hairline rules and a single grotesk family carry every screen; the only color is a deep cane green taken from the sugar-cane fields of the Valle del Cauca, and it appears only where something can be acted on or is currently true. Nothing sits on a card, nothing casts a shadow, and no single project is staged as a hero. Hierarchy comes from three weight steps, a handful of sizes and the split between ink and muted text, never from surfaces.\n\nThe page is dense in content and sparse in apparatus. On desktop a sticky identity column (name, role, intro, section nav, actions, availability) stays put while a reading column of hairline-separated lists scrolls beside it: the work index, the process steps, the experience timeline, the stack groups, the contact rows. Every list is row-based, and detail lives one click deep inside the row that names it, not on another page or in a modal. On phones the same stack runs in one column and the section nav is dropped.\n\nMotion follows the owner's standing preference: clean, minimal, few animations, each one well made. There is one staggered entrance for the identity column, rows that open in place, a nav line that grows to mark the current section, a crossfade when the language changes, and 2px arrow nudges on hover. Everything that arrives uses one strong ease-out curve; everything that leaves is shorter. Confirmed rejections from the direction contract: hero banners, card grids, metric tiles.",
+    "northStar": "The Dimensioned Sheet",
+    "overview": "The site is one technical drawing sheet of a developer's career. A charcoal sheet carries a faint drafting grid, warm light-gray linework and lettering from the DIN lineage. Lime is the only color and it behaves like a reviewer's pen: it ticks the ends of dimension lines, writes the measured figures, underlines what is active and fills one block per view. A claim is set the way a drawing sets it, as a figure beside its basis, and the systems he built are drawn as plans with blocks, arrows and brackets.\n\nThe density is that of a drawing, not of a landing page. The opening view is a framed sheet with zone ticks, the name in caps, a real cut-out portrait standing in a drawn view frame, and a side rail with numbered notes and a title block (role, location, work mode, engagement, languages, revision, CV). Each section opens with a condensed title joined by a dimension line to its measure. The main project is a bordered sheet holding a plan and a rail of figures, the other projects are register rows that unfold in place, the process is a dimension chain, experience is a timeline drawn to scale and the stack is a ruled table. The page ends on the only inverted sheet: lime ground, dark ink.\n\nMotion has one idea: lines are drawn and content stays put. On load the frame plots its four strokes, the name rises out of its line box and the portrait develops. On scroll each dimension line, bracket and to-scale bar draws from its origin as it enters the viewport, and a lime hairline under the sticky header grows with the page. A two-button toggle swaps the photo for the illustrated avatar with a circular reveal from the face. All CSS motion is removed under `prefers-reduced-motion: reduce`. The direction contract refused the split hero with an avatar, the project card grid and the row of metric tiles; the owner's brief fixed the dark charcoal ground and the lime accent.",
     "keyCharacteristics": [
-      "Paper, ink and one green; the green marks interaction and live state only.",
-      "1px hairline rules are the only structure; no shadows, no cards, no panels at rest.",
-      "One family (Schibsted Grotesk) in three weights, stylistic set 01 everywhere, tabular figures for years and dates.",
-      "Sticky identity column beside a scrolling index; a single column on phones.",
-      "Work rows expand in place instead of linking out to case-study pages.",
-      "Strong ease-out for arrivals, short plain fades for exits, all of it off under reduced motion."
+      "One dark sheet (`color-scheme: dark`); there is no light theme.",
+      "One accent, lime, used as a pen: ticks, measured figures, active and focus states, one filled block per view.",
+      "One superfamily in two widths: Sofia Sans for the name, titles and sentences; Sofia Sans Condensed for section titles, labels, figures and controls. No monospace.",
+      "Square corners everywhere; the portrait reveal is the only circle.",
+      "1px linework carries all structure: frame, title blocks, dimension lines, plan blocks. No shadows.",
+      "Measurements are real: bars and the timeline are drawn to scale from the content data.",
+      "Lines draw, content stays put, and all CSS motion is removed under reduced motion."
     ],
     "rules": [
       {
-        "name": "The Open Slow, Close Fast Rule",
-        "body": "Arrivals take their time on the ease-out curve (420ms row, 700ms entrance); departures are cut short (220ms collapse, 160ms content fade) so nothing lingers after the reader is done with it.",
-        "section": "motion"
-      },
-      {
-        "name": "The One Green Rule",
-        "body": "Cane green marks what can be acted on or what is currently true: links, focus, the active section, availability, and an icon under the pointer. It never fills a surface, never tints a heading, never decorates. There is no second accent.",
+        "name": "The Reviewer's Pen Rule",
+        "body": "Lime marks what a reviewer would mark: the ticks that close a dimension line, a measured figure, the numeral of a note or step, the active nav item, the pressed toggle, focus, the underline of a link. It never colors a heading or running text, and it never outlines a container at rest.",
         "section": "colors"
       },
       {
-        "name": "The Two Inks Rule",
-        "body": "Hierarchy in text is ink for what is read and muted for what is scanned (dates, organizations, labels, hints). The only intermediate is ink at 80% for work-row summaries.",
+        "name": "The One Lime Block Rule",
+        "body": "A view holds at most one lime-filled block: the primary action in the hero, then the closing sheet. Every other lime fill is a measurement or a mark: the measured span of a to-scale bar, the current job on the timeline, the 6px corner of the monogram, selected text.",
         "section": "colors"
       },
       {
-        "name": "The Three Weights Rule",
-        "body": "400 is for reading, 500 for labels and values, 600 for names and titles. Nothing is set at 700 or heavier, nothing lighter than 400.",
+        "name": "The Structure-Only Line Rule",
+        "body": "Object Line and Hairline sit at 2.3:1 and 1.3:1 on the sheet, so a line organizes but never carries meaning alone. Every outlined control also holds a text label or an icon at text contrast, and every bar has its figure written beside it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Width Is Hierarchy Rule",
+        "body": "Normal width is for language: the name, project and role titles, sentences. Condensed is for lettering: section titles, labels, figures, dates, controls. A new element picks its width by that test; a second family or a monospace is never the answer.",
         "section": "typography"
       },
       {
-        "name": "The Tabular Time Rule",
-        "body": "Every year, date range and step number is set in tabular figures and in muted, so columns of time align down the page.",
+        "name": "The Lettering Caps Rule",
+        "body": "Uppercase belongs to the name, the closing question, section titles and condensed labels and controls, tracked 0.06em to 0.09em at label sizes. Project titles, figures, tags and sentences stay in sentence case.",
         "section": "typography"
       },
       {
-        "name": "The Bleed Rule",
-        "body": "Interactive rows extend their hover fill 16px past the text column on both sides (negative margin, matching padding), so text stays flush with the hairlines and the fill reads as a highlight, not a box.",
+        "name": "The Tabular Figures Rule",
+        "body": "`font-variant-numeric: lining-nums tabular-nums` is set once on the body, so every figure, year and date aligns in columns wherever it appears.",
+        "section": "typography"
+      },
+      {
+        "name": "The Inhabited Rail Rule",
+        "body": "The right-hand rail is where a drawing keeps its notes: numbered notes and the title block in the hero, measured figures beside the plan. A rail is never empty and never decorative, and below 72rem it folds under what it annotates.",
         "section": "layout"
       },
       {
-        "name": "The Flat Paper Rule",
-        "body": "Nothing floats. A surface may change tone under the pointer; it never lifts, never casts, and never sits in a box at rest.",
+        "name": "The One Grid Per Entry Rule",
+        "body": "A register row and its unfolded detail sit on the same four columns, and experience and stack share the 10rem label column, so the same field is found in the same place down the page.",
+        "section": "layout"
+      },
+      {
+        "name": "The Space Above Rule",
+        "body": "A section is announced by the space above its title, not by a rule or a tinted band. The only full-width change of ground is the closing sheet.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Sheet Rule",
+        "body": "Nothing floats and nothing casts. A surface may step one tone under the pointer or while open; rank is shown by inversion to lime, once, at the end of the page.",
         "section": "elevation"
+      },
+      {
+        "name": "The Line-and-Tick Rule",
+        "body": "One geometry draws everything: a 1px line closed by a 1px lime tick. Frame, dividers, dimension lines, active states and scroll progress are all that same line; nothing gets a thicker border to look important.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Grid Under Drawings Rule",
+        "body": "The drafting grid appears only under things that are drawings: the hero sheet (masked so it is strongest around the portrait), the portrait's view frame and the main project's plan. Tables, the register, the timeline and the closing sheet sit on plain sheet.",
+        "section": "shapes"
       }
     ],
     "dos": [
-      "Do draw every list as hairline rows (1px `line`, closed top and bottom) and keep a row's detail inside that row, expanding in place.",
-      "Do keep cane green to links, focus, the active nav line, the availability dot and icons under the pointer; selection and caret use its wash and its hue.",
-      "Do set years, date ranges and step numbers in muted tabular figures.",
-      "Do use the ease-out curve (`cubic-bezier(0.23, 1, 0.32, 1)`) for anything that arrives, and make exits shorter than entrances (open 420ms, close 220ms).",
-      "Do add every new motion class to the `prefers-reduced-motion` block, leaving content fully visible and the interaction working without tweening.",
-      "Do bleed hover fills 16px past the text column with the 12px row radius, so text stays flush with the rules.",
-      "Do pair every icon with a visible text label: 16px Lucide outline, GitHub as its filled mark.",
-      "Do define any new color for both themes by role, and keep `theme-color` equal to `paper` and `paper-dark`."
+      "Do draw structure with 1px lines: `line` for dividers inside a table or list, `line-strong` for outlines, frames and dimension lines.",
+      "Do close a dimension line with 1px × 11px lime ticks and end it on a real measure set in Label.",
+      "Do keep lime for marks, measured figures, active and focus states, and one filled block per view.",
+      "Do choose width by role: Sofia Sans for names, titles and sentences; Sofia Sans Condensed for section titles, labels, figures, dates and controls.",
+      "Do write a figure with its basis: the value in Figure, one sentence of scope or source under it, and a to-scale bar only when the value is a ratio of two real numbers.",
+      "Do keep every project on the register grid with the same spec fields; when code is private the field stays and says so with the lock icon.",
+      "Do number only what is ordered: hero notes and process steps carry a lime condensed numeral, sections carry none.",
+      "Do put a label beside or under what it names: the measure at the end of the dimension line, the client line under the project title.",
+      "Do build new motion as a line growing from its origin (`scaleX` or `scaleY`, `cubic-bezier(0.16, 1, 0.3, 1)` on load, a scroll-linked `view()` timeline below the hero), and make sure the `prefers-reduced-motion: reduce` block stops it.",
+      "Do use Lucide outline icons at about 1rem, with a text label beside them or an accessible name on a square toggle, and 1px square-capped SVG for arrows inside drawings."
     ],
     "donts": [
-      "Don't cast shadows or place content on cards or tinted panels at rest; the only fill is Pressed Paper, under the pointer.",
-      "Don't build hero banners, card grids or metric tiles; figures stay inside sentences.",
-      "Don't introduce a second accent, a gradient, or a second typeface.",
-      "Don't set type at 700 or heavier.",
-      "Don't animate the content column on load or on scroll; the identity column's single entrance is the only load motion.",
-      "Don't use the accent on headings, fills or decoration.",
-      "Don't put eyebrows or kickers above section titles; a hint line, when needed, goes under the title in muted Meta."
+      "Don't round corners or cast shadows; the portrait reveal is the only circle and nothing floats.",
+      "Don't put content on cards, lay projects out as a card grid or set figures as a row of metric tiles; projects are register rows and figures live in a ruled rail beside the plan they measure.",
+      "Don't add a second accent, a gradient fill, gradient text or glass; the only gradients are the 1px grid rulings and the masks that fade them.",
+      "Don't set headings or running text in lime, and don't fill a second block with lime in the same view.",
+      "Don't bring in a second typeface or a monospace, and don't let a system face stand in for Sofia Sans in display sizes.",
+      "Don't place a small label above a heading; the heading speaks first.",
+      "Don't draw the drafting grid under tables, the register, the timeline or the closing sheet.",
+      "Don't animate content on scroll; below the hero only lines, brackets and bars draw.",
+      "Don't rely on a line alone to show a control or a state; Object Line is 2.3:1 on the sheet.",
+      "Don't add a light theme; the sheet is dark only."
     ]
   }
 }

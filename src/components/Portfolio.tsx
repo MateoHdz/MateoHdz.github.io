@@ -1,16 +1,30 @@
-import { ArrowDownToLine, ArrowUpRight, Languages, Mail, MessageCircle } from "lucide-react";
+import { ArrowDown, ArrowUp, ArrowUpRight, Download, Mail, MessageCircle } from "lucide-react";
 import type { CSSProperties, ReactNode } from "react";
-import type { Site } from "@/content/site";
-import { GithubMark, LinkedinMark } from "./BrandIcons";
-import { SectionNav } from "./SectionNav";
-import { WorkIndex } from "./WorkIndex";
+import { CV_EN, CV_ES, EMAIL, GITHUB, LINKEDIN, REVISION, TIMELINE, WHATSAPP, type PlanNode, type Site } from "@/content/site";
+import { SITE_URL } from "@/metadata";
+import { FlowArrow, StepArrow } from "./Arrows";
+import { GithubIcon, LinkedinIcon } from "./BrandIcons";
+import { CopyEmail } from "./CopyEmail";
+import { Header } from "./Header";
+import { Portrait } from "./Portrait";
+import { ProjectRow } from "./ProjectRow";
 
-const delay = (i: number) => ({ "--i": i }) as CSSProperties;
+const ZONES_X = ["A", "B", "C", "D", "E", "F", "G", "H"];
+const ZONES_Y = ["1", "2", "3", "4"];
 
-// En pantallas angostas el correo se parte antes de la arroba, nunca dentro del dominio.
-function breakBeforeAt(value: string) {
+// Posición de un mes sobre la línea de tiempo, como fracción de 0 a 1.
+const monthIndex = (ym: string) => {
+  const [year, month] = ym.split("-").map(Number);
+  return year * 12 + month - 1;
+};
+const axisStart = monthIndex(TIMELINE.start);
+const axisSpan = monthIndex(TIMELINE.end) + 1 - axisStart;
+const startOf = (ym: string) => (monthIndex(ym) - axisStart) / axisSpan;
+const endOf = (ym: string) => (monthIndex(ym) + 1 - axisStart) / axisSpan;
+
+// El correo solo puede partirse antes de la arroba.
+function breakEmail(value: string) {
   const at = value.indexOf("@");
-  if (at < 1) return value;
   return (
     <>
       {value.slice(0, at)}
@@ -20,229 +34,421 @@ function breakBeforeAt(value: string) {
   );
 }
 
-function Section({ id, title, children, wide = false }: { id: string; title: string; children: ReactNode; wide?: boolean }) {
+function SectionHead({ id, title, measure }: { id: string; title: string; measure?: string }) {
   return (
-    <section id={id} aria-labelledby={`${id}-titulo`} className="scroll-mt-16 pt-24 first:pt-0">
-      <h2 id={`${id}-titulo`} className="mb-6 text-2xl font-semibold tracking-[-0.02em]">
+    <div className="sec-head">
+      <h2 id={`${id}-titulo`} className="sec-title">
         {title}
       </h2>
-      <div className={wide ? "" : "max-w-[64ch]"}>{children}</div>
+      <span className="dim" aria-hidden="true" />
+      {measure && <p className="label dim-note">{measure}</p>}
+    </div>
+  );
+}
+
+function Section({ id, title, measure, children }: { id: string; title: string; measure?: string; children: ReactNode }) {
+  return (
+    <section id={id} aria-labelledby={`${id}-titulo`} className="band">
+      <div className="shell">
+        <SectionHead id={id} title={title} measure={measure} />
+        {children}
+      </div>
     </section>
   );
 }
 
 export function Portfolio({ s }: { s: Site }) {
-  const navItems = [
-    { id: "trabajo", label: s.nav.work },
-    { id: "como-trabajo", label: s.nav.process },
-    { id: "experiencia", label: s.nav.experience },
-    { id: "stack", label: s.nav.stack },
-    { id: "contacto", label: s.nav.contact },
-  ];
-  const otherLang = s.lang === "es" ? "en" : "es";
+  const { hero, work, process, experience, stack, contact } = s;
+  const fl = work.flagship;
+
+  const person = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: s.name,
+    jobTitle: hero.block[0].value,
+    url: SITE_URL,
+    email: EMAIL,
+    address: { "@type": "PostalAddress", addressLocality: "Cali", addressCountry: "CO" },
+    sameAs: [GITHUB, LINKEDIN],
+  };
 
   return (
-    <div className="mx-auto max-w-[1200px] px-6 sm:px-10 lg:grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-20 lg:px-16">
+    <>
       <a
-        href="#contenido"
-        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-10 focus:rounded-lg focus:bg-ink focus:px-4 focus:py-2 focus:text-paper"
+        href="#top"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-pen focus:px-4 focus:py-2 focus:text-sm focus:font-bold focus:text-pen-ink"
       >
-        {s.lang === "es" ? "Saltar al contenido" : "Skip to content"}
+        {s.ui.skip}
       </a>
 
-      <header className="pt-16 sm:pt-20 lg:sticky lg:top-0 lg:flex lg:h-dvh lg:flex-col lg:justify-between lg:py-20">
-        <div>
-          <h1 className="rise text-[2.5rem] font-semibold leading-[1.02] tracking-[-0.035em] sm:text-5xl" style={delay(0)}>
-            {s.name}
-          </h1>
-          <p className="rise mt-3 text-lg font-medium tracking-[-0.01em]" style={delay(1)}>
-            {s.role}
-          </p>
-          <p className="rise mt-4 max-w-[37ch] leading-relaxed text-muted" style={delay(2)}>
-            {s.intro}
-          </p>
+      <Header s={s} />
 
-          <div className="rise mt-14 hidden lg:block" style={delay(3)}>
-            <SectionNav items={navItems} label={s.lang === "es" ? "Secciones" : "Sections"} />
+      <main id="top">
+        <section className="hero shell" aria-labelledby="inicio-titulo">
+          <div className="sheet">
+            <div className="frame" aria-hidden="true">
+              <i />
+              <i />
+              <i />
+              <i />
+            </div>
+
+            <div className="sheet-main">
+              <div className="zones-x" aria-hidden="true">
+                {ZONES_X.map((z) => (
+                  <span key={z}>{z}</span>
+                ))}
+              </div>
+              <div className="zones-y" aria-hidden="true">
+                {ZONES_Y.map((z) => (
+                  <span key={z}>{z}</span>
+                ))}
+              </div>
+
+              <div className="hero-id">
+                <h1 id="inicio-titulo" className="hero-title">
+                  <span className="row">
+                    <span>{s.firstName}</span>
+                  </span>{" "}
+                  <span className="row">
+                    <span>{s.lastName}</span>
+                  </span>
+                </h1>
+                <p className="hero-lead">
+                  <strong>{hero.leadStrong}</strong> {hero.lead}
+                </p>
+                <div className="hero-actions">
+                  <a href="#proyectos" className="btn btn-pen">
+                    {hero.work} <ArrowDown className="nudge-down" aria-hidden="true" />
+                  </a>
+                  <a href={hero.cvHref} target="_blank" rel="noreferrer" className="btn btn-line">
+                    {hero.cv} <Download className="nudge-down" aria-hidden="true" />
+                  </a>
+                </div>
+                <ul className="hero-links label">
+                  <li>
+                    <a href={GITHUB} target="_blank" rel="noreferrer">
+                      <GithubIcon /> GitHub
+                    </a>
+                  </li>
+                  <li>
+                    <a href={LINKEDIN} target="_blank" rel="noreferrer">
+                      <LinkedinIcon /> LinkedIn
+                    </a>
+                  </li>
+                  <li>
+                    <a href={WHATSAPP} target="_blank" rel="noreferrer">
+                      <MessageCircle aria-hidden="true" /> WhatsApp
+                    </a>
+                  </li>
+                  <li>
+                    <a href={`mailto:${EMAIL}`}>
+                      <Mail aria-hidden="true" /> {hero.email}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="hero-view">
+                <Portrait labels={{ alt: hero.portraitAlt, group: hero.viewLabel, photo: hero.viewPhoto, avatar: hero.viewAvatar }} />
+              </div>
+            </div>
+
+            <aside className="sheet-side">
+              <div className="notes">
+                <h2 className="label">{hero.notesTitle}</h2>
+                <ol>
+                  {hero.notes.map((note, i) => (
+                    <li key={note.text}>
+                      <span className="n" aria-hidden="true">
+                        {i + 1}
+                      </span>
+                      <a href={note.href}>
+                        {note.text}
+                        <small>
+                          {note.source}
+                          {/* Espacio duro: la flecha nunca queda sola en una línea. */}
+                          {" "}
+                          <ArrowDown aria-hidden="true" />
+                        </small>
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+
+              <dl className="tb" aria-label={hero.blockTitle}>
+                {hero.block.map((row) => (
+                  <div key={row.label}>
+                    <dt className="label">{row.label}</dt>
+                    <dd>{row.value}</dd>
+                  </div>
+                ))}
+                <div className="tb-rev">
+                  <dt className="label">{hero.revision.label}</dt>
+                  <dd>{hero.revision.value}</dd>
+                </div>
+                <div>
+                  <dt className="label">{hero.cvLabel}</dt>
+                  <dd>
+                    <a href={CV_ES} target="_blank" rel="noreferrer" className="cv-link">
+                      ES <Download aria-hidden="true" />
+                    </a>
+                    <a href={CV_EN} target="_blank" rel="noreferrer" className="cv-link">
+                      EN <Download aria-hidden="true" />
+                    </a>
+                  </dd>
+                </div>
+              </dl>
+            </aside>
           </div>
-        </div>
-
-        <div className="rise mt-8 lg:mt-0" style={delay(4)}>
-          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-            <a
-              href={s.actions.cvHref}
-              download
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-ink px-4 py-2.5 text-sm font-semibold text-paper no-underline transition-[background-color,transform] duration-200 hover:bg-ink/85 active:scale-[0.97]"
-            >
-              <ArrowDownToLine className="size-4" aria-hidden="true" />
-              {s.actions.cv}
-            </a>
-            <a
-              href={`mailto:${s.contact.email}`}
-              className="inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold no-underline ring-1 ring-line transition-[background-color,transform] duration-200 ring-inset hover:bg-hover active:scale-[0.97]"
-            >
-              <Mail className="size-4" aria-hidden="true" />
-              {s.actions.email}
-            </a>
-          </div>
-
-          <ul className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-medium">
-            <li>
-              <a href={s.contact.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-muted no-underline transition-colors hover:text-ink">
-                <GithubMark className="size-4" />
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href={s.contact.linkedin} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-muted no-underline transition-colors hover:text-ink">
-                <LinkedinMark className="size-4" />
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a href={s.contact.whatsapp} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-muted no-underline transition-colors hover:text-ink">
-                <MessageCircle className="size-4" aria-hidden="true" />
-                WhatsApp
-              </a>
-            </li>
-            <li>
-              <a
-                href={s.actions.otherLangHref}
-                hrefLang={otherLang}
-                lang={otherLang}
-                aria-label={s.actions.otherLangLabel}
-                className="inline-flex items-center gap-1.5 text-muted no-underline transition-colors hover:text-ink"
-              >
-                <Languages className="size-4" aria-hidden="true" />
-                {s.actions.otherLang}
-              </a>
-            </li>
-          </ul>
-
-          <p className="mt-6 flex items-center gap-2 text-sm text-muted">
-            <span className="inline-flex size-2 shrink-0 rounded-full bg-accent" aria-hidden="true" />
-            {s.availability}
-          </p>
-        </div>
-      </header>
-
-      <main id="contenido" className="pb-24 pt-20 lg:py-20">
-        <section aria-label={s.lang === "es" ? "Sobre mí" : "About me"} className="max-w-[64ch] space-y-4 text-[1.0625rem] leading-relaxed">
-          {s.about.map((p) => (
-            <p key={p}>{p}</p>
-          ))}
         </section>
 
-        <Section id="trabajo" title={s.workTitle} wide>
-          <p className="-mt-3 mb-5 text-sm text-muted">{s.workHint}</p>
-          <WorkIndex items={s.work} labels={s.labels} />
+        <Section id="proyectos" title={work.title} measure={work.measure}>
+          <article id="proyecto-quantum" className="flagship" aria-labelledby="principal-titulo">
+            <div className="fl-top">
+              <div>
+                <h3 id="principal-titulo" className="fl-title">
+                  {fl.title}
+                </h3>
+                <p className="fl-meta label">
+                  <span>{fl.client}</span>
+                  <span className="is-pen">{fl.role}</span>
+                </p>
+              </div>
+              <p className="fl-summary">{fl.summary}</p>
+            </div>
+
+            <div className="fl-grid">
+              <div className="plan">
+                <p className="label plan-label">{fl.flowLabel}</p>
+                <div className="flow">
+                  {fl.flow.map((node, i) => (
+                    <FlowNode key={node.name} node={node} arrow={i > 0} />
+                  ))}
+                </div>
+                <div className="contract">
+                  <p>{fl.contract}</p>
+                </div>
+
+                <p className="label plan-label">{fl.platformLabel}</p>
+                <div className="platform">
+                  {fl.platform.map((node) => (
+                    <PlanBlock key={node.name} node={node} />
+                  ))}
+                </div>
+
+                <div className="plan-legend">
+                  <ul className="tags" aria-label={fl.stackLabel}>
+                    {fl.stack.map((tech) => (
+                      <li key={tech}>{tech}</li>
+                    ))}
+                  </ul>
+                  <p>{fl.source}</p>
+                </div>
+              </div>
+
+              <div className="figs">
+                <span className="label">{fl.figuresLabel}</span>
+                {fl.figures.map((fig) => (
+                  <div key={fig.value} className="fig">
+                    <p className="fig-value">{fig.value}</p>
+                    <p className="fig-label">{fig.label}</p>
+                    {fig.scale && (
+                      <div className="scale" role="img" aria-label={fig.scale.caption} style={{ "--ratio": fig.scale.ratio } as CSSProperties}>
+                        <i />
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </article>
+
+          <div className="reg">
+            {work.groups.map((group) => (
+              <section key={group.title} className="reg-group">
+                <div className="reg-group-head">
+                  <h3>{group.title}</h3>
+                  <span className="label">
+                    {group.projects.length} {work.countLabel}
+                  </span>
+                </div>
+                {group.projects.map((p) => (
+                  <ProjectRow key={p.id} p={p} labels={work.labels} ui={s.ui} />
+                ))}
+              </section>
+            ))}
+          </div>
         </Section>
 
-        <Section id="como-trabajo" title={s.processTitle}>
-          <ol className="divide-y divide-line border-y border-line">
-            {s.process.map((step, i) => (
-              <li key={step.title} className="grid grid-cols-[1.75rem_1fr] gap-x-3 py-5">
-                <span className="text-sm text-muted tabular-nums">{i + 1}.</span>
-                <div>
-                  <h3 className="font-semibold tracking-[-0.01em]">{step.title}</h3>
-                  <p className="mt-1 leading-relaxed text-muted">{step.text}</p>
+        <Section id="proceso" title={process.title} measure={process.measure}>
+          <ol className="steps">
+            {process.steps.map((step, i) => (
+              <li key={step.title} className="step">
+                <span className="step-n" aria-hidden="true">
+                  {i + 1}
+                </span>
+                <h3>{step.title}</h3>
+                <p>{step.text}</p>
+                <div className="step-proof">
+                  <p className="label">{process.proofLabel}</p>
+                  <p>{step.proof}</p>
                 </div>
               </li>
             ))}
           </ol>
-          <p className="mt-6 leading-relaxed">{s.ai}</p>
+          <div className="aside-note">
+            <h3 className="label">{process.noteLabel}</h3>
+            <p>{process.note}</p>
+          </div>
         </Section>
 
-        <Section id="experiencia" title={s.experienceTitle}>
-          <ol className="space-y-6">
-            {s.experience.map((job) => (
-              <li key={`${job.company}-${job.dates}`} className="grid gap-x-6 gap-y-1 sm:grid-cols-[10rem_1fr]">
-                <span className="pt-0.5 text-sm text-muted tabular-nums">{job.dates}</span>
+        <Section id="experiencia" title={experience.title} measure={experience.measure}>
+          <div className="gantt">
+            <div className="gantt-axis" aria-hidden="true">
+              <div className="axis-years">
+                {TIMELINE.years.map((year) => (
+                  <span key={year}>{year}</span>
+                ))}
+              </div>
+            </div>
+            <ol>
+              {experience.jobs.map((job) => (
+                <li key={job.start} className="job">
+                  <p className="job-dates">{job.dates}</p>
+                  <div>
+                    <h3>{job.role}</h3>
+                    <p className="job-co">
+                      {job.company} <span>· {job.place}</span>
+                    </p>
+                    <p className="job-line">{job.line}</p>
+                  </div>
+                  <div
+                    className="job-bar"
+                    aria-hidden="true"
+                    style={{ "--s": startOf(job.start), "--e": endOf(job.end || REVISION) } as CSSProperties}
+                  >
+                    <i className={job.end ? undefined : "is-now"} />
+                  </div>
+                </li>
+              ))}
+              <li className="job job-edu">
+                <p className="job-dates">{experience.education.dates}</p>
                 <div>
-                  <h3 className="font-semibold tracking-[-0.01em]">
-                    {job.role}
-                    <span className="block font-normal text-muted">{job.company}</span>
-                  </h3>
-                  <p className="mt-1 leading-relaxed text-muted">{job.line}</p>
+                  <h3>{experience.education.degree}</h3>
+                  <p className="job-co">{experience.education.school}</p>
                 </div>
+                <p className="label">{experience.education.label}</p>
               </li>
-            ))}
-          </ol>
-          <a
-            href={s.actions.cvHref}
-            download
-            className="group mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-accent underline decoration-accent/40 hover:decoration-accent"
-          >
-            {s.fullCv}
-            <ArrowDownToLine className="size-4 transition-transform duration-200 group-hover:translate-y-0.5" aria-hidden="true" />
-          </a>
+            </ol>
+          </div>
         </Section>
 
-        <Section id="stack" title={s.stackTitle}>
-          <dl className="divide-y divide-line border-y border-line">
-            {s.stack.map((g) => (
-              <div key={g.group} className="grid gap-x-6 gap-y-1 py-3.5 sm:grid-cols-[10rem_1fr]">
-                <dt className="text-sm text-muted">{g.group}</dt>
-                <dd className="leading-relaxed">{g.items}</dd>
+        <Section id="stack" title={stack.title}>
+          <dl className="stack-table">
+            {stack.groups.map((g) => (
+              <div key={g.group} className={g.lead ? "is-lead" : undefined}>
+                <dt className="label">{g.group}</dt>
+                <dd>
+                  {g.lead && <p className="stack-lead">{g.lead}</p>}
+                  {g.layout === "steps" ? (
+                    <ol className="chain stack-chain">
+                      {g.items.map((item, i) => (
+                        <li key={item}>
+                          {i > 0 && <StepArrow />}
+                          <span>
+                            <b className="n">{i + 1}</b>
+                            {item}
+                          </span>
+                        </li>
+                      ))}
+                    </ol>
+                  ) : (
+                    <ul className={g.layout === "tasks" ? "stack-tasks" : undefined}>
+                      {g.items.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
+                  {g.notes?.map((note) => (
+                    <p key={note.label} className="stack-note">
+                      <span className="label">{note.label}</span>
+                      {note.text}
+                    </p>
+                  ))}
+                </dd>
               </div>
             ))}
           </dl>
-          <p className="mt-5 text-sm text-muted">{s.languagesLine}</p>
         </Section>
 
-        <Section id="contacto" title={s.contactTitle}>
-          <p className="leading-relaxed text-muted">{s.contactText}</p>
-          <ul className="mt-6 divide-y divide-line border-y border-line">
-            <ContactRow href={`mailto:${s.contact.email}`} icon={<Mail className="size-4" aria-hidden="true" />} label={s.contactLabels.email} value={s.contact.email} />
-            <ContactRow href={s.contact.whatsapp} external icon={<MessageCircle className="size-4" aria-hidden="true" />} label={s.contactLabels.whatsapp} value={s.contact.phone} />
-            <ContactRow href={s.contact.github} external icon={<GithubMark className="size-4" />} label={s.contactLabels.github} value="github.com/MateoHdz" />
-            <ContactRow href={s.contact.linkedin} external icon={<LinkedinMark className="size-4" />} label={s.contactLabels.linkedin} value="linkedin.com/in/mateo-hernandez-209384280" />
-            <ContactRow href={s.contact.cvEs} download icon={<ArrowDownToLine className="size-4" aria-hidden="true" />} label="Español" value={s.contactLabels.cvEs} />
-            <ContactRow href={s.contact.cvEn} download icon={<ArrowDownToLine className="size-4" aria-hidden="true" />} label="English" value={s.contactLabels.cvEn} />
-          </ul>
-        </Section>
-
-        <footer className="mt-24 text-sm text-muted">
-          <p>
-            {s.footer}{" "}
-            <a href="https://github.com/MateoHdz" target="_blank" rel="noreferrer" className="underline decoration-line hover:text-ink hover:decoration-ink">
-              GitHub
-            </a>
-          </p>
-        </footer>
+        <section id="contacto" aria-labelledby="contacto-titulo" className="close">
+          <div className="shell">
+            <div className="close-sheet">
+              <div className="close-main">
+                <div>
+                  <h2 id="contacto-titulo" className="close-title">
+                    {contact.title}
+                  </h2>
+                  <p className="close-text">{contact.text}</p>
+                </div>
+                <div className="close-actions">
+                  <a href={WHATSAPP} target="_blank" rel="noreferrer" className="btn btn-ink">
+                    {contact.whatsapp} <ArrowUpRight className="nudge-out" aria-hidden="true" />
+                  </a>
+                  <CopyEmail email={EMAIL} label={s.ui.copyEmail} copied={s.ui.copied} />
+                </div>
+              </div>
+              <div className="close-list">
+                <ul>
+                  {contact.items.map((item) => (
+                    <li key={item.href}>
+                      <a href={item.href} {...(item.href.startsWith("mailto:") ? {} : { target: "_blank", rel: "noreferrer" })}>
+                        <span className="k">{item.label}</span>
+                        <span className="v">{item.href.startsWith("mailto:") ? breakEmail(item.value) : item.value}</span>
+                        {item.href.endsWith(".pdf") ? <Download aria-hidden="true" /> : <ArrowUpRight aria-hidden="true" />}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <footer className="close-foot">
+              <span>{s.footer}</span>
+              <a href="#top">
+                {s.ui.backToTop} <ArrowUp aria-hidden="true" />
+              </a>
+            </footer>
+          </div>
+        </section>
       </main>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }} />
+    </>
+  );
+}
+
+function PlanBlock({ node }: { node: PlanNode }) {
+  return (
+    <div className="node">
+      <h4>{node.name}</h4>
+      <p>{node.text}</p>
+      {node.dim && <p className="node-dim">{node.dim}</p>}
     </div>
   );
 }
 
-function ContactRow({
-  href,
-  icon,
-  label,
-  value,
-  external = false,
-  download = false,
-}: {
-  href: string;
-  icon: ReactNode;
-  label: string;
-  value: string;
-  external?: boolean;
-  download?: boolean;
-}) {
+function FlowNode({ node, arrow }: { node: PlanNode; arrow: boolean }) {
   return (
-    <li>
-      <a
-        href={href}
-        {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
-        {...(download ? { download: true } : {})}
-        className="group -mx-4 flex items-center gap-4 rounded-xl px-4 py-4 no-underline transition-colors duration-200 hover:bg-hover"
-      >
-        <span className="text-muted transition-colors group-hover:text-accent">{icon}</span>
-        <span className="hidden w-20 shrink-0 text-sm text-muted sm:block">{label}</span>
-        <span className="min-w-0 flex-1 font-medium [overflow-wrap:break-word]">{breakBeforeAt(value)}</span>
-        <ArrowUpRight className="size-4 shrink-0 text-muted transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-ink" aria-hidden="true" />
-      </a>
-    </li>
+    <>
+      {arrow && (
+        <div className="arrow">
+          <FlowArrow />
+        </div>
+      )}
+      <PlanBlock node={node} />
+    </>
   );
 }

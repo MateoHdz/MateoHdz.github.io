@@ -10,8 +10,17 @@ Next.js 16 (App Router, exportación estática) · React 19 · TypeScript · Tai
 
 Todo el texto vive en dos lugares:
 
-- `content/cv/es.json` y `content/cv/en.json`: hoja de vida (experiencia, habilidades, educación, idiomas). El sitio toma de aquí la experiencia y el stack.
-- `src/content/site.ts`: textos del sitio y el detalle de cada proyecto.
+- `content/cv/es.json` y `content/cv/en.json`: hoja de vida (experiencia, habilidades, educación, idiomas) que usa `npm run cv`.
+- `src/content/site.ts`: todos los textos del sitio en ES y EN, incluidos proyectos, experiencia y stack (versiones cortas de la hoja de vida). Si cambias la hoja de vida, revisa también este archivo.
+
+En `site.ts` también están `REVISION` (mes de la última actualización: cierra la barra del empleo actual y aparece en el cajetín) y `TIMELINE` (años de la línea de tiempo). Al empezar un año nuevo o cambiar de empleo hay que actualizar ambos.
+
+El diseño está descrito en `DESIGN.md`; los colores y medidas viven en `src/app/globals.css`.
+
+## Imágenes
+
+- `src/assets/mateo-foto.webp` y `src/assets/mateo-avatar.webp`: retrato real y versión ilustrada, con fondo transparente y el mismo encuadre (1024×1280). Si se cambia uno, el otro debe conservar el encuadre para que el cambio de vista del inicio coincida.
+- `public/og.jpg`: imagen que aparece al compartir el enlace (1200×630).
 
 ## Comandos
 

@@ -15,15 +15,15 @@ export function buildMetadata(s: Site): Metadata {
       type: "profile",
       url: path,
       title: s.meta.title,
-      description: s.meta.description,
+      description: s.meta.ogDescription,
       locale: s.lang === "es" ? "es_CO" : "en_US",
+      images: [{ url: "/og.jpg", width: 1200, height: 630, alt: s.meta.title }],
     },
+    twitter: { card: "summary_large_image", title: s.meta.title, description: s.meta.ogDescription, images: ["/og.jpg"] },
   };
 }
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f7f7f4" },
-    { media: "(prefers-color-scheme: dark)", color: "#111210" },
-  ],
+  themeColor: "#090a09",
+  colorScheme: "dark",
 };

@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { schibsted } from "@/fonts";
+import { fontVariables } from "@/fonts";
 import { buildMetadata, viewport as sharedViewport } from "@/metadata";
 import { site } from "@/content/site";
 import "../globals.css";
@@ -9,7 +9,7 @@ export const viewport = sharedViewport;
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={schibsted.variable}>
+    <html lang="en" className={fontVariables}>
       <body>{children}</body>
     </html>
   );

@@ -20,7 +20,7 @@
     "languages": "Languages",
     "present": "Present"
   },
-  "profile": "Full Stack Developer with 3+ years building business software with JavaScript, TypeScript, React and Node.js. Currently the lead developer of a multi-tenant SaaS for restaurants (point of sale, order management and online menu) running in production for 12 companies and 18 locations. I start from the business problem: I gather requirements with the client, model the data and rules, build with automated tests and document every decision. Experience in data migration, performance, multi-tenant security and AI-assisted development.",
+  "profile": "Full Stack Developer with 3+ years building business software with JavaScript, TypeScript, React and Node.js. Currently the lead developer of a multi-tenant SaaS for restaurants (point of sale, order management and online menu). I start from the business problem: I learn how the client operates, explain it in writing, mock it up before building, deliver in phases with automated tests and document every decision. Experience in data migration, performance, multi-tenant security and AI-assisted development.",
   "experience": [
     {
       "role": "Full Stack Developer",
@@ -30,13 +30,13 @@
       "end": "",
       "summary": "",
       "bullets": [
-        "Lead developer of a multi-tenant SaaS for restaurants (POS, order management, online menu, product landing pages and admin console) built with React, Node.js/Express and Firebase, in production for 12 companies and 18 locations; authored 96% of the commits since August 2026 (408 of 424).",
-        "Extended and maintain the POS REST API (316 endpoints: cash register and reconciliation, purchases with taxes, inventory by location, production and reports) with about 1,600 automated test cases.",
-        "Designed a reusable data importer (generic engine, per-source adapter, preview and rollback) and migrated a client from VectorPOS: 1,703 customer, supplier and recipe records in about 21 minutes.",
-        "Integrated the online menu, OMS and POS through a versioned order contract with transactions and idempotent IDs that prevent duplicate sales, plus customer notifications via WhatsApp templates.",
-        "Cut sale checkout time by about 50% (from 1,390 ms to ~700 ms) by batch-loading recipes from Firestore; validated against 2,470 orders.",
-        "Built an internal console in 9 days to onboard companies and enable their apps (170+ tests) and implemented multi-tenant authentication with Firebase custom tokens, scrypt password hashing and login rate limiting.",
-        "Documented the product (79 technical documents, 44 business rules, architecture decision records and phased roadmaps) and work with AI (Claude Code) from specs and acceptance criteria."
+        "Lead developer of a multi-tenant SaaS for restaurants (point of sale, order management, online menu, single-product landing pages for ads and admin console) built with React, Node.js/Express and Firebase.",
+        "Cut sale checkout time in half (from 1,390 ms to ~700 ms) by loading recipes from Firestore level by level instead of one by one, and verified against the order history that inventory is deducted the same way.",
+        "Took the point-of-sale REST API from zero to more than 1,700 automated tests while extending it: cash register and reconciliation, purchases with taxes, inventory by location, production and 30 reports.",
+        "Turned the menu, the product landing pages and order management into a single codebase for every company, integrated with the point of sale through a versioned order contract with transactions and idempotent IDs that prevent double charges, plus customer notifications via WhatsApp.",
+        "Designed a reusable data importer (per-source adapter, preview and rollback) and migrated a restaurant from its previous system: 1,703 customer, supplier and recipe records in about 21 minutes.",
+        "Built the internal console that creates companies and turns on their apps (four phases in two days, one approved mockup per phase) and, in three days, a sales demo running the four apps on fictional data. Multi-tenant authentication with Firebase custom tokens, scrypt password hashing and login rate limiting.",
+        "Analyze and document each module before changing it (business rules, architecture decision records and phased roadmaps). Work with AI (Claude Code) from specs and acceptance criteria."
       ]
     },
     {

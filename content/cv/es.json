@@ -20,7 +20,7 @@
     "languages": "Idiomas",
     "present": "Actualidad"
   },
-  "profile": "Desarrollador Full Stack con más de 3 años construyendo software empresarial con JavaScript, TypeScript, React y Node.js. Hoy soy el desarrollador principal de un SaaS multiempresa para restaurantes (punto de venta, gestión de pedidos y menú online) que opera en producción para 12 empresas y 18 sedes. Trabajo desde el problema del negocio: levanto requerimientos con el cliente, modelo los datos y las reglas, construyo con pruebas automatizadas y documento cada decisión. Experiencia en migración de datos, rendimiento, seguridad multiempresa y desarrollo asistido por IA.",
+  "profile": "Desarrollador Full Stack con más de 3 años construyendo software empresarial con JavaScript, TypeScript, React y Node.js. Hoy soy el desarrollador principal de un SaaS multiempresa para restaurantes (punto de venta, gestión de pedidos y menú online). Trabajo desde el problema del negocio: entiendo cómo opera el cliente, lo explico por escrito, maqueto antes de desarrollar, construyo por fases con pruebas automatizadas y documento cada decisión. Experiencia en migración de datos, rendimiento, seguridad multiempresa y desarrollo asistido por IA.",
   "experience": [
     {
       "role": "Desarrollador Full Stack",
@@ -30,13 +30,13 @@
       "end": "",
       "summary": "",
       "bullets": [
-        "Desarrollador principal de un SaaS multiempresa para restaurantes (POS, gestión de pedidos, menú online, landing por producto y consola administrativa) con React, Node.js/Express y Firebase, en producción para 12 empresas y 18 sedes; autor del 96 % de los commits desde agosto de 2026 (408 de 424).",
-        "Amplié y mantengo la API REST del POS (316 endpoints: caja y arqueo, compras con impuestos, inventario por ubicación, producción y reportes) con cerca de 1.600 casos de pruebas automatizadas.",
-        "Diseñé un importador de datos reutilizable (motor genérico, adaptador por sistema de origen, vista previa y reversa) y migré a un cliente desde VectorPOS: 1.703 registros de clientes, proveedores y recetas en unos 21 minutos.",
-        "Integré menú online, OMS y POS con un contrato de pedido versionado, transacciones e identificadores idempotentes que evitan ventas duplicadas, y avisos al cliente por plantillas de WhatsApp.",
-        "Reduje cerca de 50 % el tiempo de cierre de una venta (de 1.390 ms a ~700 ms) cargando las recetas de Firestore por lotes; validado contra 2.470 órdenes.",
-        "Construí en 9 días una consola interna para dar de alta empresas y activar sus aplicaciones (más de 170 pruebas) e implementé autenticación multiempresa con tokens de Firebase, contraseñas con scrypt y límite de intentos.",
-        "Documenté el producto (79 documentos técnicos, 44 reglas de negocio, decisiones de arquitectura y roadmaps por fases) y trabajo con IA (Claude Code) a partir de especificaciones y criterios de aceptación."
+        "Desarrollador principal de un SaaS multiempresa para restaurantes (punto de venta, gestión de pedidos, menú online, página de producto para anuncios y consola de administración) con React, Node.js/Express y Firebase.",
+        "Reduje a la mitad el tiempo de cobro de una venta (de 1.390 ms a ~700 ms) cargando las recetas de Firestore por niveles en lugar de una por una, y comprobé contra el historial de órdenes que el inventario descuenta lo mismo.",
+        "Llevé la API REST del punto de venta de cero a más de 1.700 pruebas automatizadas mientras la ampliaba: caja y cuadre, compras con impuestos, inventario por ubicación, producción en planta y 30 reportes.",
+        "Convertí el menú, la página de producto y la gestión de pedidos en una sola base de código para todas las empresas, integrada con el punto de venta por un contrato de pedido versionado, transacciones e identificadores idempotentes que evitan cobros duplicados, y avisos al cliente por WhatsApp.",
+        "Diseñé un importador de datos reutilizable (adaptador por sistema de origen, vista previa y reversa) y migré a un restaurante desde su sistema anterior: 1.703 registros de clientes, proveedores y recetas en unos 21 minutos.",
+        "Construí la consola interna que crea empresas y enciende sus aplicaciones (cuatro fases en dos días, una maqueta aprobada por fase) y, en tres días, una demo comercial con las cuatro apps y datos ficticios. Autenticación multiempresa con tokens de Firebase, contraseñas con scrypt y límite de intentos.",
+        "Antes de cambiar un módulo lo analizo y lo documento (reglas de negocio, decisiones de arquitectura y roadmaps por fases). Trabajo con IA (Claude Code) a partir de especificaciones y criterios de aceptación."
       ]
     },
     {
