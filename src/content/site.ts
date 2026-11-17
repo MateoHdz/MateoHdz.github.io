@@ -40,7 +40,8 @@ export type Job = {
   line: string;
 };
 
-export type ContactItem = { label: string; value: string; href: string };
+/** `event` es el nombre del clic en el contador de visitas (GoatCounter). */
+export type ContactItem = { label: string; value: string; href: string; event: string };
 
 export type Site = {
   lang: Lang;
@@ -152,12 +153,12 @@ export const REVISION = "2026-11";
 export const TIMELINE = { start: "2023-01", end: "2026-12", years: ["2023", "2024", "2025", "2026"] };
 
 const contactItems = (l: { email: string; cvEs: string; cvEn: string }): ContactItem[] => [
-  { label: l.email, value: EMAIL, href: `mailto:${EMAIL}` },
-  { label: "WhatsApp", value: PHONE, href: WHATSAPP },
-  { label: "LinkedIn", value: "in/mateo-hernandez-209384280", href: LINKEDIN },
-  { label: "GitHub", value: "github.com/MateoHdz", href: GITHUB },
-  { label: l.cvEs, value: "PDF · español", href: CV_ES },
-  { label: l.cvEn, value: "PDF · English", href: CV_EN },
+  { label: l.email, value: EMAIL, href: `mailto:${EMAIL}`, event: "correo" },
+  { label: "WhatsApp", value: PHONE, href: WHATSAPP, event: "whatsapp" },
+  { label: "LinkedIn", value: "in/mateo-hernandez-209384280", href: LINKEDIN, event: "linkedin" },
+  { label: "GitHub", value: "github.com/MateoHdz", href: GITHUB, event: "github" },
+  { label: l.cvEs, value: "PDF · español", href: CV_ES, event: "hoja-de-vida-es" },
+  { label: l.cvEn, value: "PDF · English", href: CV_EN, event: "hoja-de-vida-en" },
 ];
 
 const STACK_QUANTUM = ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "Firebase", "Firestore", "node:test"];

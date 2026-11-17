@@ -36,3 +36,9 @@ npm run cv      # regenera la hoja de vida en PDF y DOCX (ES/EN) en public/cv/
 ## Publicación
 
 Cada `push` a `main` compila el sitio y lo publica en GitHub Pages con `.github/workflows/deploy.yml`.
+
+## Visitas
+
+El sitio cuenta visitas con [GoatCounter](https://mateohdz.goatcounter.com) (`src/components/Analytics.tsx`): sin cookies ni datos personales. Muestra visitas, de dónde vienen, país y dispositivo, y los clics marcados con `data-goatcounter-click` (hoja de vida, WhatsApp, correo, LinkedIn, GitHub y repositorios). No cuenta en localhost ni en la red local.
+
+Para saber qué canal trae cada visita, comparte el enlace con `?ref=`: por ejemplo `https://mateohdz.github.io/?ref=instagram` o `?ref=linkedin`.

@@ -18,7 +18,7 @@ export function CopyEmail({ email, label, copied }: { email: string; label: stri
   };
 
   return (
-    <button type="button" className="btn btn-ink-line" onClick={copy}>
+    <button type="button" className="btn btn-ink-line" onClick={copy} data-goatcounter-click="copiar-correo">
       {done ? <Check aria-hidden="true" /> : <Copy aria-hidden="true" />}
       <span aria-live="polite">{done ? copied : label}</span>
     </button>

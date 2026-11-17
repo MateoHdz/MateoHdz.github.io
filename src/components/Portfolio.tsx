@@ -121,28 +121,34 @@ export function Portfolio({ s }: { s: Site }) {
                   <a href="#proyectos" className="btn btn-pen">
                     {hero.work} <ArrowDown className="nudge-down" aria-hidden="true" />
                   </a>
-                  <a href={hero.cvHref} target="_blank" rel="noreferrer" className="btn btn-line">
+                  <a
+                    href={hero.cvHref}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-line"
+                    data-goatcounter-click={hero.cvHref === CV_ES ? "hoja-de-vida-es" : "hoja-de-vida-en"}
+                  >
                     {hero.cv} <Download className="nudge-down" aria-hidden="true" />
                   </a>
                 </div>
                 <ul className="hero-links label">
                   <li>
-                    <a href={GITHUB} target="_blank" rel="noreferrer">
+                    <a href={GITHUB} target="_blank" rel="noreferrer" data-goatcounter-click="github">
                       <GithubIcon /> GitHub
                     </a>
                   </li>
                   <li>
-                    <a href={LINKEDIN} target="_blank" rel="noreferrer">
+                    <a href={LINKEDIN} target="_blank" rel="noreferrer" data-goatcounter-click="linkedin">
                       <LinkedinIcon /> LinkedIn
                     </a>
                   </li>
                   <li>
-                    <a href={WHATSAPP} target="_blank" rel="noreferrer">
+                    <a href={WHATSAPP} target="_blank" rel="noreferrer" data-goatcounter-click="whatsapp">
                       <MessageCircle aria-hidden="true" /> WhatsApp
                     </a>
                   </li>
                   <li>
-                    <a href={`mailto:${EMAIL}`}>
+                    <a href={`mailto:${EMAIL}`} data-goatcounter-click="correo">
                       <Mail aria-hidden="true" /> {hero.email}
                     </a>
                   </li>
@@ -191,10 +197,10 @@ export function Portfolio({ s }: { s: Site }) {
                 <div>
                   <dt className="label">{hero.cvLabel}</dt>
                   <dd>
-                    <a href={CV_ES} target="_blank" rel="noreferrer" className="cv-link">
+                    <a href={CV_ES} target="_blank" rel="noreferrer" className="cv-link" data-goatcounter-click="hoja-de-vida-es">
                       ES <Download aria-hidden="true" />
                     </a>
-                    <a href={CV_EN} target="_blank" rel="noreferrer" className="cv-link">
+                    <a href={CV_EN} target="_blank" rel="noreferrer" className="cv-link" data-goatcounter-click="hoja-de-vida-en">
                       EN <Download aria-hidden="true" />
                     </a>
                   </dd>
@@ -398,7 +404,7 @@ export function Portfolio({ s }: { s: Site }) {
                   <p className="close-text">{contact.text}</p>
                 </div>
                 <div className="close-actions">
-                  <a href={WHATSAPP} target="_blank" rel="noreferrer" className="btn btn-ink">
+                  <a href={WHATSAPP} target="_blank" rel="noreferrer" className="btn btn-ink" data-goatcounter-click="whatsapp">
                     {contact.whatsapp} <ArrowUpRight className="nudge-out" aria-hidden="true" />
                   </a>
                   <CopyEmail email={EMAIL} label={s.ui.copyEmail} copied={s.ui.copied} />
@@ -408,7 +414,11 @@ export function Portfolio({ s }: { s: Site }) {
                 <ul>
                   {contact.items.map((item) => (
                     <li key={item.href}>
-                      <a href={item.href} {...(item.href.startsWith("mailto:") ? {} : { target: "_blank", rel: "noreferrer" })}>
+                      <a
+                        href={item.href}
+                        data-goatcounter-click={item.event}
+                        {...(item.href.startsWith("mailto:") ? {} : { target: "_blank", rel: "noreferrer" })}
+                      >
                         <span className="k">{item.label}</span>
                         <span className="v">{item.href.startsWith("mailto:") ? breakEmail(item.value) : item.value}</span>
                         {item.href.endsWith(".pdf") ? <Download aria-hidden="true" /> : <ArrowUpRight aria-hidden="true" />}

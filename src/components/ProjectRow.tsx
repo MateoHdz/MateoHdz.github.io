@@ -88,7 +88,7 @@ export function ProjectRow({ p, labels, ui }: Props) {
                   <dt className="label">{labels.code}</dt>
                   <dd>
                     {p.code.kind === "public" ? (
-                      <a href={p.code.href} target="_blank" rel="noreferrer" className="code-link">
+                      <a href={p.code.href} target="_blank" rel="noreferrer" className="code-link" data-goatcounter-click={`repositorio-${p.id}`}>
                         {p.code.label}
                         <ArrowUpRight aria-hidden="true" />
                       </a>
